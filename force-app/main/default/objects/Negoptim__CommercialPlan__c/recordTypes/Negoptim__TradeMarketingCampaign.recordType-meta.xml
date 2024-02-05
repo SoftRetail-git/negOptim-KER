@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__TradeMarketingCampaign</fullName>
+    <active>true</active>
+    <label>Trade Marketing Campaign</label>
+    <picklistValues>
+        <picklist>Negoptim__Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diffused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In preparation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request for approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request for approval Fact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revue budg%2E déc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revue budg%2E juin%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revue budg%2E mars%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revue budg%2E sept%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update with fact data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validate with fact data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

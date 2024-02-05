@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>SPKERCADELAC -  Channel</layout>
+        <sections>
+            <label></label>
+            <section>Assortment - Settings</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Life cycle</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPKERCADELAC - Banner</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Filter Settings - Assortment</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Life cycle</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Weight Distribution Rise Plan for Inno</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Weight Distribution Rise Plan for Stop</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Weight Distribution Rise Plan for Switch</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPKERCADELAC - Cluster</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Filter Settings - Assortment</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Life cycle</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>ND/WD Calculation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPKERCADELAC - Country</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Life cycle</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPKERCADELAC - Group</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Filter Settings - Assortment</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Life cycle</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__Assortment_Cluster</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__Assortment_Cluster_List</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__Banner</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__Channel</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__Country</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__Group</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__Legal</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__List</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__Region</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__Store</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__Warehouse</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__Web</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Negoptim__Country_required_for_legal_form</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Negoptim__Country_required_for_stores</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Negoptim__Legal_Form_required_for_Store</name>
+    </validationRules>
+</CustomObjectTranslation>

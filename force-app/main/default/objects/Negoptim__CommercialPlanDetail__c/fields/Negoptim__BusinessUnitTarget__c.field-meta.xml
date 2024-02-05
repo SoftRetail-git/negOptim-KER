@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__BusinessUnitTarget__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>CP BU target and their childs</description>
+    <externalId>false</externalId>
+    <label>Business Unit Target</label>
+    <referenceTo>Negoptim__Orga_BU__c</referenceTo>
+    <relationshipLabel>Commercial Plan Details (BU Target)</relationshipLabel>
+    <relationshipName>CommercialPlanDetailsBUTarget</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

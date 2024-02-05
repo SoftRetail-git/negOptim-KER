@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__Store_nb__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Stores linked to the list</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Nombre de magasins</inlineHelpText>
+    <label>#Store</label>
+    <summaryFilterItems>
+        <field>Negoptim__Orga_BU_List_Detail__c.Negoptim__Format__c</field>
+        <operation>equals</operation>
+        <value>Store</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Negoptim__Orga_BU_List_Detail__c.Negoptim__Entity__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

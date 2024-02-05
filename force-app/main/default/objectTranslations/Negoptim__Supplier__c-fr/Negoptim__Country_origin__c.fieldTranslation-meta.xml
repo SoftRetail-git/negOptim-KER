@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Pays de référence du fournisseur. Peut être différente du pays d&apos;adresse du fournisseur.</help>
+    <label></label>
+    <name>Negoptim__Country_origin__c</name>
+    <relationshipLabel></relationshipLabel>
+</CustomFieldTranslation>

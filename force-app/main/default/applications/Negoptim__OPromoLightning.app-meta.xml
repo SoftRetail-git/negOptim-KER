@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#00C7FF</headerColor>
+        <logo>Negoptim__Picto_PROMO</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Negoptim app to manage promo</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Promo O</label>
+    <navType>Standard</navType>
+    <tabs>Negoptim__CommercialPlan__c</tabs>
+    <tabs>Negoptim__CommercialPlanDetail__c</tabs>
+    <tabs>Negoptim__CommercialPlanFollowup__c</tabs>
+    <tabs>Negoptim__CommercialPlanSequence__c</tabs>
+    <tabs>Negoptim__ProductGroupList__c</tabs>
+    <tabs>Negoptim__Orga_BU__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Negoptim__Promo_O_UtilityBar</utilityBar>
+</CustomApplication>

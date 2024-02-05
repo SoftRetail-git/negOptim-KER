@@ -1,0 +1,463 @@
+<apex:page standardController="Negoptim__Assortment_BU__c" extensions="Negoptim.AssortmentBUProductSelectionController" lightningStylesheets="true"
+           sidebar="false" applyHtmlTag="false" applyBodyTag="false" showHeader="false" docType="html-5.0" standardStyleSheets="false">
+
+    <html class="slds-scope slds-scrollable_none">
+
+        <head>
+            <apex:slds />
+            <apex:stylesheet value="{!URLFOR($Resource.Negoptim__Assets, 'Assets/css/app.css')}" />
+            <style>
+                .lookupInput {
+                width: 100%
+                }
+
+                .lookupInput input {
+                width: 100%
+                }
+                .Product-labels * {
+                font-size: var(--lwc-fontSize4,0.875rem);
+                }
+
+                .Product-labels a ,.Product-labels a:hover {
+                border-bottom: 1px dotted;
+                text-decoration:none
+                }
+                .panel-footer {
+                background-color: #f3f2f2;
+                border-top-color: #dddbda !IMPORTANT;
+                border-top-width: 2px !IMPORTANT;
+                }
+                .stickyHead th{
+                position: sticky !important;
+                top: 0 !IMPORTANT;
+                z-index:3 !IMPORTANT;
+                }
+                .table {
+                thead tr:nth-child(1) th{
+                background: white;
+                position: sticky;
+                top: 0;
+                z-index: 10;
+                }
+                }
+                .sticky > th {
+                position: sticky;
+                top: 0;
+                z-index:3;
+                }
+            </style>
+        </head>
+
+        <body class="slds-brand-band slds-brand-band_large slds-scrollable_none">
+            <apex:actionStatus id="globalloading">
+                <apex:facet name="start">
+                    <div class="slds-spinner_container">
+                        <div role="status" class="slds-spinner slds-spinner_large slds-spinner_brand">
+                            <span class="slds-assistive-text">
+                                {!JSINHTMLENCODE($Label.Loading)}
+                            </span>
+                            <div class="slds-spinner__dot-a"></div>
+                            <div class="slds-spinner__dot-b"></div>
+                        </div>
+                    </div>
+                </apex:facet>
+            </apex:actionStatus>
+            <div id="msg" class="slds-m-horizontal_small">
+                <apex:pageMessages id="Messages" />
+            </div>
+            <apex:form id="theForm">
+                <div class="slds-p-around_small" >
+                    <div id="pageHeader" class="slds-page-header slds-page-header--object-home slds-page-header_joined slds-page-header_bleed slds-page-header slds-shrink-none ">
+                        <!-- LAYOUT GRID -->
+                        <div class="slds-grid">
+                            <!-- GRID COL -->
+                            <div class="slds-col slds-has-flexi-truncate">
+                                <div class="slds-media slds-no-space slds-grow">
+                                    <div class="slds-media__figure">
+                                        <svg aria-hidden="true" class="slds-icon slds-icon-standard-contact" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#product')}"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <p class="slds-text-title_caps slds-line-height_reset">
+                                            <apex:outputText value="{!$ObjectType.Negoptim__Assortment_BU__c.Label}" />
+                                        </p>
+                                        <h1 class="slds-page-header__title slds-align-middle slds-truncate" title="{!JSINHTMLENCODE(Negoptim__Assortment_BU__c.Name)}">
+                                            <apex:outputText value="{!Negoptim__Assortment_BU__c.Name}" />
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-no-flex slds-grid slds-align-top">
+                                <div role="group">
+                                    <!-- buttons -->
+                                    <button type="button" onclick="showConfirmMsg(); return false;" class="slds-button slds-button_neutral">
+                                        <apex:outputText value="{!$Label.negoptim__LBL_Import_All_Filtered}" />
+                                    </button>
+                                    <button type="button" onclick="return cancel() && false;" class="slds-button slds-button_neutral">
+                                        <apex:outputText value="{!$Label.negoptim__Cancel}" />
+                                    </button>
+                                    <button type="button" onclick="return importSelected() && false;" class="slds-button slds-button_brand">
+                                        <apex:outputText value="{!$Label.negoptim__Save}" />
+                                    </button>
+                                </div>
+                                <button id="filter-panel-toggle" class="slds-button slds-button_icon slds-button_icon-border-filled slds-m-left_xx-small"
+                                        title="{!$Label.LBL_Filter}" onclick="toggleFilterPanel();return false;">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#filterList')}" />
+                                    </svg>
+                                    <span class="slds-assistive-text">Filters</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--ul class="slds-grid "  style="overflow: hidden;width=100%">
+<li class="slds-page-header__detail-block">
+<p class="slds-text-title slds-truncate slds-m-bottom_xx-small" title="{!JSINHTMLENCODE($ObjectType.Assortment_BU__c.fields.Orga_HE__c.label)}">
+<apex:outputText value="{!$ObjectType.Assortment_BU__c.fields.Orga_HE__c.label}" />
+</p>
+<p class=" slds-text-body_regular slds-show_inline-block slds-truncate">
+<span class="Product-labels">
+<apex:outputLink value="/{!Assortment_BU__c.Orga_HE__c}" target="_blank">
+<apex:outputText value="{!Assortment_BU__c.Orga_HE__r.Name}" />
+</apex:outputLink>
+</span>
+
+</p>
+</li>
+</ul-->
+
+                    <!--ul class="slds-grid slds-page-header__detail-row"-->
+
+                    <div class="slds-grid" id="content" >
+                        <div class="slds-col slds-scrollable" style="background-color:#fafaf9;">
+                            <apex:outputPanel id="productsTable" >
+                                <apex:outputPanel rendered="{!noOfRecords==0}" >
+                                    <div class="slds-text-align_center slds-card">
+                                        <span class="slds-card__header-title">{!$Label.negoptim__LBL_No_Record_To_Display}</span>
+                                    </div>
+                                </apex:outputPanel>
+                                    <div class="slds-scrollable " id="tableDiv">
+                                        <apex:dataTable value="{!ProductRecords}"  rendered="{!noOfRecords > 0}" var="item" columnsWidth="2%" styleClass=" stickyHead slds-table slds-table_bordered">
+                                            <apex:column >
+                                                <apex:facet name="header">
+                                                    <apex:inputCheckbox styleClass="selectAllProductsCheckbox" onclick="toggleSelectAllProductsCheckbox(this);" />
+                                                </apex:facet>
+                                                <apex:inputCheckbox value="{!item.isSelected}" styleClass="productCheckbox" onchange="toggleSelectAllProductsCheckbox(this);"></apex:inputCheckbox>
+                                            </apex:column>
+                                            <apex:repeat value="{!columnWrapperList}" var="col">
+                                                <apex:column headerValue="{!col.fieldLabel}">
+                                                    <apex:outputField value="{!item.product[col.fieldName]}" rendered="{!AND(!col.isProdRef, item.product[col.fieldName] != null)}" /> 
+                                                    <apex:outputLink value="/{!item.product.Id}" target="_blank" rendered="{!col.isProdRef}">
+                                                        <apex:outputText value="{!item.product.Name}" />
+                                                    </apex:outputLink>
+                                                    <apex:outputpanel rendered="{{!AND(item.isHigherLevelPackaging, !col.isProdRef)}">
+                                                        <div class="slds-icon_container slds-m-left_xx-small"
+                                                            aria-expanded="false" aria-haspopup="true" title ="{!higherLevelPackagingName}">
+                                                            <span class='HLPIcon'></span>
+                                                        </div>
+                                                    </apex:outputpanel>
+                                                </apex:column>
+                                            </apex:repeat>
+                                        </apex:dataTable>
+                                    </div>
+                                <apex:outputPanel layout="block" rendered="{!noOfRecords > 0}" id="productsTableFooter" styleClass="slds-p-around_small">
+                                    <apex:selectList value="{!pageSize}" multiselect="false" size="1" onchange="refreshPageSize();">
+                                        <apex:selectOptions value="{!pageSizes}" />
+                                    </apex:selectList>
+                                    <div class="slds-button-group slds-p-horizontal_small" role="group">
+                                        <apex:commandButton status="globalloading" value="{!$Label.negoptim__LBL_First}" action="{!first}" disabled="{!!productStdSetCtrl.hasPrevious}"
+                                                            reRender="productsTable, productsTableFooter" styleClass="slds-button slds-button_neutral" oncomplete="afterRerender();"></apex:commandButton>
+                                        <apex:commandButton status="globalloading" value="{!$Label.negoptim__LBL_Previous}" action="{!previous}" disabled="{!!productStdSetCtrl.hasPrevious}"
+                                                            reRender="productsTable, productsTableFooter" styleClass="slds-button slds-button_neutral" oncomplete="afterRerender();"></apex:commandButton>
+                                        <apex:commandButton status="globalloading" value="{!$Label.negoptim__LBL_Next}" action="{!next}" disabled="{!!productStdSetCtrl.hasNext}"
+                                                            reRender="productsTable, productsTableFooter" styleClass="slds-button slds-button_neutral" oncomplete="afterRerender();"></apex:commandButton>
+                                        <apex:commandButton status="globalloading" value="{!$Label.negoptim__LBL_Last}" action="{!last}" disabled="{!!productStdSetCtrl.hasNext}"
+                                                            reRender="productsTable, productsTableFooter" styleClass="slds-button slds-button_neutral" oncomplete="afterRerender();"></apex:commandButton>
+                                    </div>
+                                    <apex:outputPanel >
+                                        <span  class="slds-p-left_small slds-badge">
+                                            {!IF(noOfRecords > 0 ,(productStdSetCtrl.pageNumber * pageSize) + 1 - pageSize, noOfRecords)} - {!IF((productStdSetCtrl.pageNumber
+                                            * pageSize) > noOfRecords, noOfRecords, (productStdSetCtrl.pageNumber * pageSize))} {!$Label.LBL_Of}
+                                            {!noOfRecords}
+                                        </span>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                            </apex:outputPanel>
+
+                        </div>
+                        <!--- Add Filterr Here-->
+                        <div id="filter-panel" class="slds-col slds-grid slds-no-flex slds-hide ">
+                            <div class="slds-panel slds-size_medium slds-panel_docked slds-panel_docked-right slds-grid slds-grid_vertical" style="overflow: unset;">
+                                <div class="slds-panel__header" id="filterHeader">
+                                    <h2 class="slds-panel__header-title slds-text-heading_small slds-truncate" title="{!$Label.LBL_Filter}">{!$Label.LBL_Filter}</h2>
+                                    <button class="slds-button slds-button_icon slds-button_icon-small slds-panel__close" title="Collapse Panel Header" onclick="hideFilterPanel();return false;">
+                                        <svg class="slds-button__icon" aria-hidden="true">
+                                            <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#close')}"/>
+                                        </svg>
+                                        <span class="slds-assistive-text">Collapse Panel Header</span>
+                                    </button>
+                                </div>
+                                <div class="slds-col " id="filterBody"  style="overflow: unset;">
+                                    <div class="slds-panel__body slds-scrollable" id="filterDiv" style="">
+                                        <apex:outputPanel styleClass="slds-filters" layout="block" id="productFilters" >
+                                            <!-- category filter -->
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control slds-m-vertical_small">
+                                                    <apex:inputText id="searchInput" value="{!searchString}" style="width: 20px;min-width: 49%;border: 1px solid grey;width: 100%;"
+                                                                    html-placeholder="{!$Label.negoptim__LBL_Search}" onkeypress="return onPressEnterKey(event);"></apex:inputText>
+                                                </div>
+                                            </div>
+                                            <div class="slds-form-element">
+                                                <label class="slds-form-element__label">
+                                                    <apex:outputLabel value="{!$ObjectType.Product2.Fields.Negoptim__Category__c.Label}" />
+                                                </label>
+                                                <div class="slds-form-element__control">
+                                                    <c:AdvancedLookup sObjectName="Orga_HE__c" value="{!categoryLookup}" searchFields="Name, Elt_Code__c" formFields="Name, Elt_Code__c"
+                                                                      canCreate="false" fieldLabel="Name" tabIndexLookup="11" multiSelect="true" onkeypress="onPressEnterKey"
+                                                                      whereClause="{!categoryWhereClause}" />
+                                                </div>
+                                            </div>
+                                            <!-- productfamily filter -->
+                                            <div class="slds-form-element">
+                                                <label class="slds-form-element__label">
+                                                    <apex:outputLabel value="{!$ObjectType.Product2.Fields.Negoptim__Brand__c.Label}" />
+                                                </label>
+                                                <div class="slds-form-element__control">
+                                                    <c:AdvancedLookup sObjectName="Brand__c" value="{!brandLookup}" searchFields="Name, Brand_code__c" formFields="Name, Brand_code__c"
+                                                                      canCreate="false" fieldLabel="Name" tabIndexLookup="10" multiSelect="true" />
+                                                </div>
+                                            </div>
+                                            <div class="slds-form-element">
+                                                <label class="slds-form-element__label">
+                                                    <apex:outputLabel value="{!$ObjectType.Product2.Fields.Negoptim__Market__c.Label}" />
+                                                </label>
+                                                <div class="slds-form-element__control">
+                                                    <apex:selectList value="{!market}" size="1" style="width: 100%">
+                                                        <apex:selectOptions value="{!marketSelectOptionList}" />
+                                                    </apex:selectList>
+                                                </div>
+                                            </div>
+                                            <div class="slds-form-element">
+                                                <label class="slds-form-element__label">
+                                                    <apex:outputLabel value="{!$ObjectType.Product2.Fields.Family.Label}" /></label>
+                                                <div class="slds-form-element__control">
+                                                    <apex:selectList value="{!family}" size="1" style="width: 100%">
+                                                        <apex:selectOptions value="{!familySelectOptionList}" />
+                                                    </apex:selectList>
+                                                </div></div>
+                                            <div class="slds-form-element">
+                                                <label class="slds-form-element__label">
+                                                    <apex:outputLabel value="{!$ObjectType.Product2.Fields.Negoptim__Animation__c.Label}" /></label>
+
+                                                <div class="slds-form-element__control">
+                                                    <apex:selectList value="{!animation}" size="1" style="width: 100%">
+                                                        <apex:selectOptions value="{!animationSelectOptionList}" />
+                                                    </apex:selectList>
+                                                </div>
+                                            </div>
+                                            <div class="slds-item slds-has-divider_top-space">
+                                                <apex:inputCheckbox label="Show Only Higher Level Packaging"
+                                                                                    id="showHLP" value="{!showOnlyHighLevelPackaging}"
+                                                                                    onchange="searchProducts(); return false;"/> Show Only Higher Level Packaging
+                                            </div>
+                                        </apex:outputPanel>
+                                    </div>
+                                </div>
+                                <div class="panel-footer slds-border_top slds-p-vertical--x-small slds-p-horizontal--medium slds-clearfix" id="filterFooter">
+                                    <div class="slds-float_left">
+                                        <button type="button" class="slds-button slds-button_neutral" onclick="resetFilter(); return false;">{!$Label.LBL_Reset}</button>
+                                    </div>
+                                    <div class="slds-float_right">
+                                        <button type="button" class="slds-button slds-button_brand" onclick="searchProducts(); return false;">{!$Label.negoptim__LBL_Search} </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- end of Filter-->
+                    </div>
+                    <!--div class="slds-m-top_small slds-card" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+</div-->
+                    <apex:actionFunction name="importAll" action="{!importAll}" reRender="Messages, productsTable, productsTableFooter" status="globalloading" oncomplete="afterRerender();"></apex:actionFunction>
+                    <apex:actionFunction name="cancel" action="{!cancel}" reRender=""></apex:actionFunction>
+                    <apex:actionFunction name="importSelected" action="{!importSelected}" reRender="Messages, productsTable, productsTableFooter" status="globalloading"
+                                         oncomplete="afterRerender();"></apex:actionFunction>
+                    <apex:actionFunction name="searchProducts" action="{!searchProducts}" reRender="productsTable, productsTableFooter" status="globalloading" oncomplete="afterRerender();"></apex:actionFunction>
+                    <apex:actionFunction name="refreshPageSize" action="{!refreshPageSize}" reRender="productsTable, productsTableFooter" status="globalloading" oncomplete="afterRerender();"></apex:actionFunction>
+                    <apex:actionFunction name="resetFilter" action="{!resetFilter}" reRender="productsTable, productsTableFooter, productFilters" status="globalloading" oncomplete="afterRerender();return onPressEnterKey(event);"></apex:actionFunction>
+                </div>
+                <!--Confirm Selection Modal Start-->
+                <div class="slds-hide"  id="import-all-popup">
+                    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                        <div class="slds-modal__container">
+                            <header class="slds-modal__header">
+                                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick="CloseConfirmMsg();">
+                                    <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true" >
+                                        <use  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#close')}" ></use>
+                                    </svg>
+                                    <span class="slds-assistive-text">Close</span>
+                                </button>
+                                <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Confirm Import</h2>
+                            </header>
+                            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                                <p>{!JSINHTMLENCODE($Label.MSG_Confirm_Import_Products)}</p>
+                            </div>
+                            <footer class="slds-modal__footer">
+                                <button type="button" class="slds-button slds-button_neutral" onclick="CloseConfirmMsg();">{!JSINHTMLENCODE($Label.Cancel)}</button>
+                                <button class="slds-button slds-button_brand" onclick="importAll();CloseConfirmMsg();return false;">{!JSINHTMLENCODE($Label.Ok)}</button>
+                            </footer>
+                        </div>
+                    </section>
+                    <div class="slds-backdrop slds-backdrop_open"></div>
+                </div>
+                <!--Confirm Selection Modal End-->
+            </apex:form>
+            <apex:includeScript value="{!URLFOR($Resource.Negoptim__JQuery, 'jquery.min.js')}"/>
+            <script>
+
+            var showFilter = false;
+            $(document).ready(function () {
+                $("[id*='searchInput']").focus(function () {
+                    $(this).select();
+                });
+                afterRerender();
+                // the page css makes the filter panel hidden by default, therefor, we should call toggleFilterPanel()
+                // if the global settings indicated that the filter panel should be open by default
+                if ({!openPagesFilterSectionByDefault}) { // no need for JSENCODE because openPagesFilterSectionByDefault is a boolean
+                    toggleFilterPanel();
+                }
+            });
+
+            function onPressEnterKey(e) {
+                if (e.keyCode == 13) {
+                    searchProducts();
+                    return false;
+                }
+                return e.keyCode !== 13;
+            }
+
+            function toggleSelectAllProductsCheckbox(cb) {
+                var productCheckboxes = document.getElementsByClassName('productCheckbox');
+                if (cb == null || cb.classList.contains('productCheckbox')) {
+                    var selectAll = productCheckboxes.length > 0;
+                    for (var i = 0; i < productCheckboxes.length && selectAll; i++) {
+                        selectAll = selectAll && productCheckboxes[i].checked;
+                    }
+                    let selectAllCheckboxesItem = document.getElementsByClassName('selectAllProductsCheckbox')[0];
+                    if (selectAllCheckboxesItem)
+                        selectAllCheckboxesItem.checked = selectAll;
+                }
+                else {
+                    for (var i = 0; i < productCheckboxes.length; i++) {
+                        if (productCheckboxes[i])
+                            productCheckboxes[i].checked = cb.checked;
+                    }
+                }
+            }
+
+            function rerenderFilter() {
+                setDivSize();
+                let panel = document.getElementById('filter-panel');
+                let filterButton= document.getElementById('filter-panel-toggle');
+                //let open = document.getElementsByClassName("toggle-open");
+                //let close = document.getElementsByClassName("toggle-close");
+                //let filterTable = document.getElementById("filterTable");
+                console.log("rerenderFilter -> showFilter", showFilter)
+                if (showFilter) {
+                    /*if (open && open.length != 0)
+                        open[0].classList.add("slds-hide");
+                    if (close && close.length != 0)
+                        close[0].classList.remove("slds-hide");
+                    if (filterTable)
+                        filterTable.classList.remove("slds-hide");*/
+                    if (panel)
+                        panel.classList.remove("slds-hide");
+                    filterButton.classList.add("slds-is-selected");
+
+                } else {
+                    /*  if (open && open.length != 0)
+                        open[0].classList.remove("slds-hide");
+                    if (close && close.length != 0)
+                        close[0].classList.add("slds-hide");
+                    if (filterTable)
+                        filterTable.classList.add("slds-hide");*/
+                    if (panel)
+                        panel.classList.add("slds-hide");
+                    filterButton.classList.remove("slds-is-selected");
+                }
+            }
+            function toggleFilterPanel() {
+                showFilter = !showFilter;
+                rerenderFilter();
+                afterRerender();
+            }
+            function showFilterPanel() {
+                showFilter = true;
+                renderFilter();
+            }
+            function hideFilterPanel() {
+                showFilter = false;
+                rerenderFilter();
+            }
+
+            function toggleFilter() {
+                showFilter = !showFilter;
+                rerenderFilter();
+            }
+            function afterRerender() {
+                window.onresize = setDivSize;
+                setDivSize();
+                toggleSelectAllProductsCheckbox();
+                rerenderFilter();
+                rerenderHLPIcon();
+            }
+            function rerenderHLPIcon(){
+                var source = '';
+                source += '<svg xmlns="http://www.w3.org/2000/svg" ';
+                source += 'xmlns:xlink="http://www.w3.org/1999/xlink" ';
+                source += 'focusable="false" aria-hidden="true" class="slds-icon slds-icon_x-small">';
+                source += '<use xlink:href="{!URLFOR($Asset.SLDS, "assets/icons/utility-sprite/svg/symbols.svg#archive")}" fill="Black"></use>';
+                source += '</svg>';
+                var hlp = document.getElementsByClassName('HLPIcon');
+                for(var i = 0; i < hlp.length; i++)
+                {
+                    hlp[i].innerHTML = source;
+                }
+                //document.getElementsByClassName('HLPIcon')[0].innerHTML = source;
+            }
+            function showConfirmMsg(){
+                let popup=document.getElementById("import-all-popup");
+                popup.classList.remove("slds-hide");
+            }
+            function CloseConfirmMsg(){
+                let popup=document.getElementById("import-all-popup");
+                popup.classList.add("slds-hide");
+            }
+            function setDivSize() {
+                let clientHeight = document.documentElement.clientHeight;
+                //let div = document.getElementById('content');
+                let div2 = document.getElementById('tableDiv');
+                let div3 = document.getElementById('filterDiv');
+                let filterFooter=document.getElementById('filterFooter');
+                let filterBody=document.getElementById('filterBody');
+                let filterHeader=document.getElementById('filterHeader');
+                let pageHeader = document.getElementById('pageHeader');
+                let Messages=document.getElementById('Messages');
+                let height=0;
+                let msg=document.getElementById('msg');
+                console.log("msg height "+$(msg).height())
+                height = clientHeight - 1.5 * ($(pageHeader).outerHeight()) - $(pageHeader).height()-$(msg).height();
+                let height2=height-$(filterHeader).height()-$(filterFooter).height();
+                console.log("filter height"+ $(filterBody).height());
+                console.log("filter head "+filterHeader+" "+$(filterHeader).outerHeight());
+                let style2 = { height: height-40};
+                let style3={ height: height2-20};
+                //$(div).css(style);
+                $(div2).css(style2);
+                $(div3).css(style3);
+            }
+            </script>
+        </body>
+
+    </html>
+</apex:page>

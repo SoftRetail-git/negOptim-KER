@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__No_Org_HE_update_from_specfic_profil</fullName>
+    <active>true</active>
+    <description>Vous n&apos;avez pas l&apos;autorisation de modifier l&apos;hiérarchie articles.</description>
+    <errorConditionFormula>ISCHANGED( Negoptim__Orga_HE__c  ) &amp;&amp; ($Profile.Name = &apos;DDC&apos;) &amp;&amp;  (RecordType.DeveloperName = &apos;Nego&apos; || RecordType.DeveloperName = &apos;Target&apos;)</errorConditionFormula>
+    <errorDisplayField>Negoptim__Orga_HE__c</errorDisplayField>
+    <errorMessage>Vous n&apos;avez pas l&apos;autorisation de modifier l&apos;hiérarchie articles.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__Ass_BU_Cluster__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>BU Cluster</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Ass_BU_Cluster__c - Value does not exist or does not match filter criteria.</errorMessage>
+        <filterItems>
+            <field>Negoptim__Orga_BU__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Assortment Cluster, Assortment Cluster List</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Negoptim__Orga_BU__c</referenceTo>
+    <relationshipLabel>Assortment BU Details</relationshipLabel>
+    <relationshipName>Assortment_BU_Details</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

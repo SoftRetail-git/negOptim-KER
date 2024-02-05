@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__Ref_Corp_Assortment__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Ref Corp Assortment</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Ref_Corp_Assortment__c - Value does not exist or does not match filter criteria.</errorMessage>
+        <filterItems>
+            <field>Negoptim__Assortment_Detail__c.Negoptim__Assortment_BU__r.Negoptim__Assortment_type__c</field>
+            <operation>equals</operation>
+            <value>In</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Negoptim__Assortment_Detail__c</referenceTo>
+    <relationshipLabel>Assortment BU Details</relationshipLabel>
+    <relationshipName>Assortment_BU_Details</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

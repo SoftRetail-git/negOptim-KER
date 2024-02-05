@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__OProduct</fullName>
+    <fields>Name</fields>
+    <fields>Negoptim__IsInnovation__c</fields>
+    <fields>Negoptim__IsPermanent__c</fields>
+    <fields>Negoptim__IsSeasonal__c</fields>
+    <fields>Negoptim__IsSwitch__c</fields>
+    <label>O Product</label>
+</CompactLayout>

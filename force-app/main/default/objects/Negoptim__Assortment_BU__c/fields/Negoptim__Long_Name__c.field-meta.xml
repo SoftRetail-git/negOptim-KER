@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__Long_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>/*IF (DAY(Ass_BDate__c) &gt;= 10, TEXT(DAY(Ass_BDate__c)), &apos;0&apos; &amp; TEXT(DAY(Ass_BDate__c)))&amp;&apos;-&apos;&amp;IF (MONTH(Ass_BDate__c) &gt;= 10, TEXT(MONTH(Ass_BDate__c)), &apos;0&apos; &amp; TEXT(MONTH(Ass_BDate__c)))&amp;&apos;-&apos;&amp;TEXT(YEAR(Ass_BDate__c)) &amp;&apos; | &apos;&amp;
+IF (DAY(Ass_EDate__c) &gt;= 10, TEXT(DAY(Ass_EDate__c)), &apos;0&apos; &amp; TEXT(DAY(Ass_EDate__c)))&amp;&apos;-&apos;&amp;IF (MONTH(Ass_EDate__c) &gt;= 10, TEXT(MONTH(Ass_EDate__c)), &apos;0&apos; &amp; TEXT(MONTH(Ass_EDate__c)))&amp;&apos;-&apos;&amp;TEXT(YEAR(Ass_EDate__c)) &amp;&apos; | &apos;&amp;
+*/
+
+CASE(RecordType.DeveloperName, &quot;Budget&quot;, $Label.negoptim__RT_Assortment_Budget,
+&quot;Conso&quot;, $Label.negoptim__RT_Assortment_Conso,
+&quot;L4L&quot;, $Label.negoptim__RT_Assortment_Like4Like,
+&quot;Nego&quot;, $Label.negoptim__RT_Assortment_Nego,
+&quot;Simulation&quot;, $Label.negoptim__RT_Assortment_Simulation,
+&quot;Target&quot;,  $Label.negoptim__RT_Assortment_Target,
+&quot;Conso_Target&quot;, $Label.negoptim__RT_Assortment_Conso_Target,
+&quot;Panel&quot;, $Label.negoptim__RT_Assortment_Panel, &quot;&quot;) &amp;&apos; | &apos;&amp;
+
+Negoptim__BU_Target__r.Name &amp;&apos; | &apos;&amp;
+CASE(TEXT(Negoptim__Status__c),
+&quot;Open (in bulding process)&quot;,$Label.negoptim__LBL_Status_In_Preparation,
+&quot;Request for approval&quot;,$Label.negoptim__LBL_Status_Request_For_Approval,
+&quot;Validated&quot;,$Label.negoptim__LBL_Status_Validated,
+&quot;Signed IN&quot;,$Label.negoptim__LBL_Status_Signed_In,
+&quot;Signed OUT&quot;,$Label.negoptim__LBL_Status_Signed_Out,
+&quot;Closed&quot;,$Label.negoptim__LBL_Status_Closed,
+&quot;Deleted&quot;,$Label.negoptim__LBL_Status_Deleted,
+Null)+ &apos; | &apos; + TEXT(Negoptim__Year__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Long Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

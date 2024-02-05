@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__Last_History__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup field used to register the last history entry for each validated record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>pour tracer la dernière entrée de chaque validation</inlineHelpText>
+    <label>Last History</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Negoptim__Assortment_Detail__c.Negoptim__Version__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Negoptim__Assortment_Detail__c</referenceTo>
+    <relationshipLabel>Assortment BU Details (Last History)</relationshipLabel>
+    <relationshipName>Assortment_BU_Details2</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

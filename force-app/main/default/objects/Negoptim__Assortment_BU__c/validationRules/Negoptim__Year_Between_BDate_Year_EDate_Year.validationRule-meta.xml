@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__Year_Between_BDate_Year_EDate_Year</fullName>
+    <active>true</active>
+    <description>The Year should be between the Begin Date Year and the End Date Year.</description>
+    <errorConditionFormula>OR(YEAR(Negoptim__Ass_BDate__c) &gt; Negoptim__Year__c, YEAR(Negoptim__Ass_EDate__c) &lt; Negoptim__Year__c)</errorConditionFormula>
+    <errorDisplayField>Negoptim__Year__c</errorDisplayField>
+    <errorMessage>The Year should be between the Begin Date Year and the End Date Year.</errorMessage>
+</ValidationRule>

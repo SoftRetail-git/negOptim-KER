@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__SellInBDateMonth__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Mois date début commande</description>
+    <externalId>false</externalId>
+    <formula>MONTH( IF(ISNULL(Negoptim__SellInBDate__c), Negoptim__SellInBDateCP__c, Negoptim__SellInBDate__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Buy-in month</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

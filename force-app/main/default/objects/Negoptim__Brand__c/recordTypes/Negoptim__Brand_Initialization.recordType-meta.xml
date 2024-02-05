@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__Brand_Initialization</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Negoptim__OBrand</compactLayoutAssignment>
+    <description>Brand created in very preliminary phase, still not existing in the organization (could be deleted or migrated to confirmed brand)</description>
+    <label>Brand Initialization</label>
+    <picklistValues>
+        <picklist>Negoptim__Brand_Type_2__c</picklist>
+        <values>
+            <fullName>First Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Brand</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Brand</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Negoptim__Status__c</picklist>
+        <values>
+            <fullName>Close</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

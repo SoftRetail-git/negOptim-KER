@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Negoptim__OAssortmentDynmamic</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Negoptim__OBusinessUnitPage</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Negoptim__OHierarchyElementPage</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Negoptim__Orga_HE__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Negoptim__OProductPage</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#69CB9D</headerColor>
+        <logo>Negoptim__Picto_ASSORTIMENT</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description>NegOptim App to manage assortments</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Assortment O</label>
+    <navType>Standard</navType>
+    <tabs>Negoptim__Assortment_BU__c</tabs>
+    <tabs>standard-Product2</tabs>
+    <tabs>Negoptim__Orga_BU__c</tabs>
+    <tabs>Negoptim__Orga_HE__c</tabs>
+    <tabs>Negoptim__Brand__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>Negoptim__Country_List__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Negoptim__Assortment_O_UtilityBar</utilityBar>
+</CustomApplication>

@@ -1,0 +1,9 @@
+.slds-input-has-icon .slds-input__icon {
+  z-index: unset;
+}
+.slds-table th, .slds-table td {
+  position: unset;
+}
+.slds-form-element__icon {
+  display: none;
+}

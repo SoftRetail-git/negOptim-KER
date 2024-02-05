@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__OAllBanners</fullName>
+    <columns>NAME</columns>
+    <columns>Negoptim__Set_BU_List_Entity__c</columns>
+    <columns>Negoptim__IsMasterBU__c</columns>
+    <columns>Negoptim__BU_Code__c</columns>
+    <columns>Negoptim__Store_nb__c</columns>
+    <columns>Negoptim__Layer_Budget_Display__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Negoptim__Orga_BU__c.Negoptim__Banner</value>
+    </filters>
+    <label>3. Les Enseignes</label>
+</ListView>

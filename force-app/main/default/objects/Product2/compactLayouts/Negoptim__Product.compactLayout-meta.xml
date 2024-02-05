@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__Product</fullName>
+    <fields>Name</fields>
+    <fields>Negoptim__IsInnovation__c</fields>
+    <fields>Negoptim__TOP20_Hyper__c</fields>
+    <fields>Negoptim__Top20_Convenience__c</fields>
+    <fields>Negoptim__Top20_Drive__c</fields>
+    <fields>Negoptim__Last_Unit_Cost__c</fields>
+    <fields>Negoptim__Retail_Price_Reco__c</fields>
+    <label>Product</label>
+</CompactLayout>

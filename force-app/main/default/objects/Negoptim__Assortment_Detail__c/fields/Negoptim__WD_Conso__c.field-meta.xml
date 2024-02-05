@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__WD_Conso__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Row has been aggregated to the conso layer</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Lignes agrégées sur la conso</inlineHelpText>
+    <label>WD Conso</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
