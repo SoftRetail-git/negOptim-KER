@@ -3,16 +3,6 @@
     <isVisibleByExternalUsers>true</isVisibleByExternalUsers>
     <language>fr</language>
     <masterLabel>patisseriesgourmandeslogo</masterLabel>
-    <relationships>
-        <organization>
-            <access>VIEWER</access>
-        </organization>
-        <workspace>
-            <access>INFERRED</access>
-            <isManagingWorkspace>true</isManagingWorkspace>
-            <name>sfdc_asset_company_assets</name>
-        </workspace>
-    </relationships>
     <versions>
         <version>
             <number>1</number>

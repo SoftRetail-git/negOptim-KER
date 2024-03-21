@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__New_NetPrice_wo_Promo__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>ROUND(Negoptim__New_NetPrice_wo_Promo_woTax__c
++ ROUND(IF(CONTAINS(Negoptim__New_NetPrice_Taxes__c, &apos;N1/&apos;),Negoptim__New_Tax_1__c,0)
++IF(CONTAINS(Negoptim__New_NetPrice_Taxes__c, &apos;N2/&apos;), Negoptim__New_Tax_2__c,0)
++IF(CONTAINS(Negoptim__New_NetPrice_Taxes__c, &apos;N3/&apos;), Negoptim__New_Tax_3__c,0)
++IF(CONTAINS(Negoptim__New_NetPrice_Taxes__c, &apos;N4/&apos;), Negoptim__New_Tax_4__c,0)
++IF(CONTAINS(Negoptim__New_NetPrice_Taxes__c, &apos;N5/&apos;), Negoptim__New_Tax_5__c,0)
++IF(CONTAINS(Negoptim__New_NetPrice_Taxes__c, &apos;N6/&apos;), Negoptim__New_Tax_6__c,0)
++IF(CONTAINS(Negoptim__New_NetPrice_Taxes__c, &apos;N7/&apos;), Negoptim__New_Tax_7__c,0)
++IF(CONTAINS(Negoptim__New_NetPrice_Taxes__c, &apos;N8/&apos;), Negoptim__New_Tax_8__c,0)
++IF(CONTAINS(Negoptim__New_NetPrice_Taxes__c, &apos;N9/&apos;), Negoptim__New_Tax_9__c,0)
++IF(CONTAINS(Negoptim__New_NetPrice_Taxes__c, &apos;N10/&apos;), Negoptim__New_Tax_10__c,0), IF( ISBLANK(TEXT(Negoptim__Assortment_BU__r.Negoptim__Tax_Rounding_Level__c)) , 4, VALUE(TEXT(Negoptim__Assortment_BU__r.Negoptim__Tax_Rounding_Level__c)))), IF(ISBLANK(TEXT(Negoptim__Assortment_BU__r.Negoptim__NetPrice_Rounding_Level__c)), 4,VALUE(TEXT(Negoptim__Assortment_BU__r.Negoptim__NetPrice_Rounding_Level__c))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>New NetPrice wo Promo</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>5</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -9,7 +9,7 @@
         <outerJoin>false</outerJoin>
         <relationship>FlowOrchestrationWorkItems</relationship>
     </join>
-    <label>Éléments de travail d’orchestration Spring &apos;24</label>
+    <label>Éléments de travail d’orchestration</label>
     <sections>
         <columns>
             <checkedByDefault>true</checkedByDefault>

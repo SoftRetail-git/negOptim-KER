@@ -5,7 +5,30 @@
     <deprecated>false</deprecated>
     <externalId>false</externalId>
     <label>Marketing Plan</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>The CP Parent should have the same Client as the CP.
+The Begin date of the CP should be posterior or equal to the Begin date of the CP Parent.
+The End date of the CP should be anterior or equal to the End date of the CP Parent.</errorMessage>
+        <filterItems>
+            <field>$Source.Negoptim__Supplier__c</field>
+            <operation>equals</operation>
+            <valueField>Negoptim__CommercialPlan__c.Negoptim__Supplier__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Negoptim__SellOutBDate__c</field>
+            <operation>greaterOrEqual</operation>
+            <valueField>Negoptim__CommercialPlan__c.Negoptim__SellOutBDate__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Negoptim__SellOutEDate__c</field>
+            <operation>lessOrEqual</operation>
+            <valueField>Negoptim__CommercialPlan__c.Negoptim__SellOutEDate__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
     <referenceTo>Negoptim__CommercialPlan__c</referenceTo>
+    <relationshipLabel>Commercial Plans</relationshipLabel>
     <relationshipName>CommercialPlansParent</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>

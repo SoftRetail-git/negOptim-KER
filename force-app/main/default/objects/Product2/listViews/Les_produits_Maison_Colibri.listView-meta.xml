@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Les_produits_Maison_Colibri</fullName>
+    <columns>Negoptim__Product_EAN__c</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>SPKERCADELACBigLogo__c</columns>
+    <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+    <columns>SPKERCADELAC_SHELL__c</columns>
+    <columns>SPKERCADELAC_RECIPE__c</columns>
+    <columns>SPKERCADELAC_INGREDIENTS__c</columns>
+    <columns>Negoptim__Weight__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Negoptim__Brand__c</field>
+        <operation>equals</operation>
+        <value>Maison Colibri</value>
+    </filters>
+    <label>Les produits Maison Colibri</label>
+</ListView>

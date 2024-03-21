@@ -155,13 +155,13 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <gender>Feminine</gender>
-    <label>DA Fournisseur Mapping</label>
+    <label>Supplier Product Group</label>
     <nameField>
         <label>PG Name</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
-    <pluralLabel>DA Fournisseur Mapping</pluralLabel>
+    <pluralLabel>Supplier Products Groups</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>

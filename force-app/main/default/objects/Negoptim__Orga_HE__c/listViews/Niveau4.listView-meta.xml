@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Niveau4</fullName>
+    <columns>Negoptim__Elt_Code__c</columns>
+    <columns>NAME</columns>
+    <columns>SPKERCADELACLogoSegm__c</columns>
+    <columns>Negoptim__Level__c</columns>
+    <columns>Negoptim__Parent_Element__c</columns>
+    <columns>KercadelacDisplayOrder__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Negoptim__Orga_HE__c.Negoptim__Product</value>
+    </filters>
+    <filters>
+        <field>Negoptim__Level__c</field>
+        <operation>equals</operation>
+        <value>4</value>
+    </filters>
+    <label>Niveau 4</label>
+</ListView>

@@ -163,7 +163,10 @@
     </nameField>
     <pluralLabel>Clients/Suppliers</pluralLabel>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
-    <searchLayouts></searchLayouts>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Negoptim__Logo__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Negoptim__Code__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

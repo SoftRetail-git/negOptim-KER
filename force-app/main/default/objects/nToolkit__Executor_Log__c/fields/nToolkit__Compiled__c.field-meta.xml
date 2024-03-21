@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nToolkit__Compiled__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(nToolkit__Status__c) = &apos;Not Compiled&apos;, IMAGE(&apos;/img/msg_icons/error16.png&apos;, &apos;Failed&apos;),
+IF(OR(TEXT(nToolkit__Status__c) = &apos;Compiled and Not Executed&apos;, TEXT(nToolkit__Status__c) = &apos;Executed&apos; ), IMAGE(&apos;/img/msg_icons/confirm16.png&apos;, &apos;Successful&apos;), NULL ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Compiled</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

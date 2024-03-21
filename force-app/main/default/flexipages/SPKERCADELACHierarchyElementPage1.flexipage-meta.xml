@@ -17,7 +17,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>numVisibleActions</name>
@@ -47,6 +47,31 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentInstanceProperties>
+                    <name>objApiName</name>
+                    <value>Negoptim__Orga_HE__c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>objFieldNames</name>
+                    <value>Name, Negoptim__Level__c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>objRelationshipField</name>
+                    <value>Negoptim__Parent_Element__c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>whereCondition</name>
+                </componentInstanceProperties>
+                <componentName>appTree:heirarchyView</componentName>
+                <identifier>appTree_heirarchyView</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-d9ec3c11-b6a8-4a7c-a7a4-14d1aa8035b5</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
                 <componentName>force:detailPanel</componentName>
                 <identifier>force_detailPanel</identifier>
             </componentInstance>
@@ -55,6 +80,116 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>backgroundColor1</name>
+                    <value>#A9EAFE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor2</name>
+                    <value>#A9EAFE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundColor3</name>
+                    <value>#A9EAFE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>bgColor</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>borderColor1</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>borderColor2</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>borderColor3</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>descriptionPosition</name>
+                    <value>Top</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>field1</name>
+                    <value>Negoptim__Set_Product_link_level__c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>field2</name>
+                    <value>Negoptim__Set_Assortment_nego_level__c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>field3</name>
+                    <value>Negoptim__Set_Assortment_Cluster_level__c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>layout</name>
+                    <value>Horizontal</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>messageToggleActive1</name>
+                    <value>La catégorie peut être choisie au niveau Produit</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>messageToggleActive2</name>
+                    <value>La catégorie peut être choisie au niveau ASSORTIMENT</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>messageToggleActive3</name>
+                    <value>La catégorie peut être choisie au niveau STRATE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>messageToggleInactive1</name>
+                    <value>La catégorie NE peut PAS être choisie au niveau Produit</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>messageToggleInactive2</name>
+                    <value>La catégorie NE peut PAS être choisie au niveau ASSORTIMENT</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>messageToggleInactive3</name>
+                    <value>La catégorie NE peut PAS être choisie au niveau STRATE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showConfirmMsg1</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showConfirmMsg2</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showConfirmMsg3</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                </componentInstanceProperties>
+                <componentName>Negoptim:toggleWidget</componentName>
+                <identifier>Negoptim_toggleWidget</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-4ilvwok63i7</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-d9ec3c11-b6a8-4a7c-a7a4-14d1aa8035b5</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Standard.Tab.hierarchy</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab</identifier>
+            </componentInstance>
+        </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -67,10 +202,24 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
-                    <value>Standard.Tab.detail</value>
+                    <value>Informations</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>detailTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-4ilvwok63i7</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Standard.Tab.landingPageSettings</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab2</identifier>
             </componentInstance>
         </itemInstances>
         <name>maintabs</name>

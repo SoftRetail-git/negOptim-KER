@@ -6,5 +6,5 @@
         <errorMessage></errorMessage>
     </lookupFilter>
     <name>Negoptim__Country_origin__c</name>
-    <relationshipLabel></relationshipLabel>
+    <relationshipLabel>BU liées</relationshipLabel>
 </CustomFieldTranslation>

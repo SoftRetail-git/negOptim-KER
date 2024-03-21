@@ -8,5 +8,5 @@
     <masterLabel>Promo Screen</masterLabel>
     <openType>replace</openType>
     <protected>false</protected>
-    <url>/lightning/n/Negoptim__CommercialPlanSimulationLWC?c__recordId={!Negoptim__CommercialPlan__c.Id}</url>
+    <url>/apex/Negoptim__NegoptimNavigator?c__componentName=Negoptim:CommercialPlanSimulationLWC&amp;a__recordId={!Negoptim__CommercialPlan__c.Id}&amp;a__displayCloneForMultipleProducts=true</url>
 </WebLink>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3_Les_UL</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>Negoptim__Consumer_Trade_Item__c</columns>
+    <columns>SPKERCADELACArtLog__c</columns>
+    <columns>SPKERCADELACPCB__c</columns>
+    <columns>SPKERCADELACDUN14__c</columns>
+    <columns>PRODUCT2.RECORD_TYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PRODUCT2.RECORD_TYPE</field>
+        <operation>equals</operation>
+        <value>Product2.Negoptim__Higher_Level_Packaging</value>
+    </filters>
+    <label>3. Les UL</label>
+</ListView>

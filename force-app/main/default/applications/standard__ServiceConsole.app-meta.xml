@@ -180,7 +180,11 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Lead</tabs>
+    <tabs>Assortment_Bu_Matrix</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Assortment_Bu_Matrix</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

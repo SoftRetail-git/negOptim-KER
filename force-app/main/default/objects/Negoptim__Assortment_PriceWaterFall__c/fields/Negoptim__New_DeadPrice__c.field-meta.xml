@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__New_DeadPrice__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>Negoptim__New_NetPrice_wTax__c - 
+(Negoptim__Product_UnitCharge1__c + Negoptim__Product_UnitCharge2__c + Negoptim__Product_UnitCharge3__c + Negoptim__Product_UnitCharge4__c + Negoptim__Product_UnitCharge5__c + Negoptim__Product_UnitCharge6__c + Negoptim__Product_UnitCharge7__c + Negoptim__Product_UnitCharge8__c + Negoptim__Product_UnitCharge9__c + Negoptim__Product_UnitCharge10__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>New DeadPrice</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>5</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

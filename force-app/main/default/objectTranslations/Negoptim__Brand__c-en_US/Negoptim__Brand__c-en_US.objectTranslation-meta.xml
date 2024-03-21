@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value></value>
+    </caseValues>
+    <layouts>
+        <layout>SPKERCADELAC - Brand</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General informations</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Life cycle</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel></nameFieldLabel>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__Brand_Initialization</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Negoptim__Brand_Regular</name>
+    </recordTypes>
+    <startsWith></startsWith>
+</CustomObjectTranslation>

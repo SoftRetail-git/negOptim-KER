@@ -3,15 +3,23 @@
     <label></label>
     <name>Negoptim__ProductType__c</name>
     <picklistValues>
-        <masterLabel>Competitor</masterLabel>
-        <translation>Concurrent</translation>
+        <masterLabel>Box</masterLabel>
+        <translation></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>National Brand</masterLabel>
         <translation>Marque nationale</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Store Brand</masterLabel>
-        <translation>Marque distributeur</translation>
+        <masterLabel>PPX</masterLabel>
+        <translation>PPX</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produit</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBX</masterLabel>
+        <translation></translation>
     </picklistValues>
 </CustomFieldTranslation>

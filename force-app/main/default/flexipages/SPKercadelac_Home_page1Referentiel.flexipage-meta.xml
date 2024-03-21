@@ -99,7 +99,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>logo</name>
-                    <value>https://patisseriesgourmandes-prod.my.salesforce.com/sfc/servlet.shepherd/version/download/0680600000SIt8RAAT</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.my.salesforce.com/sfc/servlet.shepherd/version/download/068MU0000009671YAA</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>minimumtilesheight</name>
@@ -222,7 +222,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>bannerImageUrl</name>
-                    <value>https://patisseriesgourmandes-prod--c.vf.force.com/resource/1689762055000/Ref_Visuel1?</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat--c.sandbox.vf.force.com/resource/1696583264000/Ref_Visuel1?</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonLabel</name>
@@ -284,11 +284,20 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>bannerImageUrl</name>
-                    <value>https://patisseriesgourmandes-prod--c.vf.force.com/resource/1689761245000/Ref_Visuel2?</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat--c.sandbox.vf.force.com/resource/1696582442000/Ref_Visuel2</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonLabel</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonUrl</name>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonVariant</name>
                     <value>brand</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>descriptionColor</name>
@@ -300,7 +309,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>height</name>
-                    <value>275</value>
+                    <value>175</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>textAlign</name>
@@ -317,6 +326,9 @@
                 <componentInstanceProperties>
                     <name>textPosition</name>
                     <value>overlay</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>titleColor</name>
@@ -334,11 +346,20 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>bannerImageUrl</name>
-                    <value>https://patisseriesgourmandes-prod--c.vf.force.com/resource/1689761288000/Ref_Visuel3?</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat--c.sandbox.vf.force.com/resource/1696583923000/Ref_Visuel3?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonLabel</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonUrl</name>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonVariant</name>
                     <value>brand</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>descriptionColor</name>
@@ -350,7 +371,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>height</name>
-                    <value>145</value>
+                    <value>165</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>textAlign</name>
@@ -369,6 +390,9 @@
                     <value>overlay</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
+                    <name>title</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>titleColor</name>
                     <value>#fff</value>
                 </componentInstanceProperties>
@@ -384,13 +408,14 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>bannerImageUrl</name>
-                    <value>https://patisseriesgourmandes-prod--c.vf.force.com/resource/1689761327000/Retour_Accueil?</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.lightning.force.com/resource/1689761327000/Retour_Accueil?</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonLabel</name>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonUrl</name>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.lightning.force.com/lightning/app/06m060000011dP3AAI</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonVariant</name>

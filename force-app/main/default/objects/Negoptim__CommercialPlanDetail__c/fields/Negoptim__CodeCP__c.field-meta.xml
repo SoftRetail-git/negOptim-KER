@@ -3,7 +3,7 @@
     <fullName>Negoptim__CodeCP__c</fullName>
     <deprecated>false</deprecated>
     <externalId>false</externalId>
-    <formula>null</formula>
+    <formula>Negoptim__CommercialPlan__r.Negoptim__Code__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Event Code</label>
     <required>false</required>

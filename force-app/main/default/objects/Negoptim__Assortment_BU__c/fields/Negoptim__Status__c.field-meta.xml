@@ -53,6 +53,11 @@
                 <default>false</default>
                 <label>Deleted</label>
             </value>
+            <value>
+                <fullName>Pre Validate</fullName>
+                <default>false</default>
+                <label>Pre Validate</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>In</controllingFieldValue>
@@ -73,6 +78,10 @@
             <controllingFieldValue>In</controllingFieldValue>
             <controllingFieldValue>Out</controllingFieldValue>
             <valueName>Closed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In</controllingFieldValue>
+            <valueName>Pre Validate</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Out</controllingFieldValue>

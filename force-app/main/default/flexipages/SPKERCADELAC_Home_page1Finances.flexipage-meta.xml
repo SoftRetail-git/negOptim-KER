@@ -95,7 +95,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>logo</name>
-                    <value>https://patisseriesgourmandes-prod.my.salesforce.com/sfc/servlet.shepherd/version/download/0680600000SIt8RAAT</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.my.salesforce.com/sfc/servlet.shepherd/version/download/068MU0000009671YAA</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>minimumtilesheight</name>
@@ -198,7 +198,81 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>bannerImageUrl</name>
-                    <value>https://patisseriesgourmandes-prod--c.vf.force.com/resource/1689851336000/Fin_Visuel1?</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat--c.sandbox.vf.force.com/resource/1696585588000/Fin_Visuel1?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonLabel</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonUrl</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonVariant</name>
+                    <value>brand</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>description</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>descriptionColor</name>
+                    <value>#fff</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>descriptionSize</name>
+                    <value>regular</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>250</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>textAlign</name>
+                    <value>center</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>textHeight</name>
+                    <value>150</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>textOverlayBackground</name>
+                    <value>rgba(0,0,0,0.4)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>textPosition</name>
+                    <value>overlay</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleColor</name>
+                    <value>#fff</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleSize</name>
+                    <value>large</value>
+                </componentInstanceProperties>
+                <componentName>cloudx_cms:SS_uiImageBanner</componentName>
+                <identifier>cloudx_cms_SS_uiImageBanner</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>top</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>bottomLeft</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>bottomRight</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>bannerImageUrl</name>
+                    <value>https://patisseriesgourmandes-prod--kercauat--c.sandbox.vf.force.com/resource/1696586074000/Fin_Visuel3?</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonLabel</name>
@@ -253,68 +327,6 @@
                     <value>large</value>
                 </componentInstanceProperties>
                 <componentName>cloudx_cms:SS_uiImageBanner</componentName>
-                <identifier>cloudx_cms_SS_uiImageBanner</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>top</name>
-        <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <name>bottomLeft</name>
-        <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <name>bottomRight</name>
-        <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>bannerImageUrl</name>
-                    <value>https://patisseriesgourmandes-prod--c.vf.force.com/resource/1689856648000/Fin_Visuel3?</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>buttonVariant</name>
-                    <value>brand</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>descriptionColor</name>
-                    <value>#fff</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>descriptionSize</name>
-                    <value>regular</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>height</name>
-                    <value>260</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>textAlign</name>
-                    <value>center</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>textHeight</name>
-                    <value>150</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>textOverlayBackground</name>
-                    <value>rgba(0,0,0,0.4)</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>textPosition</name>
-                    <value>overlay</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>titleColor</name>
-                    <value>#fff</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>titleSize</name>
-                    <value>large</value>
-                </componentInstanceProperties>
-                <componentName>cloudx_cms:SS_uiImageBanner</componentName>
                 <identifier>cloudx_cms_SS_uiImageBanner3</identifier>
             </componentInstance>
         </itemInstances>
@@ -322,7 +334,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>bannerImageUrl</name>
-                    <value>https://patisseriesgourmandes-prod--c.vf.force.com/resource/1689856495000/Fin_Visuel2?</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat--c.sandbox.vf.force.com/resource/1696585909000/Fin_Visuel2?</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonLabel</name>
@@ -384,13 +396,14 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>bannerImageUrl</name>
-                    <value>https://patisseriesgourmandes-prod--c.vf.force.com/resource/1689761327000/Retour_Accueil?</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.lightning.force.com/resource/1689761327000/Retour_Accueil?</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonLabel</name>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonUrl</name>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.lightning.force.com/lightning/app/06m060000011dP3AAI</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonVariant</name>

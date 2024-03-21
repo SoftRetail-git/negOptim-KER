@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Users All access except Config</label>
+    <permissionSets>SPKERCADELACPortal_Account</permissionSets>
+    <permissionSets>SPKERCADELACProduct</permissionSets>
+    <permissionSets>SPKERCADELACPromo</permissionSets>
+    <permissionSets>SPKERCADELACShareProductsaccessrights</permissionSets>
+    <permissionSets>SPKERCADELACToggleComponent</permissionSets>
+    <permissionSets>SPKERCADELAC_Assortment</permissionSets>
+    <permissionSets>SPKERCADELAC_Client</permissionSets>
+    <permissionSets>SP_KERCADELAC_Standard_SF</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

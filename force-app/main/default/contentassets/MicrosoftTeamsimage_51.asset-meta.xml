@@ -3,11 +3,6 @@
     <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
     <language>fr</language>
     <masterLabel>MicrosoftTeamsimage_51</masterLabel>
-    <relationships>
-        <organization>
-            <access>VIEWER</access>
-        </organization>
-    </relationships>
     <versions>
         <version>
             <number>1</number>

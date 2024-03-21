@@ -3,7 +3,7 @@
     <fullName>Negoptim__ProductEAN__c</fullName>
     <deprecated>false</deprecated>
     <externalId>false</externalId>
-    <formula>null</formula>
+    <formula>Negoptim__Product__r.Negoptim__Product_EAN__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Product EAN</label>
     <required>false</required>

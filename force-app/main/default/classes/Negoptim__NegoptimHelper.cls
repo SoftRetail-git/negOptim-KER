@@ -1,9 +1,9 @@
 /*
-This file is generated and isn't the actual source code for this
-managed global class.
-This read-only file shows the class's global constructors,
-methods, variables, and properties.
-To enable code to compile, all methods return null.
+Ce fichier est généré ne correspond pas au code source de cette
+classe globale gérée.
+Ce fichier en lecture seule affiche les constructeurs globaux,
+les méthodes, les variables et les propriétés de la classe.
+Pour activer le code à compiler, toutes les méthodes renvoient null.
 */
 global class NegoptimHelper {
     global NegoptimHelper() {
@@ -27,6 +27,24 @@ global class NegoptimHelper {
     global static Boolean checkUpdatibility(Schema.SObjectType objType, List<String> fields) {
         return null;
     }
+    global static String defaultPicklistValue(Schema.DescribeFieldResult dFR) {
+        return null;
+    }
+    global static String formatDecimalValue(Decimal d, Integer places) {
+        return null;
+    }
+    global static String formatPercentageValue(Decimal d, Boolean wildcard) {
+        return null;
+    }
+    global static Map<String,Id> getAvailableObjectRecordTypeMapIds(Schema.SObjectType sObjectType) {
+        return null;
+    }
+    global static Map<Id,Set<Id>> getBUChildrenMap(Set<Id> ids) {
+        return null;
+    }
+    global static Map<Id,Set<Id>> getBUParentsMap(Set<Id> ids) {
+        return null;
+    }
     global static String getCorporateCurrency() {
         return null;
     }
@@ -39,10 +57,25 @@ global class NegoptimHelper {
     global static Folder getFolderSettings() {
         return null;
     }
+    global static Date getLastDayOfMonth(Date aDate) {
+        return null;
+    }
+    global static Date getLastDayOfMonth(Integer year, Integer month) {
+        return null;
+    }
     global static Integer getNbClientClusterFields() {
         return null;
     }
+    global static Id getObjectDefaultRecordTypeId(Schema.SObjectType sObjectType) {
+        return null;
+    }
+    global static Id getObjectDefaultRecordTypeId(String objectName) {
+        return null;
+    }
     global static String getObjectRecordTypeId(Schema.SObjectType sObjectType, String recordTypeName) {
+        return null;
+    }
+    global static Map<String,String> getObjectRecordTypeMapDeveloperNameToLabel(Schema.SObjectType sObjectType) {
         return null;
     }
     global static Map<Id,String> getObjectRecordTypeMapDeveloperNames(Schema.SObjectType sObjectType) {
@@ -52,6 +85,9 @@ global class NegoptimHelper {
         return null;
     }
     global static Map<Id,String> getObjectRecordTypeMapLabels(Schema.SObjectType sObjectType) {
+        return null;
+    }
+    global static String getObjectRecordTypeName(Schema.SObjectType sObjectType, Id recordTypeId) {
         return null;
     }
     @AuraEnabled
@@ -76,7 +112,22 @@ global class NegoptimHelper {
     global static String normalizeAPIName(String name) {
         return null;
     }
+    global static List<List<String>> parseCSV(List<String> lines, Boolean skipHeaders, String separator) {
+        return null;
+    }
+    global static List<List<String>> parseCSV(List<String> lines, String separator) {
+        return null;
+    }
+    global static List<List<String>> parseCSV(String contents, Boolean skipHeaders) {
+        return null;
+    }
+    global static List<Decimal> smartDivision(Decimal numerator, Integer denominator, Integer decimalPlaces, System.RoundingMode roundingMode) {
+        return null;
+    }
     global static Schema.SObjectField validateField(String objectName, List<String> theFields) {
+        return null;
+    }
+    global static Boolean validateId(String Idparam) {
         return null;
     }
 }

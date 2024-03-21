@@ -5,6 +5,17 @@
     <compactLayoutAssignment>Negoptim__OClientSupplier</compactLayoutAssignment>
     <label>Supplier</label>
     <picklistValues>
+        <picklist>Negoptim__Reference_language__c</picklist>
+        <values>
+            <fullName>English</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Negoptim__Status__c</picklist>
         <values>
             <fullName>Active</fullName>

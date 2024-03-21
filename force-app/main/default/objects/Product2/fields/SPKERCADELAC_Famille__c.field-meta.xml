@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPKERCADELAC_Famille__c</fullName>
+    <externalId>false</externalId>
+    <label>SPKERCADELAC Famille</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SPKERCADELACONFAMILY__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GALETTES PB</fullName>
+                <default>false</default>
+                <label>GALETTES PB</label>
+            </value>
+            <value>
+                <fullName>PALETS PB</fullName>
+                <default>false</default>
+                <label>PALETS PB</label>
+            </value>
+            <value>
+                <fullName>PETIT BEURRE</fullName>
+                <default>false</default>
+                <label>PETIT BEURRE</label>
+            </value>
+            <value>
+                <fullName>BARRES MGV MARBREES</fullName>
+                <default>false</default>
+                <label>BARRES MGV MARBREES</label>
+            </value>
+            <value>
+                <fullName>BARRES MGV</fullName>
+                <default>false</default>
+                <label>BARRES MGV</label>
+            </value>
+            <value>
+                <fullName>AUTRES MIXTES</fullName>
+                <default>false</default>
+                <label>AUTRES MIXTES</label>
+            </value>
+            <value>
+                <fullName>GATEAUX BRETONS</fullName>
+                <default>false</default>
+                <label>GATEAUX BRETONS</label>
+            </value>
+            <value>
+                <fullName>MOELLEUX</fullName>
+                <default>false</default>
+                <label>MOELLEUX</label>
+            </value>
+            <value>
+                <fullName>QUATRE QUART</fullName>
+                <default>false</default>
+                <label>QUATRE QUART</label>
+            </value>
+            <value>
+                <fullName>MUFFINS</fullName>
+                <default>false</default>
+                <label>MUFFINS</label>
+            </value>
+            <value>
+                <fullName>MADELEINES COQUILLES MGV</fullName>
+                <default>false</default>
+                <label>MADELEINES COQUILLES MGV</label>
+            </value>
+            <value>
+                <fullName>MADELEINES INJECTEES</fullName>
+                <default>false</default>
+                <label>MADELEINES INJECTEES</label>
+            </value>
+            <value>
+                <fullName>MADELEINES COQUILLES PB</fullName>
+                <default>false</default>
+                <label>MADELEINES COQUILLES PB</label>
+            </value>
+            <value>
+                <fullName>MADELEINES COQUES</fullName>
+                <default>false</default>
+                <label>MADELEINES COQUES</label>
+            </value>
+            <value>
+                <fullName>MADELEINES MIXTE</fullName>
+                <default>false</default>
+                <label>MADELEINES MIXTE</label>
+            </value>
+            <value>
+                <fullName>MINI PB</fullName>
+                <default>false</default>
+                <label>MINI PB</label>
+            </value>
+            <value>
+                <fullName>MINI MGV</fullName>
+                <default>false</default>
+                <label>MINI MGV</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>PRODUITS SECS</controllingFieldValue>
+            <valueName>GALETTES PB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRODUITS SECS</controllingFieldValue>
+            <valueName>PALETS PB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRODUITS SECS</controllingFieldValue>
+            <valueName>PETIT BEURRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BARRES</controllingFieldValue>
+            <valueName>BARRES MGV MARBREES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BARRES</controllingFieldValue>
+            <valueName>BARRES MGV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GATEAUX A PARTAGER</controllingFieldValue>
+            <valueName>AUTRES MIXTES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GATEAUX BRETONS</controllingFieldValue>
+            <valueName>GATEAUX BRETONS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MOELLEUX</controllingFieldValue>
+            <valueName>MOELLEUX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>QUATRE QUART</controllingFieldValue>
+            <valueName>QUATRE QUART</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUFFINS</controllingFieldValue>
+            <valueName>MUFFINS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MADELEINES</controllingFieldValue>
+            <valueName>MADELEINES COQUILLES MGV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MADELEINES</controllingFieldValue>
+            <valueName>MADELEINES INJECTEES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MADELEINES</controllingFieldValue>
+            <valueName>MADELEINES COQUILLES PB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MADELEINES</controllingFieldValue>
+            <valueName>MADELEINES COQUES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MADELEINES</controllingFieldValue>
+            <valueName>MADELEINES MIXTE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MINI GATEAUX</controllingFieldValue>
+            <valueName>MINI PB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MINI GATEAUX</controllingFieldValue>
+            <valueName>MINI MGV</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

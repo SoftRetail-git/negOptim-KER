@@ -164,7 +164,11 @@
     </nameField>
     <pluralLabel>Brands</pluralLabel>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts></searchLayouts>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Negoptim__Brand_Parent__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SPKERCADELACBrandLogo__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Negoptim__Brand_code__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

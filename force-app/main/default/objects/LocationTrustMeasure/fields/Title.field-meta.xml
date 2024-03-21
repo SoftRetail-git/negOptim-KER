@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Title</fullName>
-    <inlineHelpText>The header for your trust measure that’s displayed to viewers. Keep it short and sweet! You can use up to 40 characters, but 20 is best to keep your title on one line.</inlineHelpText>
+    <inlineHelpText>L&apos;en-tête de votre mesure de confiance qui est présentée aux visiteurs. Saisissez un titre court et efficace ! Vous pouvez utiliser jusqu&apos;à 40 caractères, mais nous recommandons 20 caractères pour afficher l&apos;en-tête sur une seule ligne.</inlineHelpText>
 </CustomField>

@@ -8,6 +8,7 @@
     <columns>Negoptim__Year__c</columns>
     <columns>Negoptim__Status__c</columns>
     <columns>CREATED_DATE</columns>
+    <columns>RECORDTYPE</columns>
     <filterScope>Everything</filterScope>
     <label>Tout</label>
 </ListView>

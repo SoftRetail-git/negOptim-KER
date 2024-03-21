@@ -188,7 +188,6 @@
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>
-    <owner>ulit@patisseries.prod</owner>
     <rightSection>
         <columnSize>Medium</columnSize>
         <components>
@@ -250,7 +249,7 @@
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
-    <runningUser>ulit@patisseries.prod</runningUser>
+    <runningUser>ulit@patisseries.uat</runningUser>
     <textColor>#000000</textColor>
     <title>Tableau de bord des performances de la société</title>
     <titleColor>#000099</titleColor>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__Sup_sup_NegoScope__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Supplier Nego Scope</label>
+    <referenceTo>Negoptim__NegoScope__c</referenceTo>
+    <relationshipLabel>Supplier Nego scope Brands</relationshipLabel>
+    <relationshipName>Supplier_Nego_scope_Brands</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

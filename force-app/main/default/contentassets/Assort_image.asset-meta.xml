@@ -3,11 +3,6 @@
     <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
     <language>fr</language>
     <masterLabel>Assort_image</masterLabel>
-    <relationships>
-        <organization>
-            <access>VIEWER</access>
-        </organization>
-    </relationships>
     <versions>
         <version>
             <number>1</number>

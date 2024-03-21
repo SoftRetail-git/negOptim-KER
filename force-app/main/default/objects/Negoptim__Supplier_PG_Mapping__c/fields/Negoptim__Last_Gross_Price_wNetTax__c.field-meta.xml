@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__Last_Gross_Price_wNetTax__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>Negoptim__Last_Gross_Price__c
+
++
+IF (CONTAINS(Negoptim__NetPrice_Taxes_New__c,&apos;N1/&apos;), Negoptim__Tax_1_New__c,0)
++ IF (CONTAINS(Negoptim__NetPrice_Taxes_New__c,&apos;N2/&apos;), Negoptim__Tax_2_New__c,0)
++ IF (CONTAINS(Negoptim__NetPrice_Taxes_New__c,&apos;N3/&apos;), Negoptim__Tax_3_New__c,0)
++ IF (CONTAINS(Negoptim__NetPrice_Taxes_New__c,&apos;N4/&apos;),Negoptim__Tax_4_New__c,0)
++ IF (CONTAINS(Negoptim__NetPrice_Taxes_New__c,&apos;N5/&apos;),Negoptim__Tax_5_New__c,0)
++ IF (CONTAINS(Negoptim__NetPrice_Taxes_New__c,&apos;N6/&apos;),Negoptim__Tax_6_New__c,0)
++ IF (CONTAINS(Negoptim__NetPrice_Taxes_New__c,&apos;N7/&apos;),Negoptim__Tax_7_New__c,0)
++ IF (CONTAINS(Negoptim__NetPrice_Taxes_New__c,&apos;N8/&apos;),Negoptim__Tax_8_New__c,0)
++ IF (CONTAINS(Negoptim__NetPrice_Taxes_New__c,&apos;N9/&apos;),Negoptim__Tax_9_New__c,0)
++ IF (CONTAINS(Negoptim__NetPrice_Taxes_New__c,&apos;N10/&apos;),Negoptim__Tax_10_New__c,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last Gross Price wNetTax</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -16,11 +16,7 @@
             <section>Custom Links</section>
         </sections>
         <sections>
-            <label></label>
-            <section>Filter Settings</section>
-        </sections>
-        <sections>
-            <label></label>
+            <label>Cycle de vie</label>
             <section>Life Cycle</section>
         </sections>
     </layouts>

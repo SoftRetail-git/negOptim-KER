@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Les_marques</fullName>
+    <columns>NAME</columns>
+    <columns>SPKERCADELACBrandLogo__c</columns>
+    <columns>Negoptim__Brand_code__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Negoptim__Brand__c.Negoptim__Brand_Regular</value>
+    </filters>
+    <label>Les marques</label>
+</ListView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Negoptim__Slab_Calc_Method_TO_Origin__c</name>
+    <picklistValues>
+        <masterLabel>Actual</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nego</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Target</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

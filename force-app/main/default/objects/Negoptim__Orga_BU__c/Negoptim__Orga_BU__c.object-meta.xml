@@ -166,10 +166,7 @@
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts>
-        <searchResultsAdditionalFields>Negoptim__BU_Code__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Negoptim__Status__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Negoptim__IsMasterBU__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

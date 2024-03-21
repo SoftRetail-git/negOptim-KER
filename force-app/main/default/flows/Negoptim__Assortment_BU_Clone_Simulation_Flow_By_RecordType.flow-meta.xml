@@ -444,7 +444,7 @@
             <targetReference>Get_Assortment_BU_RecordTypes</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>recordId</name>
         <dataType>String</dataType>

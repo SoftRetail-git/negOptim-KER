@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Negoptim__OAllClusters</fullName>
+    <columns>Negoptim__BU_Code__c</columns>
+    <columns>Negoptim__Logo__c</columns>
+    <columns>Negoptim__Category__c</columns>
+    <columns>Negoptim__Country_origin__c</columns>
     <columns>NAME</columns>
-    <columns>Negoptim__Set_BU_List_Entity__c</columns>
+    <columns>Negoptim__Assortment_Strat__c</columns>
     <columns>Negoptim__SiteOfSales_Number__c</columns>
     <columns>Negoptim__SiteOfSales_Number_P1__c</columns>
     <columns>Negoptim__SiteOfSales_Number_N1__c</columns>
-    <columns>Negoptim__BU_Code__c</columns>
     <columns>Negoptim__Weighted_Distribution_Manual__c</columns>
-    <columns>Negoptim__Numeric_Distribution__c</columns>
-    <columns>Negoptim__SellOut_Fact__c</columns>
+    <columns>Negoptim__Weighted_Distribution_Manual_P1__c</columns>
+    <columns>Negoptim__Weighted_Distribution_Manual_N1__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
         <field>RECORDTYPE</field>
         <operation>equals</operation>
         <value>Negoptim__Orga_BU__c.Negoptim__Assortment_Cluster</value>
     </filters>
-    <label>3. Les Strates</label>
+    <label>4. Les Strates</label>
 </ListView>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPKERCADELACNeedUnitMktgS3__c</fullName>
+    <externalId>false</externalId>
+    <label>SPKERCADELAC need unit  (Mktg-S3)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BARQ ASSORT PB 500</fullName>
+                <default>false</default>
+                <label>BARQ ASSORT PB 500</label>
+            </value>
+            <value>
+                <fullName>COFF 325 ASSORT PB</fullName>
+                <default>false</default>
+                <label>COFF 325 ASSORT PB</label>
+            </value>
+            <value>
+                <fullName>BARQ GALETTE NAT PB 300</fullName>
+                <default>false</default>
+                <label>BARQ GALETTE NAT PB 300</label>
+            </value>
+            <value>
+                <fullName>BARQ GALETTE NAT PB 500</fullName>
+                <default>false</default>
+                <label>BARQ GALETTE NAT PB 500</label>
+            </value>
+            <value>
+                <fullName>BARQ GDE GAL CHO CARAM PB 240</fullName>
+                <default>false</default>
+                <label>BARQ GDE GAL CHO CARAM PB 240</label>
+            </value>
+            <value>
+                <fullName>BARQ GDE GAL NAT PB 240</fullName>
+                <default>false</default>
+                <label>BARQ GDE GAL NAT PB 240</label>
+            </value>
+            <value>
+                <fullName>BARQ GDE GAL PEP CHOC PB 240</fullName>
+                <default>false</default>
+                <label>BARQ GDE GAL PEP CHOC PB 240</label>
+            </value>
+            <value>
+                <fullName>BARQ PALET NAT PB 300</fullName>
+                <default>false</default>
+                <label>BARQ PALET NAT PB 300</label>
+            </value>
+            <value>
+                <fullName>BARQ PALET NAT PB 500</fullName>
+                <default>false</default>
+                <label>BARQ PALET NAT PB 500</label>
+            </value>
+            <value>
+                <fullName>COFF CŒUR 90 PAL PB</fullName>
+                <default>false</default>
+                <label>COFF CŒUR 90 PAL PB</label>
+            </value>
+            <value>
+                <fullName>ETUI PALET NAT PB 120-125</fullName>
+                <default>false</default>
+                <label>ETUI PALET NAT PB 120-125</label>
+            </value>
+            <value>
+                <fullName>BARQ PTI BEURRE 200</fullName>
+                <default>false</default>
+                <label>BARQ PTI BEURRE 200</label>
+            </value>
+            <value>
+                <fullName>CAKE MARB CHOC 500</fullName>
+                <default>false</default>
+                <label>CAKE MARB CHOC 500</label>
+            </value>
+            <value>
+                <fullName>CAKE NATURE 800</fullName>
+                <default>false</default>
+                <label>CAKE NATURE 800</label>
+            </value>
+            <value>
+                <fullName>CAKE BRET FRUIT 380</fullName>
+                <default>false</default>
+                <label>CAKE BRET FRUIT 380</label>
+            </value>
+            <value>
+                <fullName>DEMI-LUNE FRAMBOISE 400</fullName>
+                <default>false</default>
+                <label>DEMI-LUNE FRAMBOISE 400</label>
+            </value>
+            <value>
+                <fullName>DEMI-LUNE PRUNEAU 400</fullName>
+                <default>false</default>
+                <label>DEMI-LUNE PRUNEAU 400</label>
+            </value>
+            <value>
+                <fullName>GATEAU BRETON ROND 400</fullName>
+                <default>false</default>
+                <label>GATEAU BRETON ROND 400</label>
+            </value>
+            <value>
+                <fullName>LE GOURMAND AMANDES 350</fullName>
+                <default>false</default>
+                <label>LE GOURMAND AMANDES 350</label>
+            </value>
+            <value>
+                <fullName>LE GOURMAND CITRON 350</fullName>
+                <default>false</default>
+                <label>LE GOURMAND CITRON 350</label>
+            </value>
+            <value>
+                <fullName>MOELLEUX CHOCO 500</fullName>
+                <default>false</default>
+                <label>MOELLEUX CHOCO 500</label>
+            </value>
+            <value>
+                <fullName>MOELLEUX MARB PCH 450-475</fullName>
+                <default>false</default>
+                <label>MOELLEUX MARB PCH 450-475</label>
+            </value>
+            <value>
+                <fullName>MOELLEUX NATURE 200</fullName>
+                <default>false</default>
+                <label>MOELLEUX NATURE 200</label>
+            </value>
+            <value>
+                <fullName>MOELLEUX NATURE 350</fullName>
+                <default>false</default>
+                <label>MOELLEUX NATURE 350</label>
+            </value>
+            <value>
+                <fullName>MOELLEUX NATURE 500</fullName>
+                <default>false</default>
+                <label>MOELLEUX NATURE 500</label>
+            </value>
+            <value>
+                <fullName>MOELLEUX NATURE 690</fullName>
+                <default>false</default>
+                <label>MOELLEUX NATURE 690</label>
+            </value>
+            <value>
+                <fullName>MOELLEUX NATURE BIO 350-400</fullName>
+                <default>false</default>
+                <label>MOELLEUX NATURE BIO 350-400</label>
+            </value>
+            <value>
+                <fullName>MOELLEUX PANACHE 500</fullName>
+                <default>false</default>
+                <label>MOELLEUX PANACHE 500</label>
+            </value>
+            <value>
+                <fullName>MOELLEUX PEP CHOC 350-400</fullName>
+                <default>false</default>
+                <label>MOELLEUX PEP CHOC 350-400</label>
+            </value>
+            <value>
+                <fullName>MOELLEUX PEP CHOC 500</fullName>
+                <default>false</default>
+                <label>MOELLEUX PEP CHOC 500</label>
+            </value>
+            <value>
+                <fullName>ALYSSE FOOD MUFFIN</fullName>
+                <default>false</default>
+                <label>ALYSSE FOOD MUFFIN</label>
+            </value>
+            <value>
+                <fullName>MAP NATURE X20</fullName>
+                <default>false</default>
+                <label>MAP NATURE X20</label>
+            </value>
+            <value>
+                <fullName>MAP NATURE X40</fullName>
+                <default>false</default>
+                <label>MAP NATURE X40</label>
+            </value>
+            <value>
+                <fullName>MAP PEPITE CHOCO X20</fullName>
+                <default>false</default>
+                <label>MAP PEPITE CHOCO X20</label>
+            </value>
+            <value>
+                <fullName>MAP PEPITE CHOCO X40</fullName>
+                <default>false</default>
+                <label>MAP PEPITE CHOCO X40</label>
+            </value>
+            <value>
+                <fullName>MAD COQ FOU CHOCO 420-455</fullName>
+                <default>false</default>
+                <label>MAD COQ FOU CHOCO 420-455</label>
+            </value>
+            <value>
+                <fullName>MAD COQ FOU FRAISE 420-455</fullName>
+                <default>false</default>
+                <label>MAD COQ FOU FRAISE 420-455</label>
+            </value>
+            <value>
+                <fullName>MAD COQ FOU PEP CHOCO 360-390</fullName>
+                <default>false</default>
+                <label>MAD COQ FOU PEP CHOCO 360-390</label>
+            </value>
+            <value>
+                <fullName>MEM AMANDE 600</fullName>
+                <default>false</default>
+                <label>MEM AMANDE 600</label>
+            </value>
+            <value>
+                <fullName>MEM CHOCOLAIT 600</fullName>
+                <default>false</default>
+                <label>MEM CHOCOLAIT 600</label>
+            </value>
+            <value>
+                <fullName>MEM CITRON 400</fullName>
+                <default>false</default>
+                <label>MEM CITRON 400</label>
+            </value>
+            <value>
+                <fullName>MEM CITRON 600</fullName>
+                <default>false</default>
+                <label>MEM CITRON 600</label>
+            </value>
+            <value>
+                <fullName>MEM FROM BLANC 600</fullName>
+                <default>false</default>
+                <label>MEM FROM BLANC 600</label>
+            </value>
+            <value>
+                <fullName>MEM MARB CHO 400</fullName>
+                <default>false</default>
+                <label>MEM MARB CHO 400</label>
+            </value>
+            <value>
+                <fullName>MEM MARB CHO 600</fullName>
+                <default>false</default>
+                <label>MEM MARB CHO 600</label>
+            </value>
+            <value>
+                <fullName>MEM NATURE 400</fullName>
+                <default>false</default>
+                <label>MEM NATURE 400</label>
+            </value>
+            <value>
+                <fullName>MEM NATURE 600</fullName>
+                <default>false</default>
+                <label>MEM NATURE 600</label>
+            </value>
+            <value>
+                <fullName>MEM NATURE 800</fullName>
+                <default>false</default>
+                <label>MEM NATURE 800</label>
+            </value>
+            <value>
+                <fullName>MEM PEP SUC 400</fullName>
+                <default>false</default>
+                <label>MEM PEP SUC 400</label>
+            </value>
+            <value>
+                <fullName>MEM PEP SUC 600</fullName>
+                <default>false</default>
+                <label>MEM PEP SUC 600</label>
+            </value>
+            <value>
+                <fullName>MEM PEPITE CHOCO 400</fullName>
+                <default>false</default>
+                <label>MEM PEPITE CHOCO 400</label>
+            </value>
+            <value>
+                <fullName>MEM PEPITE CHOCO 600</fullName>
+                <default>false</default>
+                <label>MEM PEPITE CHOCO 600</label>
+            </value>
+            <value>
+                <fullName>MEM PEPITE CHOCO 800</fullName>
+                <default>false</default>
+                <label>MEM PEPITE CHOCO 800</label>
+            </value>
+            <value>
+                <fullName>MEM VANILLE 400</fullName>
+                <default>false</default>
+                <label>MEM VANILLE 400</label>
+            </value>
+            <value>
+                <fullName>MEM VANILLE 600</fullName>
+                <default>false</default>
+                <label>MEM VANILLE 600</label>
+            </value>
+            <value>
+                <fullName>MAD COQ INDI PB BRET 363-429</fullName>
+                <default>false</default>
+                <label>MAD COQ INDI PB BRET 363-429</label>
+            </value>
+            <value>
+                <fullName>MAD COQ INDI PB BRET 300</fullName>
+                <default>false</default>
+                <label>MAD COQ INDI PB BRET 300</label>
+            </value>
+            <value>
+                <fullName>MAD COEUR PATE A TART 300</fullName>
+                <default>false</default>
+                <label>MAD COEUR PATE A TART 300</label>
+            </value>
+            <value>
+                <fullName>MAD COEUR FRAMBOISE 280</fullName>
+                <default>false</default>
+                <label>MAD COEUR FRAMBOISE 280</label>
+            </value>
+            <value>
+                <fullName>QQ NATURE 200</fullName>
+                <default>false</default>
+                <label>QQ NATURE 200</label>
+            </value>
+            <value>
+                <fullName>QQ NATURE 500</fullName>
+                <default>false</default>
+                <label>QQ NATURE 500</label>
+            </value>
+            <value>
+                <fullName>QQ NATURE 800</fullName>
+                <default>false</default>
+                <label>QQ NATURE 800</label>
+            </value>
+            <value>
+                <fullName>MAD NATURE CCNOIR 240</fullName>
+                <default>false</default>
+                <label>MAD NATURE CCNOIR 240</label>
+            </value>
+            <value>
+                <fullName>MAD NOISETTE CCLAIT 240</fullName>
+                <default>false</default>
+                <label>MAD NOISETTE CCLAIT 240</label>
+            </value>
+            <value>
+                <fullName>MAD CHOCOLAT CCNOIR 240</fullName>
+                <default>false</default>
+                <label>MAD CHOCOLAT CCNOIR 240</label>
+            </value>
+            <value>
+                <fullName>MAD COCO CCNOIR 240</fullName>
+                <default>false</default>
+                <label>MAD COCO CCNOIR 240</label>
+            </value>
+            <value>
+                <fullName>MAD NATURE CCLAIT</fullName>
+                <default>false</default>
+                <label>MAD NATURE CCLAIT</label>
+            </value>
+            <value>
+                <fullName>MAD CŒUR FRAMBOISE CCNOIR 240</fullName>
+                <default>false</default>
+                <label>MAD CŒUR FRAMBOISE CCNOIR 240</label>
+            </value>
+            <value>
+                <fullName>MAD CŒUR ORANGE CCNOIR 240</fullName>
+                <default>false</default>
+                <label>MAD CŒUR ORANGE CCNOIR 240</label>
+            </value>
+            <value>
+                <fullName>MAD CŒUR CITRON 240</fullName>
+                <default>false</default>
+                <label>MAD CŒUR CITRON 240</label>
+            </value>
+            <value>
+                <fullName>MAD ERABLE NOIX PECAN 250</fullName>
+                <default>false</default>
+                <label>MAD ERABLE NOIX PECAN 250</label>
+            </value>
+            <value>
+                <fullName>MAD PISTACHE 250</fullName>
+                <default>false</default>
+                <label>MAD PISTACHE 250</label>
+            </value>
+            <value>
+                <fullName>MAD CŒUR PAT NOISETTE 240</fullName>
+                <default>false</default>
+                <label>MAD CŒUR PAT NOISETTE 240</label>
+            </value>
+            <value>
+                <fullName>MAD NATURE PB PLEIN AIR 250</fullName>
+                <default>false</default>
+                <label>MAD NATURE PB PLEIN AIR 250</label>
+            </value>
+            <value>
+                <fullName>MINI GAT NOISETTE 240</fullName>
+                <default>false</default>
+                <label>MINI GAT NOISETTE 240</label>
+            </value>
+            <value>
+                <fullName>MINI FINANCIER AMANDE 240</fullName>
+                <default>false</default>
+                <label>MINI FINANCIER AMANDE 240</label>
+            </value>
+            <value>
+                <fullName>GROSSE MAD NATURE CCNOIR 60</fullName>
+                <default>false</default>
+                <label>GROSSE MAD NATURE CCNOIR 60</label>
+            </value>
+            <value>
+                <fullName>GROSSE MAD NOISETTE CCLAIT 60</fullName>
+                <default>false</default>
+                <label>GROSSE MAD NOISETTE CCLAIT 60</label>
+            </value>
+            <value>
+                <fullName>MAD EPICES NOEL CCNOIR 240</fullName>
+                <default>false</default>
+                <label>MAD EPICES NOEL CCNOIR 240</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

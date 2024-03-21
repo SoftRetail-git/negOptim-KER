@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__Orga_BU__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Referene Business Unit for the planning</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specify the Reference Business Unit for the plan.</inlineHelpText>
+    <label>Business Unit</label>
+    <referenceTo>Negoptim__Orga_BU__c</referenceTo>
+    <relationshipLabel>Invoicing Planning</relationshipLabel>
+    <relationshipName>Invoicing_Planning</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

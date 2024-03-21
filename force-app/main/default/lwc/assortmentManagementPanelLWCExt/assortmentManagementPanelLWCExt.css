@@ -1,0 +1,26 @@
+.main-table th{
+    background-color: #0D807D;
+    color: #FFFFFF;
+}
+.filterPanel {
+    background-color: #14b3bb;
+    color: #FFFFFF;
+}
+
+.main-table td {
+    height: 65px !important;
+}
+
+.icons-container{
+    float: right;
+}
+.sort-icon {
+    --slds-c-icon-color-foreground: white;
+}
+.output-number{
+    /* right: 10px;
+    position: absolute; */
+    text-align: center;
+    justify-content: right;
+    display: flex;
+}

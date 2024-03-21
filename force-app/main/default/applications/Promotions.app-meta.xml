@@ -2,7 +2,7 @@
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <brand>
         <headerColor>#0DBBBC</headerColor>
-        <logo>Picto_PROMOTIONS1</logo>
+        <logo>Picto_PROMOTIONS</logo>
         <logoVersion>1</logoVersion>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
@@ -162,7 +162,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <type>Flexipage</type>
@@ -170,7 +170,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <type>Flexipage</type>
@@ -178,7 +178,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Box</recordType>
@@ -187,7 +187,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Box</recordType>
@@ -196,7 +196,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Competitor</recordType>
@@ -205,7 +205,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Competitor</recordType>
@@ -214,7 +214,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Higher_Level_Packaging</recordType>
@@ -223,7 +223,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Higher_Level_Packaging</recordType>
@@ -232,7 +232,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Model</recordType>
@@ -241,7 +241,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Model</recordType>
@@ -250,7 +250,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACProductPage11</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Product</recordType>
@@ -259,7 +259,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACProductPage11</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Product</recordType>
@@ -268,7 +268,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Purchases_Kit</recordType>
@@ -277,7 +277,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Purchases_Kit</recordType>
@@ -286,7 +286,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Sales_Kit</recordType>
@@ -295,7 +295,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Sales_Kit</recordType>
@@ -304,7 +304,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Regular</recordType>
@@ -313,7 +313,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Regular</recordType>
@@ -322,7 +322,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Unit_Need</recordType>
@@ -331,7 +331,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Unit_Need</recordType>
@@ -340,7 +340,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Unit_Need_Initialization</recordType>
@@ -349,7 +349,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACProductPage1</content>
+        <content>SPKERCADELACBoxPage1</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Product2</pageOrSobjectType>
         <recordType>Product2.Negoptim__Unit_Need_Initialization</recordType>
@@ -374,7 +374,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACBusinessUnitPage1</content>
+        <content>SPKERCADELACBUCluster</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
         <recordType>Negoptim__Orga_BU__c.Negoptim__Assortment_Cluster</recordType>
@@ -383,7 +383,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACBusinessUnitPage1</content>
+        <content>SPKERCADELACBUCluster</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
         <recordType>Negoptim__Orga_BU__c.Negoptim__Assortment_Cluster</recordType>
@@ -410,7 +410,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACBusinessUnitPage1</content>
+        <content>SPKERCADELACBUBanner</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
         <recordType>Negoptim__Orga_BU__c.Negoptim__Banner</recordType>
@@ -419,7 +419,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACBusinessUnitPage1</content>
+        <content>SPKERCADELACBUBanner</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
         <recordType>Negoptim__Orga_BU__c.Negoptim__Banner</recordType>
@@ -428,7 +428,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACBusinessUnitPage1</content>
+        <content>SPKERCADELACBUCircuit</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
         <recordType>Negoptim__Orga_BU__c.Negoptim__Channel</recordType>
@@ -437,7 +437,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACBusinessUnitPage1</content>
+        <content>SPKERCADELACBUCircuit</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
         <recordType>Negoptim__Orga_BU__c.Negoptim__Channel</recordType>
@@ -446,7 +446,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACBusinessUnitPage1</content>
+        <content>SPKERCADELACBUPays</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
         <recordType>Negoptim__Orga_BU__c.Negoptim__Country</recordType>
@@ -455,7 +455,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACBusinessUnitPage1</content>
+        <content>SPKERCADELACBUPays</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
         <recordType>Negoptim__Orga_BU__c.Negoptim__Country</recordType>
@@ -464,7 +464,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACBusinessUnitPage1</content>
+        <content>SPKERCADELACBUGroup</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
         <recordType>Negoptim__Orga_BU__c.Negoptim__Group</recordType>
@@ -473,7 +473,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>SPKERCADELACBusinessUnitPage1</content>
+        <content>SPKERCADELACBUGroup</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
         <recordType>Negoptim__Orga_BU__c.Negoptim__Group</recordType>
@@ -587,8 +587,975 @@
         <recordType>Negoptim__Orga_BU__c.Negoptim__Web</recordType>
         <type>Flexipage</type>
         <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKCPlanPromo</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__CommercialPlan__c</pageOrSobjectType>
+        <recordType>Negoptim__CommercialPlan__c.Negoptim__SalesFloorEvent</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKCPlanPromo</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__CommercialPlan__c</pageOrSobjectType>
+        <recordType>Negoptim__CommercialPlan__c.Negoptim__SalesFloorEvent</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKC_Detail_des_promotions_Facturation_Page_d_enregistrement</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__CommercialPlanDetail__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKC_Detail_des_promotions_Facturation_Page_d_enregistrement</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__CommercialPlanDetail__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>SPKERCADELAC_Home_page1Promo</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACHierarchyElementPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Orga_HE__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACHierarchyElementPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Orga_HE__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACHierarchyElementPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Orga_HE__c</pageOrSobjectType>
+        <recordType>Negoptim__Orga_HE__c.Negoptim__Product</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACHierarchyElementPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Orga_HE__c</pageOrSobjectType>
+        <recordType>Negoptim__Orga_HE__c.Negoptim__Product</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Box</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Box</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Competitor</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Competitor</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Model</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Model</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Higher_Level_Packaging</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Higher_Level_Packaging</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACProductPage11</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Product</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACProductPage11</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Product</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Purchases_Kit</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Purchases_Kit</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Regular</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Regular</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Sales_Kit</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Sales_Kit</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Unit_Need</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Unit_Need</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Unit_Need_Initialization</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBoxPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Negoptim__Unit_Need_Initialization</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBrandPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Brand__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBrandPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Brand__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBrandPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Brand__c</pageOrSobjectType>
+        <recordType>Negoptim__Brand__c.Negoptim__Brand_Initialization</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBrandPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Brand__c</pageOrSobjectType>
+        <recordType>Negoptim__Brand__c.Negoptim__Brand_Initialization</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBrandPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Brand__c</pageOrSobjectType>
+        <recordType>Negoptim__Brand__c.Negoptim__Brand_Regular</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBrandPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Brand__c</pageOrSobjectType>
+        <recordType>Negoptim__Brand__c.Negoptim__Brand_Regular</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACClientSupplierPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Supplier__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACClientSupplierPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Supplier__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACClientSupplierPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Supplier__c</pageOrSobjectType>
+        <recordType>Negoptim__Supplier__c.Negoptim__Client</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACClientSupplierPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Supplier__c</pageOrSobjectType>
+        <recordType>Negoptim__Supplier__c.Negoptim__Client</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACClientSupplierPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Supplier__c</pageOrSobjectType>
+        <recordType>Negoptim__Supplier__c.Negoptim__Supplier</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACClientSupplierPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Supplier__c</pageOrSobjectType>
+        <recordType>Negoptim__Supplier__c.Negoptim__Supplier</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBUCircuit</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Orga_BU__c.Negoptim__Channel</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBUCircuit</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Orga_BU__c.Negoptim__Channel</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBUBanner</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Orga_BU__c.Negoptim__Banner</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBUBanner</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Orga_BU__c.Negoptim__Banner</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBUPays</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Orga_BU__c.Negoptim__Country</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBUPays</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Orga_BU__c.Negoptim__Country</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBUGroup</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Orga_BU__c.Negoptim__Group</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBUGroup</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Orga_BU__c.Negoptim__Group</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBUCluster</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Orga_BU__c.Negoptim__Assortment_Cluster</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACBUCluster</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Orga_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Orga_BU__c.Negoptim__Assortment_Cluster</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentBUDetailsPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_Detail__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentBUDetailsPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_Detail__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentBUDetailsPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_Detail__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentBUDetailsPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_Detail__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentBUDetailsPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_Detail__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_Detail__c.Negoptim__Higher_Level_Packaging</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentBUDetailsPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_Detail__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_Detail__c.Negoptim__Higher_Level_Packaging</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentBUDetailsPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_Detail__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_Detail__c.Negoptim__Higher_Level_Packaging</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentBUDetailsPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_Detail__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_Detail__c.Negoptim__Higher_Level_Packaging</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentBUDetailsPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_Detail__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_Detail__c.Negoptim__Regular</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentBUDetailsPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_Detail__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_Detail__c.Negoptim__Regular</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentBUDetailsPage1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_Detail__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_Detail__c.Negoptim__Regular</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentBUDetailsPage1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_Detail__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_Detail__c.Negoptim__Regular</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Budget</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Budget</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Budget</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Budget</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Conso</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Conso</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Conso</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Conso</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Conso_Simulation</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Conso_Simulation</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Conso_Simulation</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Conso_Simulation</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Conso_Target</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Conso_Target</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Conso_Target</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Conso_Target</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__L4L</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__L4L</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__L4L</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__L4L</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Nego</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Nego</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Nego</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Nego</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Panel</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Panel</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Panel</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Panel</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__PR</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__PR</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__PR</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__PR</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Simulation</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Simulation</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Simulation</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Simulation</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Target</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>KERAdminAssortmentLayout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Target</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Target</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPKERCADELACAssortmentDynmamic1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Negoptim__Assortment_BU__c</pageOrSobjectType>
+        <recordType>Negoptim__Assortment_BU__c.Negoptim__Target</recordType>
+        <type>Flexipage</type>
+        <profile>All Access Except Config</profile>
     </profileActionOverrides>
     <tabs>standard-home</tabs>
+    <tabs>Negoptim__CommercialPlan__c</tabs>
+    <tabs>Negoptim__CommercialPlanDetail__c</tabs>
+    <tabs>Negoptim__CommercialPlanFollowup__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>Assortment_Bu_Matrix</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Promotions_UtilityBar</utilityBar>
 </CustomApplication>

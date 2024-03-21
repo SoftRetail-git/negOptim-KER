@@ -2,6 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Negoptim__YearlyPromoyear</fullName>
     <active>true</active>
+    <compactLayoutAssignment>SPKCPlanPromo</compactLayoutAssignment>
     <label>Yearly Promo year</label>
     <picklistValues>
         <picklist>Negoptim__Status__c</picklist>

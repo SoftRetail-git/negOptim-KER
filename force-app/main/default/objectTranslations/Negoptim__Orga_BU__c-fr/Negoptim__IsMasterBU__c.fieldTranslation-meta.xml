@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <help>Est-ce une BU (Enseigne, circuit...) sélectionnable pour l&apos;assortiment.</help>
-    <label></label>
+    <label>Est une BU principale</label>
     <name>Negoptim__IsMasterBU__c</name>
 </CustomFieldTranslation>

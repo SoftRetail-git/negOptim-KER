@@ -16,14 +16,24 @@
                 <label>National Brand</label>
             </value>
             <value>
-                <fullName>Competitor</fullName>
+                <fullName>PPX</fullName>
                 <default>false</default>
-                <label>Competitor</label>
+                <label>PPX</label>
             </value>
             <value>
-                <fullName>StoreBrand</fullName>
+                <fullName>Produit</fullName>
                 <default>false</default>
-                <label>Store Brand</label>
+                <label>Produit</label>
+            </value>
+            <value>
+                <fullName>Box</fullName>
+                <default>false</default>
+                <label>Box</label>
+            </value>
+            <value>
+                <fullName>SBX</fullName>
+                <default>false</default>
+                <label>SBX</label>
             </value>
         </valueSetDefinition>
     </valueSet>

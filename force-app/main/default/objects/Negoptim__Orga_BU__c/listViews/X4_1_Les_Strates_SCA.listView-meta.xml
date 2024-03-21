@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X4_1_Les_Strates_SCA</fullName>
+    <columns>Negoptim__BU_Code__c</columns>
+    <columns>Negoptim__Logo__c</columns>
+    <columns>Negoptim__Category__c</columns>
+    <columns>Negoptim__Country_origin__c</columns>
+    <columns>NAME</columns>
+    <columns>Negoptim__Assortment_Strat__c</columns>
+    <columns>Negoptim__SiteOfSales_Number__c</columns>
+    <columns>Negoptim__SiteOfSales_Number_P1__c</columns>
+    <columns>Negoptim__SiteOfSales_Number_N1__c</columns>
+    <columns>Negoptim__Weighted_Distribution_Manual__c</columns>
+    <columns>Negoptim__Weighted_Distribution_Manual_P1__c</columns>
+    <columns>Negoptim__Weighted_Distribution_Manual_N1__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Negoptim__Orga_BU__c.Negoptim__Assortment_Cluster</value>
+    </filters>
+    <filters>
+        <field>Negoptim__BU_Code__c</field>
+        <operation>contains</operation>
+        <value>SCA,SOCA,LECA</value>
+    </filters>
+    <label>4.1 Les Strates SCA</label>
+</ListView>

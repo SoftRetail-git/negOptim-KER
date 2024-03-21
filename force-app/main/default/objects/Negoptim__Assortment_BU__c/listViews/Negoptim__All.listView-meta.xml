@@ -11,6 +11,7 @@
     <columns>Negoptim__BU_Target__c</columns>
     <columns>Negoptim__Orga_HE__c</columns>
     <columns>OWNER.LAST_NAME</columns>
+    <columns>CREATED_DATE</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

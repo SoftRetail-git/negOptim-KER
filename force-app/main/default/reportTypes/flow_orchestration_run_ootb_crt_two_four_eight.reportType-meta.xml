@@ -4,8 +4,8 @@
     <baseObject>FlowOrchestrationInstance</baseObject>
     <category>other</category>
     <deployed>true</deployed>
-    <description>Déterminez quelles exécutions d’orchestrations ont été créées.</description>
-    <label>Exécutions d’orchestration Spring &apos;24</label>
+    <description>Déterminez quelles exécutions d’orchestration ont été créées.</description>
+    <label>Exécutions d&apos;orchestration</label>
     <sections>
         <columns>
             <checkedByDefault>true</checkedByDefault>

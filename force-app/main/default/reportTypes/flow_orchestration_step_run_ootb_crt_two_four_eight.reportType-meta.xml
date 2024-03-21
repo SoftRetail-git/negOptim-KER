@@ -5,7 +5,7 @@
     <category>other</category>
     <deployed>true</deployed>
     <description>Déterminez quelles exécutions d’étapes d’orchestration ont été créées et le statut actuel de chaque exécution.</description>
-    <label>Exécutions d’étape d’orchestration Spring &apos;24</label>
+    <label>Exécutions d’étape d’orchestration</label>
     <sections>
         <columns>
             <checkedByDefault>true</checkedByDefault>

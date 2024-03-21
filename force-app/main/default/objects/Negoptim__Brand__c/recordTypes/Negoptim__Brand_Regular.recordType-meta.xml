@@ -2,7 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Negoptim__Brand_Regular</fullName>
     <active>true</active>
-    <compactLayoutAssignment>Negoptim__OBrand</compactLayoutAssignment>
+    <compactLayoutAssignment>SPKERCADELACBrand</compactLayoutAssignment>
     <label>Brand Regular</label>
     <picklistValues>
         <picklist>Negoptim__Brand_Type_2__c</picklist>
@@ -32,6 +32,29 @@
         <values>
             <fullName>Open</fullName>
             <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Negoptim__Type__c</picklist>
+        <values>
+            <fullName>First Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Brand</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Brand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Brand 2</fullName>
+            <default>false</default>
         </values>
     </picklistValues>
 </RecordType>

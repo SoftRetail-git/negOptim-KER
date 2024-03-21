@@ -21,9 +21,13 @@
     <tabs>standard-Feed</tabs>
     <tabs>standard-CollaborationGroup</tabs>
     <tabs>standard-File</tabs>
+    <tabs>Assortment_Bu_Matrix</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>Assortment_Bu_Matrix</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

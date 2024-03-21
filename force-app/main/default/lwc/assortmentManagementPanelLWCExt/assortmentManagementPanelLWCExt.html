@@ -1,0 +1,150 @@
+<template>
+    <template if:true={loadingData}>
+        <div class="slds-spinner_container">
+            <div class="loader slds-spinner_container slds-align--absolute-center">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </template>
+    <div class="slds-card">
+        <div class="slds-grid slds-p-around_xx-small slds-m-bottom_x-large">
+            <!-- <h2 class="slds-card__header-title"> Accès Assortiment </h2> -->
+            <lightning-button-icon onclick={toggleFilter} icon-name="utility:filterList" variant="hidden-label"
+            style="position: absolute;right: 0px;margin: 5px;">
+            </lightning-button-icon>
+        </div>
+        <div class="slds-grid slds-m-top--large">
+            <div class="main-panel slds-col slds-scrollable">
+                <template if:true={isEmptyData}>
+                    <div class=" slds-col slds-align_absolute-center">
+                        {label.LBL_No_Item_To_Display}
+                    </div>
+                </template>
+                <template if:false={isEmptyData}>
+                    <table
+                        class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered main-table slds-border--left slds-no-row-hover">
+                        <thead>
+                            <tr style="height: 65px;">
+                                <template for:each={displayedFields} for:item='field'>
+                                    <th key={field.fieldApiName}>{field.fieldLabel}
+                                        <div class="icons-container slds-grid">
+                                        <div if:true={field.isSortable}>
+                                            <lightning-button-icon if:true={field.ascSortDirection} data-id={field.fieldApiName}
+                                              data-sort-direction={field.ascSortDirection} variant="bare" class="sort-icon"
+                                              icon-name="utility:arrowdown" onclick={changeSortDirection}></lightning-button-icon>
+                                            <lightning-button-icon if:false={field.ascSortDirection} data-id={field.fieldApiName}
+                                              data-sort-direction={field.ascSortDirection} variant="bare" class="sort-icon"
+                                              icon-name="utility:arrowup" onclick={changeSortDirection}></lightning-button-icon>
+                                          </div>
+                                        </div>
+                                    </th>
+                                </template>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={assortmentJSW} for:item='assortmentBU'>
+                                <tr key={assortmentBU}>
+                                    <template for:each={assortmentBU.fields} for:item='assField'>
+                                        <td key={assField} style={assField.fieldStyle}> 
+                                            <template if:true={assField.isAssBu}>
+                                                <a href={assField.link} target="_blank">
+                                                    {assField.fieldValue}
+                                                </a>
+                                            </template>
+
+                                            <template if:false={assField.isAssBu}>
+                                                <template if:true={assField.isDouble}>
+                                                    <lightning-formatted-number value={assField.fieldValue}
+                                                    format-style="decimal" class="output-number">
+                                                </lightning-formatted-number>
+                                                </template>
+                                                    <lightning-formatted-rich-text if:true={assField.isImg} value={assField.fieldValue}>
+                                                    </lightning-formatted-rich-text>
+                                                <template if:true={assField.isString}>
+                                                {assField.fieldValue}
+                                                </template>
+                                            </template>
+                                        </td>
+                                    </template>
+                                    <td>
+                                        <div class="slds-grid" >
+                                            <a href={assortmentBU.matrixUrl} target="_blank">
+                                                <lightning-icon icon-name="utility:matrix" size="xx-small">
+                                                </lightning-icon>
+                                            </a>
+                                            <lightning-icon icon-name="utility:socialshare" size="xx-small" class="slds-p-left_x-small" >
+                                            </lightning-icon>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </template>
+            </div>
+            <div class="slds-border--left slds-border--top" if:true={isFilterOpen}>
+                <div style="height: 100%;" class="slds-grid slds-no-flex">
+                    <div class="slds-panel slds-panel_docked slds-grid slds-grid_vertical" style="overflow: unset;">
+                        <div class="slds-panel__header filterPanel">
+                            <h2 class="slds-panel__header-title slds-text-heading_small slds-truncate"
+                                title={label.LBL_Filter}>
+                                {label.LBL_Filter}
+                            </h2>
+                            <lightning-button-icon variant="bare" icon-name="utility:close" onclick={toggleFilter}>
+                            </lightning-button-icon>
+                        </div>
+                        <div class="slds-col slds-scrollable filterPanelBody" id="filterPanelBody">
+                            <div class="slds-grid slds-size--1-of-1">
+                                <div class="slds-col slds-size--1-of-2" style="min-height: 50px">
+                                    <lightning-record-edit-form
+                                        object-api-name="Negoptim__Orga_BU__c">
+                                        <lightning-input-field label="Client"
+                                            data-type-param="clientParam"
+                                            field-name="Negoptim__Related_Client__c"
+                                            onchange={fillFilter}>
+                                        </lightning-input-field>
+                                    </lightning-record-edit-form>
+                                </div>
+                                <div class="slds-col slds-size--1-of-2" style="min-height: 50px">
+                                    <lightning-input type="number" data-type-param="yearParam" label="Year"
+                                    placeholder="filter by year..." onchange={fillFilter} value={filterParameter.yearParam}>
+                                </lightning-input>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-size--1-of-1">
+                                <div class="slds-col slds-size--1-of-2" style="min-height: 50px">
+                                    <lightning-combobox data-type-param="typeAssParam" dropdown-alignment="auto"  label="Type d'assortiment"
+                                    onchange={fillFilter} options={typeAssPicklistOptions}>
+                                    </lightning-combobox>
+                                    <!-- <lightning-record-edit-form
+                                        object-api-name="Negoptim__Assortment_BU__c">
+                                        <lightning-input-field label="Type d'assortiment"
+                                            data-type-param="typeAssParam"
+                                            field-name="Negoptim__Assortment_type__c"
+                                            onchange={fillFilter}>
+                                        </lightning-input-field>
+                                    </lightning-record-edit-form> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div id="searchButtons"
+                            class="slds-card__footer slds-grid slds-m-top_none slds-p-vertical_small">
+                            <div class="slds-col">
+                                <lightning-button onclick={handleReset} label={label.LBL_Reset}>
+                                </lightning-button>
+                            </div>
+                            <div class="slds-col">
+                                <lightning-button onclick={refreshData} label={label.LBL_Search} variant="brand">
+                                </lightning-button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

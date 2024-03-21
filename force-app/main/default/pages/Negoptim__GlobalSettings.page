@@ -1,5 +1,5 @@
 <apex:page showHeader="false" sidebar="false" setup="false" applyHtmlTag="false" applyBodyTag="false" controller="Negoptim.GlobalSettingsController"
-           lightningStylesheets="true" docType="html-5.0"> 
+           lightningStylesheets="true" docType="html-5.0">
     <html class="slds-scope">
         <head>
             <apex:slds />
@@ -621,7 +621,7 @@ xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#i
 <apex:selectOptions value="{!product2RecordTypesSelectOptions}" />
 </apex:selectList> -->
                             <!-- OHide Unused Settings
-Product Switch Grid Settings 
+Product Switch Grid Settings
 <apex:pageBlockSectionItem helpText="{!$ObjectType.NegoptimCustomSettings__c.fields.Product_Switch_Grid_Layout__c.inlineHelpText}">
 <apex:outputPanel >
 <apex:outputLabel value="{!$ObjectType.NegoptimCustomSettings__c.fields.Product_Switch_Grid_Layout__c.Label}" for="productSwitchGridLayout"/>
@@ -686,29 +686,416 @@ xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#i
                                     <apex:selectOption value="{!blankSelectOption}" rendered="{!!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Assortment_Detail__c')}"/>
                                 </apex:selectList>
                             </apex:pageBlockSectionItem>
-                            <!-- OHide Unused Settings
-Product Selection PG
-<apex:pageBlockSectionItem helpText="{!$ObjectType.NegoptimCustomSettings__c.fields.Product_Selection_PG_Grid_Layout__c.inlineHelpText}">
-<apex:outputPanel >
-<apex:outputLabel value="{!$ObjectType.NegoptimCustomSettings__c.fields.Product_Selection_PG_Grid_Layout__c.Label}" for="ProductSelectionPG"/>
-<apex:outputPanel rendered="{!!ISBLANK($ObjectType.NegoptimCustomSettings__c.fields.Product_Selection_PG_Grid_Layout__c.inlineHelpText)}">
-<span class="slds-button slds-button_icon slds-button_icon-small" title="{!$ObjectType.NegoptimCustomSettings__c.fields.Product_Selection_PG_Grid_Layout__c.inlineHelpText}">
-<svg class="slds-button__icon" aria-hidden="true">
-<use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
-</svg>
-<span class="slds-assistive-text">
-<apex:outputText value="{!$ObjectType.NegoptimCustomSettings__c.fields.Product_Selection_PG_Grid_Layout__c.inlineHelpText}" />
-</span>
-</span>
-</apex:outputPanel>
-</apex:outputPanel>
-<apex:selectList id="ProductSelectionPG" value="{!negoSettings.ProductSelectionPGGridLayout}" multiselect="false" size="1" required="false">
-<apex:selectOptions value="{!gridSettingsLayoutsMap[$ObjectType.Product2.Name]}"
-rendered="{!CONTAINS(gridSettingsLayoutsMapSerialized, 'Product2')}" />
-<apex:selectOption value="{!blankSelectOption}" rendered="{!!CONTAINS(gridSettingsLayoutsMapSerialized, 'Product2')}"/>
-</apex:selectList>
-</apex:pageBlockSectionItem>-->
+                            <!-- Condition Grid Settings -->
+                            <apex:pageBlockSectionItem helpText="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout__c.inlineHelpText}">
+                                <apex:outputPanel >
+                                    <apex:outputLabel value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout__c.Label}"
+                                        for="conditionGridLayout" />
+                                    <apex:outputPanel rendered="{!!ISBLANK($ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout__c.inlineHelpText)}">
+                                        <span class="slds-button slds-button_icon slds-button_icon-small"
+                                            title="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout__c.inlineHelpText}">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                            <span class="slds-assistive-text">
+                                                <apex:outputText value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout__c.inlineHelpText}" />
+                                            </span>
+                                        </span>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:outputPanel >
+                                    <apex:selectList styleClass="conditionGridLayout" id="conditionGridLayout"
+                                        value="{!negoSettings.conditionGridLayout}" multiselect="false" size="1" required="false">
+                                        <apex:selectOptions value="{!gridSettingsLayoutsMap[$ObjectType.Negoptim__Contract_Discount__c.Name]}"
+                                            rendered="{!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                        <apex:selectOption value="{!blankSelectOption}"
+                                            rendered="{!!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                    </apex:selectList>
+                                    <apex:commandLink onclick="goToGridSettingsJS('conditionGridLayout');" rerender="apexMessages">
+                                        <svg class="slds-button__icon" aria-hidden="true">
+                                            <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#new_window')}" />
+                                        </svg>
+                                    </apex:commandLink>
+                                </apex:outputPanel>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem helpText="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Landing__c.inlineHelpText}">
+                                <apex:outputPanel >
+                                    <apex:outputLabel value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Landing__c.Label}"
+                                        for="conditionGridLayoutForLanding" />
+                                    <apex:outputPanel rendered="{!!ISBLANK($ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Landing__c.inlineHelpText)}">
+                                        <span class="slds-button slds-button_icon slds-button_icon-small"
+                                            title="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Landing__c.inlineHelpText}">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                            <span class="slds-assistive-text">
+                                                <apex:outputText value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Landing__c.inlineHelpText}" />
+                                            </span>
+                                        </span>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:outputPanel >
+                                    <apex:selectList styleClass="conditionGridLayoutForLanding" id="conditionGridLayoutForLanding"
+                                        value="{!negoSettings.conditionGridLayoutForLanding}" multiselect="false" size="1" required="false">
+                                        <apex:selectOptions value="{!gridSettingsLayoutsMap[$ObjectType.Negoptim__Contract_Discount__c.Name]}"
+                                            rendered="{!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                        <apex:selectOption value="{!blankSelectOption}"
+                                            rendered="{!!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                    </apex:selectList>
+                                    <apex:commandLink onclick="goToGridSettingsJS('conditionGridLayoutForLanding');" rerender="apexMessages">
+                                        <svg class="slds-button__icon" aria-hidden="true">
+                                            <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#new_window')}" />
+                                        </svg>
+                                    </apex:commandLink>
+                                </apex:outputPanel>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem helpText="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Nego_Base__c.inlineHelpText}">
+                                <apex:outputPanel >
+                                    <apex:outputLabel value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Nego_Base__c.Label}"
+                                        for="conditionGridLayoutForNegoBase" />
+                                    <apex:outputPanel rendered="{!!ISBLANK($ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Nego_Base__c.inlineHelpText)}">
+                                        <span class="slds-button slds-button_icon slds-button_icon-small"
+                                            title="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Nego_Base__c.inlineHelpText}">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                            <span class="slds-assistive-text">
+                                                <apex:outputText value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Nego_Base__c.inlineHelpText}" />
+                                            </span>
+                                        </span>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:outputPanel >
+                                    <apex:selectList styleClass="conditionGridLayoutForNegoBase" id="conditionGridLayoutForNegoBase"
+                                        value="{!negoSettings.conditionGridLayoutForNegoBase}" multiselect="false" size="1" required="false">
+                                        <apex:selectOptions value="{!gridSettingsLayoutsMap[$ObjectType.Negoptim__Contract_Discount__c.Name]}"
+                                            rendered="{!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                        <apex:selectOption value="{!blankSelectOption}"
+                                            rendered="{!!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                    </apex:selectList>
+                                    <apex:commandLink onclick="goToGridSettingsJS('conditionGridLayoutForNegoBase');" rerender="apexMessages">
+                                        <svg class="slds-button__icon" aria-hidden="true">
+                                            <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#new_window')}" />
+                                        </svg>
+                                    </apex:commandLink>
+                                </apex:outputPanel>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem helpText="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Nego_Base_Init__c.inlineHelpText}">
+                                <apex:outputPanel >
+                                    <apex:outputLabel value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Nego_Base_Init__c.Label}"
+                                        for="conditionGridLayoutForNegoBaseInit" />
+                                    <apex:outputPanel rendered="{!!ISBLANK($ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Nego_Base_Init__c.inlineHelpText)}">
+                                        <span class="slds-button slds-button_icon slds-button_icon-small"
+                                            title="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Nego_Base_Init__c.inlineHelpText}">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                            <span class="slds-assistive-text">
+                                                <apex:outputText value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Nego_Base_Init__c.inlineHelpText}" />
+                                            </span>
+                                        </span>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:outputPanel >
+                                    <apex:selectList styleClass="conditionGridLayoutForNegoBaseInit" id="conditionGridLayoutForNegoBaseInit"
+                                        value="{!negoSettings.conditionGridLayoutForNegoBaseInit}" multiselect="false" size="1" required="false">
+                                        <apex:selectOptions value="{!gridSettingsLayoutsMap[$ObjectType.Negoptim__Contract_Discount__c.Name]}"
+                                            rendered="{!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                        <apex:selectOption value="{!blankSelectOption}"
+                                            rendered="{!!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                    </apex:selectList>
+                                    <apex:commandLink onclick="goToGridSettingsJS('conditionGridLayoutForNegoBaseInit');" rerender="apexMessages">
+                                        <svg class="slds-button__icon" aria-hidden="true">
+                                            <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#new_window')}" />
+                                        </svg>
+                                    </apex:commandLink>
+                                </apex:outputPanel>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem helpText="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_PE__c.inlineHelpText}">
+                                <apex:outputPanel >
+                                    <apex:outputLabel value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_PE__c.Label}"
+                                        for="conditionGridLayoutForPE" />
+                                    <apex:outputPanel rendered="{!!ISBLANK($ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_PE__c.inlineHelpText)}">
+                                        <span class="slds-button slds-button_icon slds-button_icon-small"
+                                            title="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_PE__c.inlineHelpText}">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                            <span class="slds-assistive-text">
+                                                <apex:outputText value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_PE__c.inlineHelpText}" />
+                                            </span>
+                                        </span>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:outputPanel >
+                                    <apex:selectList styleClass="conditionGridLayoutForPE" id="conditionGridLayoutForPE"
+                                        value="{!negoSettings.conditionGridLayoutForPE}" multiselect="false" size="1" required="false">
+                                        <apex:selectOptions value="{!gridSettingsLayoutsMap[$ObjectType.Negoptim__Contract_Discount__c.Name]}"
+                                            rendered="{!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                        <apex:selectOption value="{!blankSelectOption}"
+                                            rendered="{!!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                    </apex:selectList>
+                                    <apex:commandLink onclick="goToGridSettingsJS('conditionGridLayoutForPE');" rerender="apexMessages">
+                                        <svg class="slds-button__icon" aria-hidden="true">
+                                            <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#new_window')}" />
+                                        </svg>
+                                    </apex:commandLink>
+                                </apex:outputPanel>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem helpText="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Proposal__c.inlineHelpText}">
+                                <apex:outputPanel >
+                                    <apex:outputLabel value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Proposal__c.Label}"
+                                        for="conditionGridLayoutForProposal" />
+                                    <apex:outputPanel rendered="{!!ISBLANK($ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Proposal__c.inlineHelpText)}">
+                                        <span class="slds-button slds-button_icon slds-button_icon-small"
+                                            title="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Proposal__c.inlineHelpText}">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                            <span class="slds-assistive-text">
+                                                <apex:outputText value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Proposal__c.inlineHelpText}" />
+                                            </span>
+                                        </span>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:outputPanel >
+                                    <apex:selectList styleClass="conditionGridLayoutForProposal" id="conditionGridLayoutForProposal"
+                                        value="{!negoSettings.conditionGridLayoutForProposal}" multiselect="false" size="1" required="false">
+                                        <apex:selectOptions value="{!gridSettingsLayoutsMap[$ObjectType.Negoptim__Contract_Discount__c.Name]}"
+                                            rendered="{!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                        <apex:selectOption value="{!blankSelectOption}"
+                                            rendered="{!!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                    </apex:selectList>
+                                    <apex:commandLink onclick="goToGridSettingsJS('conditionGridLayoutForProposal');" rerender="apexMessages">
+                                        <svg class="slds-button__icon" aria-hidden="true">
+                                            <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#new_window')}" />
+                                        </svg>
+                                    </apex:commandLink>
+                                </apex:outputPanel>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem helpText="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_SB__c.inlineHelpText}">
+                                <apex:outputPanel >
+                                    <apex:outputLabel value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_SB__c.Label}"
+                                        for="conditionGridLayoutForSB" />
+                                    <apex:outputPanel rendered="{!!ISBLANK($ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_SB__c.inlineHelpText)}">
+                                        <span class="slds-button slds-button_icon slds-button_icon-small"
+                                            title="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_SB__c.inlineHelpText}">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                            <span class="slds-assistive-text">
+                                                <apex:outputText value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_SB__c.inlineHelpText}" />
+                                            </span>
+                                        </span>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:outputPanel >
+                                    <apex:selectList styleClass="conditionGridLayoutForSB" id="conditionGridLayoutForSB"
+                                        value="{!negoSettings.conditionGridLayoutForSB}" multiselect="false" size="1" required="false">
+                                        <apex:selectOptions value="{!gridSettingsLayoutsMap[$ObjectType.Negoptim__Contract_Discount__c.Name]}"
+                                            rendered="{!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                        <apex:selectOption value="{!blankSelectOption}"
+                                            rendered="{!!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                    </apex:selectList>
+                                    <apex:commandLink onclick="goToGridSettingsJS('conditionGridLayoutForSB');" rerender="apexMessages">
+                                        <svg class="slds-button__icon" aria-hidden="true">
+                                            <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#new_window')}" />
+                                        </svg>
+                                    </apex:commandLink>
+                                </apex:outputPanel>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem helpText="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Signed__c.inlineHelpText}">
+                                <apex:outputPanel >
+                                    <apex:outputLabel value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Signed__c.Label}"
+                                        for="conditionGridLayoutForSigned" />
+                                    <apex:outputPanel rendered="{!!ISBLANK($ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Signed__c.inlineHelpText)}">
+                                        <span class="slds-button slds-button_icon slds-button_icon-small"
+                                            title="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Signed__c.inlineHelpText}">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                            <span class="slds-assistive-text">
+                                                <apex:outputText value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Signed__c.inlineHelpText}" />
+                                            </span>
+                                        </span>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:outputPanel >
+                                    <apex:selectList styleClass="conditionGridLayoutForSigned" id="conditionGridLayoutForSigned"
+                                        value="{!negoSettings.conditionGridLayoutForSigned}" multiselect="false" size="1" required="false">
+                                        <apex:selectOptions value="{!gridSettingsLayoutsMap[$ObjectType.Negoptim__Contract_Discount__c.Name]}"
+                                            rendered="{!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                        <apex:selectOption value="{!blankSelectOption}"
+                                            rendered="{!!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                    </apex:selectList>
+                                    <apex:commandLink onclick="goToGridSettingsJS('conditionGridLayoutForSigned');" rerender="apexMessages">
+                                        <svg class="slds-button__icon" aria-hidden="true">
+                                            <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#new_window')}" />
+                                        </svg>
+                                    </apex:commandLink>
+                                </apex:outputPanel>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem helpText="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Simulation__c.inlineHelpText}">
+                                <apex:outputPanel >
+                                    <apex:outputLabel value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Simulation__c.Label}"
+                                        for="conditionGridLayoutForSimulation" />
+                                    <apex:outputPanel rendered="{!!ISBLANK($ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Simulation__c.inlineHelpText)}">
+                                        <span class="slds-button slds-button_icon slds-button_icon-small"
+                                            title="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Simulation__c.inlineHelpText}">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                            <span class="slds-assistive-text">
+                                                <apex:outputText value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Simulation__c.inlineHelpText}" />
+                                            </span>
+                                        </span>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:outputPanel >
+                                    <apex:selectList styleClass="conditionGridLayoutForSimulation" id="conditionGridLayoutForSimulation"
+                                        value="{!negoSettings.conditionGridLayoutForSimulation}" multiselect="false" size="1" required="false">
+                                        <apex:selectOptions value="{!gridSettingsLayoutsMap[$ObjectType.Negoptim__Contract_Discount__c.Name]}"
+                                            rendered="{!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                        <apex:selectOption value="{!blankSelectOption}"
+                                            rendered="{!!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                    </apex:selectList>
+                                    <apex:commandLink onclick="goToGridSettingsJS('conditionGridLayoutForSimulation');" rerender="apexMessages">
+                                        <svg class="slds-button__icon" aria-hidden="true">
+                                            <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#new_window')}" />
+                                        </svg>
+                                    </apex:commandLink>
+                                </apex:outputPanel>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem helpText="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Target__c.inlineHelpText}">
+                                <apex:outputPanel >
+                                    <apex:outputLabel value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Target__c.Label}"
+                                        for="conditionGridLayoutForTarget" />
+                                    <apex:outputPanel rendered="{!!ISBLANK($ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Target__c.inlineHelpText)}">
+                                        <span class="slds-button slds-button_icon slds-button_icon-small"
+                                            title="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Target__c.inlineHelpText}">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                            <span class="slds-assistive-text">
+                                                <apex:outputText value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_Target__c.inlineHelpText}" />
+                                            </span>
+                                        </span>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:outputPanel >
+                                    <apex:selectList styleClass="conditionGridLayoutForTarget" id="conditionGridLayoutForTarget"
+                                        value="{!negoSettings.conditionGridLayoutForTarget}" multiselect="false" size="1" required="false">
+                                        <apex:selectOptions value="{!gridSettingsLayoutsMap[$ObjectType.Negoptim__Contract_Discount__c.Name]}"
+                                            rendered="{!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                        <apex:selectOption value="{!blankSelectOption}"
+                                            rendered="{!!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                    </apex:selectList>
+                                    <apex:commandLink onclick="goToGridSettingsJS('conditionGridLayoutForTarget');" rerender="apexMessages">
+                                        <svg class="slds-button__icon" aria-hidden="true">
+                                            <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#new_window')}" />
+                                        </svg>
+                                    </apex:commandLink>
+                                </apex:outputPanel>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem helpText="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_To_Be_Signed__c.inlineHelpText}">
+                                <apex:outputPanel >
+                                    <apex:outputLabel value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_To_Be_Signed__c.Label}"
+                                        for="conditionGridLayoutForToBeSigned" />
+                                    <apex:outputPanel rendered="{!!ISBLANK($ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_To_Be_Signed__c.inlineHelpText)}">
+                                        <span class="slds-button slds-button_icon slds-button_icon-small"
+                                            title="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_To_Be_Signed__c.inlineHelpText}">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                            <span class="slds-assistive-text">
+                                                <apex:outputText value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Condition_Grid_Layout_For_To_Be_Signed__c.inlineHelpText}" />
+                                            </span>
+                                        </span>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:outputPanel >
+                                    <apex:selectList styleClass="conditionGridLayoutForToBeSigned" id="conditionGridLayoutForToBeSigned"
+                                        value="{!negoSettings.conditionGridLayoutForToBeSigned}" multiselect="false" size="1" required="false">
+                                        <apex:selectOptions value="{!gridSettingsLayoutsMap[$ObjectType.Negoptim__Contract_Discount__c.Name]}"
+                                            rendered="{!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                        <apex:selectOption value="{!blankSelectOption}"
+                                            rendered="{!!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'Contract_Discount__c')}" />
+                                    </apex:selectList>
+                                    <apex:commandLink onclick="goToGridSettingsJS('conditionGridLayoutForToBeSigned');" rerender="apexMessages">
+                                        <svg class="slds-button__icon" aria-hidden="true">
+                                            <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#new_window')}" />
+                                        </svg>
+                                    </apex:commandLink>
+                                </apex:outputPanel>
+                            </apex:pageBlockSectionItem>
+                            <!-- Product Selection PG-->
+                            
+                            <apex:pageBlockSectionItem helpText="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Product_Selection_PG_Grid_Layout__c.inlineHelpText}">
+                                <apex:outputPanel >
+                                    <apex:outputLabel value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Product_Selection_PG_Grid_Layout__c.Label}" for="ProductSelectionPG"/>
+                                    <apex:outputPanel rendered="{!!ISBLANK($ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Product_Selection_PG_Grid_Layout__c.inlineHelpText)}">
+                                        <span class="slds-button slds-button_icon slds-button_icon-small" title="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Product_Selection_PG_Grid_Layout__c.inlineHelpText}">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                     xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                            <span class="slds-assistive-text">
+                                                <apex:outputText value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Product_Selection_PG_Grid_Layout__c.inlineHelpText}" />
+                                            </span>
+                                        </span>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:selectList id="ProductSelectionPG" value="{!negoSettings.ProductSelectionPGGridLayout}" multiselect="false" size="1" required="false">
+                                    <apex:selectOptions value="{!gridSettingsLayoutsMap[$ObjectType.Product2.Name]}"
+                                                        rendered="{!CONTAINS(gridSettingsLayoutsMapSerialized, 'Product2')}" />
+                                    <apex:selectOption value="{!blankSelectOption}" rendered="{!!CONTAINS(gridSettingsLayoutsMapSerialized, 'Product2')}"/>
+                                </apex:selectList>
+                            </apex:pageBlockSectionItem>
+                            
+                            <!-- Promo Calendar CPD -->
+                            <apex:pageBlockSectionItem helpText="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Promo_Calendar_Grid_Layout__c.inlineHelpText}">
+                                <apex:outputPanel >
+                                    <apex:outputLabel value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Promo_Calendar_Grid_Layout__c.Label}" for="PromoCalendar"/>
+                                    <apex:outputPanel rendered="{!!ISBLANK($ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Promo_Calendar_Grid_Layout__c.inlineHelpText)}">
+                                        <span class="slds-button slds-button_icon slds-button_icon-small" title="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Promo_Calendar_Grid_Layout__c.inlineHelpText}">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                     xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                            <span class="slds-assistive-text">
+                                                <apex:outputText value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Promo_Calendar_Grid_Layout__c.inlineHelpText}" />
+                                            </span>
+                                        </span>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:selectList id="PromoCalendar" value="{!negoSettings.PromoCalendarGridLayout}" multiselect="false" size="1" required="false">
+                                    <apex:selectOptions value="{!gridSettingsLayoutsMap[$ObjectType.Negoptim__CommercialPlanDetail__c.Name]}"
+                                                        rendered="{!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'CommercialPlanDetail__c')}" />
+                                    <apex:selectOption value="{!blankSelectOption}" rendered="{!!CONTAINS(gridSettingsLayoutsMapSerialized, prefix + 'CommercialPlanDetail__c')}"/>
+                                </apex:selectList>
+                            </apex:pageBlockSectionItem>
                         </apex:pageBlockSection>
                         <!-- Grid Settings Profiles -->
                         <apex:pageBlockSection title="Grid Settings Profiles: Press Ctrl or Cmd to Select Profiles" collapsible="false" columns="2">
@@ -958,43 +1345,42 @@ xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#i
                                 </apex:outputPanel>
                                 <apex:inputText value="{!negoSettings.productNamePrefix}" />
                             </apex:pageBlockSectionItem>
-                            <!-- OHide Unused Settings
-<apex:pageBlockSectionItem helpText="{!$ObjectType.NegoptimCustomSettings__c.fields.Product_Record_Types_for_NS_PG__c.inlineHelpText}">
-<apex:outputPanel >
-<apex:outputLabel value="{!$ObjectType.NegoptimCustomSettings__c.fields.Product_Record_Types_for_NS_PG__c.Label}" for="productRecordTypesforNSPG"/>
-<apex:outputPanel rendered="{!!ISBLANK($ObjectType.NegoptimCustomSettings__c.fields.Product_Record_Types_for_NS_PG__c.inlineHelpText)}">
-<span class="slds-button slds-button_icon slds-button_icon-small" title="{!$ObjectType.NegoptimCustomSettings__c.fields.Product_Record_Types_for_NS_PG__c.inlineHelpText}">
-<svg class="slds-button__icon" aria-hidden="true">
-<use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
-</svg>
-<span class="slds-assistive-text">
-<apex:outputText value="{!$ObjectType.NegoptimCustomSettings__c.fields.Product_Record_Types_for_NS_PG__c.inlineHelpText}" />
-</span>
-</span>
-</apex:outputPanel>
-</apex:outputPanel>
-<apex:selectList id="productRecordTypesforNSPG" value="{!negoSettings.productRecordTypesforNSPG}" multiselect="true" size="6">
-<apex:selectOptions value="{!product2RecordTypesSelectOptions}" />
-</apex:selectList>
-</apex:pageBlockSectionItem>
-<apex:pageBlockSectionItem helpText="{!$ObjectType.NegoptimCustomSettings__c.fields.Allow_Copy_Product_to_PG_From_Sellin__c.inlineHelpText}">
-<apex:outputPanel >
-<apex:outputLabel value="{!$ObjectType.NegoptimCustomSettings__c.fields.Allow_Copy_Product_to_PG_From_Sellin__c.Label}" />
-<apex:outputPanel rendered="{!!ISBLANK($ObjectType.NegoptimCustomSettings__c.fields.Allow_Copy_Product_to_PG_From_Sellin__c.inlineHelpText)}">
-<span class="slds-button slds-button_icon slds-button_icon-small" title="{!$ObjectType.NegoptimCustomSettings__c.fields.Allow_Copy_Product_to_PG_From_Sellin__c.inlineHelpText}">
-<svg class="slds-button__icon" aria-hidden="true">
-<use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
-</svg>
-<span class="slds-assistive-text">
-<apex:outputText value="{!$ObjectType.NegoptimCustomSettings__c.fields.Allow_Copy_Product_to_PG_From_Sellin__c.inlineHelpText}" />
-</span>
-</span>
-</apex:outputPanel>
-</apex:outputPanel>
-<apex:inputCheckbox value="{!negoSettings.AllowCopyProducttoPGFromSellin}" />
-</apex:pageBlockSectionItem> -->
+                            <apex:pageBlockSectionItem helpText="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Product_Record_Types_for_NS_PG__c.inlineHelpText}">
+                                <apex:outputPanel >
+                                    <apex:outputLabel value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Product_Record_Types_for_NS_PG__c.Label}" for="productRecordTypesforNSPG"/>
+                                    <apex:outputPanel rendered="{!!ISBLANK($ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Product_Record_Types_for_NS_PG__c.inlineHelpText)}">
+                                        <span class="slds-button slds-button_icon slds-button_icon-small" title="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Product_Record_Types_for_NS_PG__c.inlineHelpText}">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                     xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                            <span class="slds-assistive-text">
+                                                <apex:outputText value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Product_Record_Types_for_NS_PG__c.inlineHelpText}" />
+                                            </span>
+                                        </span>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:selectList id="productRecordTypesforNSPG" value="{!negoSettings.productRecordTypesforNSPG}" multiselect="true" size="6">
+                                    <apex:selectOptions value="{!product2RecordTypesSelectOptions}" />
+                                </apex:selectList>
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem helpText="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Allow_Copy_Product_to_PG_From_Sellin__c.inlineHelpText}">
+                                <apex:outputPanel >
+                                    <apex:outputLabel value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Allow_Copy_Product_to_PG_From_Sellin__c.Label}" />
+                                    <apex:outputPanel rendered="{!!ISBLANK($ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Allow_Copy_Product_to_PG_From_Sellin__c.inlineHelpText)}">
+                                        <span class="slds-button slds-button_icon slds-button_icon-small" title="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Allow_Copy_Product_to_PG_From_Sellin__c.inlineHelpText}">
+                                            <svg class="slds-button__icon" aria-hidden="true">
+                                                <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                     xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#info')}" />
+                                            </svg>
+                                            <span class="slds-assistive-text">
+                                                <apex:outputText value="{!$ObjectType.Negoptim__NegoptimCustomSettings__c.fields.Negoptim__Allow_Copy_Product_to_PG_From_Sellin__c.inlineHelpText}" />
+                                            </span>
+                                        </span>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                <apex:inputCheckbox value="{!negoSettings.AllowCopyProducttoPGFromSellin}" />
+                            </apex:pageBlockSectionItem>
                         </apex:pageBlockSection>
                         <!-- OHide Unused Settings
 Contract Balancing
@@ -1740,6 +2126,13 @@ xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#i
             </apex:form>
             <script>
             var defaultToggleIndex;
+            function goToGridSettingsJS(layoutClass) {
+                var templateName = document.getElementsByClassName(layoutClass)[0].value;
+                if (templateName) {
+                    let prefix = `{!prefix}`;
+                    window.open('/lightning/n/' + prefix + 'Grid_Settings_Manager?c__templateName=' + templateName, '_blank');
+                }
+            }
             function decimalOnly(e){
                 e.value = e.value.replace(/[^0-9\.]/g,'');
                 if(e.value.split('.').length>2) e.value = e.value.replace(/\.+$/,"");
@@ -1944,6 +2337,5 @@ xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#i
             }
             </script>
         </body>
-        
     </html>
 </apex:page>

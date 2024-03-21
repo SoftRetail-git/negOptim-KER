@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPKERCADELACFormat__c</fullName>
+    <externalId>false</externalId>
+    <label>SPKERCADELAC Format</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SPKERCADELACPresentation__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>BARQUETTE 200G</fullName>
+                <default>false</default>
+                <label>BARQUETTE 200G</label>
+            </value>
+            <value>
+                <fullName>BARQUETTE 240G</fullName>
+                <default>false</default>
+                <label>BARQUETTE 240G</label>
+            </value>
+            <value>
+                <fullName>BARQUETTE 300G</fullName>
+                <default>false</default>
+                <label>BARQUETTE 300G</label>
+            </value>
+            <value>
+                <fullName>BARQUETTE 500G</fullName>
+                <default>false</default>
+                <label>BARQUETTE 500G</label>
+            </value>
+            <value>
+                <fullName>COFFRET 325G</fullName>
+                <default>false</default>
+                <label>COFFRET 325G</label>
+            </value>
+            <value>
+                <fullName>COFFRET 90G</fullName>
+                <default>false</default>
+                <label>COFFRET 90G</label>
+            </value>
+            <value>
+                <fullName>ETUI 125G</fullName>
+                <default>false</default>
+                <label>ETUI 125G</label>
+            </value>
+            <value>
+                <fullName>GATEAUX 1/2 LUNE 400G</fullName>
+                <default>false</default>
+                <label>GATEAUX 1/2 LUNE 400G</label>
+            </value>
+            <value>
+                <fullName>GATEAUX ROND 400G</fullName>
+                <default>false</default>
+                <label>GATEAUX ROND 400G</label>
+            </value>
+            <value>
+                <fullName>LONG 200G</fullName>
+                <default>false</default>
+                <label>LONG 200G</label>
+            </value>
+            <value>
+                <fullName>LONG 350G</fullName>
+                <default>false</default>
+                <label>LONG 350G</label>
+            </value>
+            <value>
+                <fullName>LONG 380G</fullName>
+                <default>false</default>
+                <label>LONG 380G</label>
+            </value>
+            <value>
+                <fullName>LONG 450G</fullName>
+                <default>false</default>
+                <label>LONG 450G</label>
+            </value>
+            <value>
+                <fullName>LONG 500G</fullName>
+                <default>false</default>
+                <label>LONG 500G</label>
+            </value>
+            <value>
+                <fullName>LONG 500X2</fullName>
+                <default>false</default>
+                <label>LONG 500X2</label>
+            </value>
+            <value>
+                <fullName>LONG 600G</fullName>
+                <default>false</default>
+                <label>LONG 600G</label>
+            </value>
+            <value>
+                <fullName>LONG 690G</fullName>
+                <default>false</default>
+                <label>LONG 690G</label>
+            </value>
+            <value>
+                <fullName>LONG 800G</fullName>
+                <default>false</default>
+                <label>LONG 800G</label>
+            </value>
+            <value>
+                <fullName>SACHET 240G</fullName>
+                <default>false</default>
+                <label>SACHET 240G</label>
+            </value>
+            <value>
+                <fullName>SACHET 250G</fullName>
+                <default>false</default>
+                <label>SACHET 250G</label>
+            </value>
+            <value>
+                <fullName>SACHET 280G</fullName>
+                <default>false</default>
+                <label>SACHET 280G</label>
+            </value>
+            <value>
+                <fullName>SACHET 300G</fullName>
+                <default>false</default>
+                <label>SACHET 300G</label>
+            </value>
+            <value>
+                <fullName>SACHET 360G</fullName>
+                <default>false</default>
+                <label>SACHET 360G</label>
+            </value>
+            <value>
+                <fullName>SACHET 363G</fullName>
+                <default>false</default>
+                <label>SACHET 363G</label>
+            </value>
+            <value>
+                <fullName>SACHET 390G</fullName>
+                <default>false</default>
+                <label>SACHET 390G</label>
+            </value>
+            <value>
+                <fullName>SACHET 396G</fullName>
+                <default>false</default>
+                <label>SACHET 396G</label>
+            </value>
+            <value>
+                <fullName>SACHET 400G</fullName>
+                <default>false</default>
+                <label>SACHET 400G</label>
+            </value>
+            <value>
+                <fullName>SACHET 410G</fullName>
+                <default>false</default>
+                <label>SACHET 410G</label>
+            </value>
+            <value>
+                <fullName>SACHET 420G</fullName>
+                <default>false</default>
+                <label>SACHET 420G</label>
+            </value>
+            <value>
+                <fullName>SACHET 429G</fullName>
+                <default>false</default>
+                <label>SACHET 429G</label>
+            </value>
+            <value>
+                <fullName>SACHET 445G</fullName>
+                <default>false</default>
+                <label>SACHET 445G</label>
+            </value>
+            <value>
+                <fullName>SACHET 450G</fullName>
+                <default>false</default>
+                <label>SACHET 450G</label>
+            </value>
+            <value>
+                <fullName>SACHET 455G</fullName>
+                <default>false</default>
+                <label>SACHET 455G</label>
+            </value>
+            <value>
+                <fullName>SACHET 478G</fullName>
+                <default>false</default>
+                <label>SACHET 478G</label>
+            </value>
+            <value>
+                <fullName>SACHET 525G</fullName>
+                <default>false</default>
+                <label>SACHET 525G</label>
+            </value>
+            <value>
+                <fullName>SACHET 528G</fullName>
+                <default>false</default>
+                <label>SACHET 528G</label>
+            </value>
+            <value>
+                <fullName>SACHET 544G</fullName>
+                <default>false</default>
+                <label>SACHET 544G</label>
+            </value>
+            <value>
+                <fullName>SACHET 594G</fullName>
+                <default>false</default>
+                <label>SACHET 594G</label>
+            </value>
+            <value>
+                <fullName>SACHET 600G</fullName>
+                <default>false</default>
+                <label>SACHET 600G</label>
+            </value>
+            <value>
+                <fullName>SACHET 607G</fullName>
+                <default>false</default>
+                <label>SACHET 607G</label>
+            </value>
+            <value>
+                <fullName>SACHET 60G</fullName>
+                <default>false</default>
+                <label>SACHET 60G</label>
+            </value>
+            <value>
+                <fullName>SACHET 627G</fullName>
+                <default>false</default>
+                <label>SACHET 627G</label>
+            </value>
+            <value>
+                <fullName>SACHET 690G</fullName>
+                <default>false</default>
+                <label>SACHET 690G</label>
+            </value>
+            <value>
+                <fullName>SACHET 693G</fullName>
+                <default>false</default>
+                <label>SACHET 693G</label>
+            </value>
+            <value>
+                <fullName>SACHET 800G</fullName>
+                <default>false</default>
+                <label>SACHET 800G</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>BARQUETTE</controllingFieldValue>
+            <valueName>BARQUETTE 200G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BARQUETTE</controllingFieldValue>
+            <valueName>BARQUETTE 240G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BARQUETTE</controllingFieldValue>
+            <valueName>BARQUETTE 300G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BARQUETTE</controllingFieldValue>
+            <valueName>BARQUETTE 500G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COFFRET ET BOITE</controllingFieldValue>
+            <valueName>COFFRET 325G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COFFRET ET BOITE</controllingFieldValue>
+            <valueName>COFFRET 90G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ETUI</controllingFieldValue>
+            <valueName>ETUI 125G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>LONG 200G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>LONG 350G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>LONG 380G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>LONG 450G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>LONG 500G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>LONG 500X2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>LONG 600G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>LONG 690G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>LONG 800G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 240G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 250G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 280G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 300G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 360G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 363G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 390G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 396G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 400G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 410G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 420G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 429G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 445G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 450G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 455G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 478G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 525G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 528G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 544G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 594G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 600G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 607G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 60G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 627G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 690G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 693G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SACHET</controllingFieldValue>
+            <valueName>SACHET 800G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A PARTAGER</controllingFieldValue>
+            <valueName>GATEAUX 1/2 LUNE 400G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A PARTAGER</controllingFieldValue>
+            <valueName>GATEAUX ROND 400G</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

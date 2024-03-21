@@ -1,5 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Assortiment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Assortiment</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>SPKercadelac - Assort Budget Channel</layout>
+        <sections>
+            <label></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPKercadelac - Assort Target/PR</layout>
+        <sections>
+            <label></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPKercadelac- Assort Nego/Simu..</layout>
+        <sections>
+            <label></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Cloner en changeant d&apos;enseigne</label>
+        <name>Duplicate</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Créer les assortiments Régionaux</label>
+        <name>Generate_Regional_Assortments</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Refresh_Target_in_TargetConso</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Nvlle Simulation</label>
+        <name>SPKER_Clone_Simulation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>SPKER_Clone_Simulation_Target</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>SPKER_PreValidate_Budget</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Validate_my_Target</name>
+    </quickActions>
     <recordTypes>
         <description></description>
         <label></label>
@@ -50,6 +111,7 @@
         <label></label>
         <name>Negoptim__Target</name>
     </recordTypes>
+    <startsWith>Vowel</startsWith>
     <validationRules>
         <errorMessage></errorMessage>
         <name>Negoptim__Begin_Date_Inferior_Or_Equal_End_Date</name>
@@ -80,11 +142,27 @@
     </validationRules>
     <webLinks>
         <label></label>
+        <name>Assortment_Bu_Matrix</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Assortment_Bu_Matrix_Target</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Assortment_Matrix_Nego_KC</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
         <name>Negoptim__AssortmentMatrixTarget</name>
     </webLinks>
     <webLinks>
         <label></label>
         <name>Negoptim__AssortmentMatrixWD</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Negoptim__Assortment_PriceWaterFall_Matrix</name>
     </webLinks>
     <webLinks>
         <label></label>

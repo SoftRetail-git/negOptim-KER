@@ -4,7 +4,7 @@
     <name>Negoptim__Status__c</name>
     <picklistValues>
         <masterLabel>Closed</masterLabel>
-        <translation></translation>
+        <translation>Fermé</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Diffused</masterLabel>
@@ -12,7 +12,7 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>In preparation</masterLabel>
-        <translation></translation>
+        <translation>En préparation</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Live</masterLabel>
@@ -24,7 +24,7 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Request for approval</masterLabel>
-        <translation></translation>
+        <translation>En attente d&apos;approbation</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Request for approval Fact</masterLabel>
@@ -56,6 +56,6 @@
     </picklistValues>
     <picklistValues>
         <masterLabel>Validated</masterLabel>
-        <translation></translation>
+        <translation>Validé</translation>
     </picklistValues>
 </CustomFieldTranslation>

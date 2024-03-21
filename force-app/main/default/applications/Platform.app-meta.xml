@@ -22,6 +22,7 @@
     <tabs>standard-Feed</tabs>
     <tabs>standard-OtherUserProfile</tabs>
     <tabs>standard-CollaborationGroup</tabs>
+    <tabs>Assortment_Bu_Matrix</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Platform_UtilityBar</utilityBar>
 </CustomApplication>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X5_Les_Entrep_ts_de_facturation</fullName>
+    <columns>NAME</columns>
+    <columns>Negoptim__Logo__c</columns>
+    <columns>Negoptim__BU_Code__c</columns>
+    <columns>Negoptim__Group_Origin__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Negoptim__Orga_BU__c.Negoptim__Warehouse</value>
+    </filters>
+    <label>5. Les Entrepôts de facturation</label>
+</ListView>

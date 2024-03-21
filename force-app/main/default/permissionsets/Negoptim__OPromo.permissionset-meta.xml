@@ -8,6 +8,10 @@
         <apexClass>Negoptim__CommercialPlanSimulationCtrlLWC</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>Negoptim__Trg_CommercialPlan_Handler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <fieldPermissions>
         <editable>true</editable>
         <field>Negoptim__CommercialPlanDetail__c.Negoptim__AgreementLine1__c</field>
@@ -206,6 +210,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Negoptim__CommercialPlanDetail__c.Negoptim__NetPriceRegular__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Negoptim__CommercialPlanDetail__c.Negoptim__NetPriceWoTaxPromo__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Negoptim__CommercialPlanDetail__c.Negoptim__NetPriceWoTaxRegular__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -621,26 +635,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Negoptim__CommercialPlanFollowup__c.Negoptim__BudgetType__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Negoptim__CommercialPlanFollowup__c.Negoptim__BusinessReviewDate_1__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Negoptim__CommercialPlanFollowup__c.Negoptim__BusinessReviewDate_2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Negoptim__CommercialPlanFollowup__c.Negoptim__BusinessReviewDate_3__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Negoptim__CommercialPlanFollowup__c.Negoptim__BusinessReviewDate_4__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1191,10 +1185,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <recordType>Negoptim__CommercialPlan__c.Negoptim__TradeMarketingCampaign</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <recordType>Negoptim__CommercialPlan__c.Negoptim__YearlyPromoyear</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>

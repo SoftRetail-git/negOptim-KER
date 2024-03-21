@@ -3,7 +3,7 @@
     <fullName>Negoptim__SellOutDiscountUnitValue__c</fullName>
     <deprecated>false</deprecated>
     <externalId>false</externalId>
-    <formula>null</formula>
+    <formula>Negoptim__RetailPricePromowoTax__c * Negoptim__SellOutDiscountValue__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Sell Out Discount Unit Value</label>
     <precision>18</precision>

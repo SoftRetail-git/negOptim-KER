@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Negoptim__Orga_BU__c</entityName>
+    <fieldName>Negoptim__Status__c</fieldName>
+    <masterLabel>BU group</masterLabel>
+    <recordTypeName>Group</recordTypeName>
+</PathAssistant>

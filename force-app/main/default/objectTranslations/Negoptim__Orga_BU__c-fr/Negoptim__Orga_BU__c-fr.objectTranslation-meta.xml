@@ -4,18 +4,14 @@
         <layout>SPKERCADELAC -  Channel</layout>
         <sections>
             <label></label>
-            <section>Assortment - Settings</section>
-        </sections>
-        <sections>
-            <label></label>
             <section>Custom Links</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Informations générales</label>
             <section>General Information</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Cycle de vie</label>
             <section>Life cycle</section>
         </sections>
     </layouts>
@@ -26,27 +22,31 @@
             <section>Custom Links</section>
         </sections>
         <sections>
-            <label></label>
-            <section>Filter Settings - Assortment</section>
+            <label>Frais</label>
+            <section>Fee</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Informations générales</label>
             <section>General Information</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Paramètres de facturation</label>
+            <section>Invoice Parameters</section>
+        </sections>
+        <sections>
+            <label>Cycle de vie</label>
             <section>Life cycle</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Montée DN/DV Innos</label>
             <section>Weight Distribution Rise Plan for Inno</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Montée DN/DV Arrêt</label>
             <section>Weight Distribution Rise Plan for Stop</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Montée DN/DV Switch</label>
             <section>Weight Distribution Rise Plan for Switch</section>
         </sections>
     </layouts>
@@ -57,19 +57,15 @@
             <section>Custom Links</section>
         </sections>
         <sections>
-            <label></label>
-            <section>Filter Settings - Assortment</section>
-        </sections>
-        <sections>
-            <label></label>
+            <label>Informations générales</label>
             <section>General Information</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Cycle de vie</label>
             <section>Life cycle</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Base de calcul pour DN/DV</label>
             <section>ND/WD Calculation</section>
         </sections>
     </layouts>
@@ -80,11 +76,11 @@
             <section>Custom Links</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Informations générales</label>
             <section>General Information</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Cycle de vie</label>
             <section>Life cycle</section>
         </sections>
     </layouts>
@@ -95,8 +91,19 @@
             <section>Custom Links</section>
         </sections>
         <sections>
+            <label>Informations générales</label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label>Cycle de vie</label>
+            <section>Life cycle</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPKERCADELAC - Wharehouse</layout>
+        <sections>
             <label></label>
-            <section>Filter Settings - Assortment</section>
+            <section>Custom Links</section>
         </sections>
         <sections>
             <label></label>
@@ -129,7 +136,7 @@
     </recordTypes>
     <recordTypes>
         <description></description>
-        <label></label>
+        <label>Enseigne nationale</label>
         <name>Negoptim__Country</name>
     </recordTypes>
     <recordTypes>
@@ -160,6 +167,11 @@
     <recordTypes>
         <description></description>
         <label></label>
+        <name>Negoptim__Tax_Agency</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
         <name>Negoptim__Warehouse</name>
     </recordTypes>
     <recordTypes>
@@ -179,4 +191,8 @@
         <errorMessage></errorMessage>
         <name>Negoptim__Legal_Form_required_for_Store</name>
     </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Negoptim__BU_Clustering</name>
+    </webLinks>
 </CustomObjectTranslation>

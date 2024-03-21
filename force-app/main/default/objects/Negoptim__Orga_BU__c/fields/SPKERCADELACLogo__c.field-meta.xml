@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPKERCADELACLogo__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( RecordType.DeveloperName =&quot;Channel&quot;,
+
+IMAGE(&apos;/resource/LogoChannel/LogoChannel/&apos; + Negoptim__BU_Code__c +&apos;.png&apos;, &apos;&apos; , 45, 90),
+
+IF ( RecordType.DeveloperName =&quot;Country&quot;,
+
+IMAGE(&apos;/resource/LogoCountry/LogoCountry/&apos; + Negoptim__BU_Code__c +&apos;.png&apos;, &apos;&apos; , 45, 90),
+
+IF ( RecordType.DeveloperName =&quot;Assortment_Cluster&quot;,
+
+IMAGE(&apos;/resource/LogoCluster/LogoCluster/&apos; + Negoptim__BU_Code__c +&apos;.png&apos;, &apos;&apos; , 45, 90),
+
+IF ( RecordType.DeveloperName =&quot;Wharehouse&quot;,
+
+IMAGE(&apos;/resource/LogoWharehouse/LogoWharehouse/&apos; + Negoptim__BU_Code__c +&apos;.png&apos;, &apos;&apos; , 45, 90),
+
+IF ( RecordType.DeveloperName =&quot;Banner&quot;,
+
+IMAGE(&apos;/resource/LogoBU/LogoBU/&apos; + Negoptim__BU_Code__c +&apos;.png&apos;, &apos;&apos; , 45, 90), NULL)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SPKERCADELAC Logo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

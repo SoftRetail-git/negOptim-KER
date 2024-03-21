@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__BU_Source__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>BU Source</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Negoptim__Orga_BU__c.Negoptim__Set_Com_Condition_BU_Source__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Negoptim__Orga_BU__c</referenceTo>
+    <relationshipLabel>Conditions Tarifaires (BU Source)</relationshipLabel>
+    <relationshipName>Conditions_Tarifaires_BU_Source</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

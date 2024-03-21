@@ -2,6 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Negoptim__TradeMarketingCampaign</fullName>
     <active>true</active>
+    <compactLayoutAssignment>SPKCPlanPromoEnseigne</compactLayoutAssignment>
     <label>Trade Marketing Campaign</label>
     <picklistValues>
         <picklist>Negoptim__Status__c</picklist>

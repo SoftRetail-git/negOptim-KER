@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2_Centrales_d_achat</fullName>
+    <columns>NAME</columns>
+    <columns>Negoptim__Logo__c</columns>
+    <columns>Negoptim__BU_Code__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Negoptim__Orga_BU__c.Negoptim__Country</value>
+    </filters>
+    <label>2.1 Centrales d&apos;achat</label>
+</ListView>

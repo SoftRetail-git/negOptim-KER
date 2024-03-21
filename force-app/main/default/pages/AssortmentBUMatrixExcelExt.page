@@ -1,0 +1,402 @@
+<apex:page standardController="Negoptim__Assortment_BU__c" extensions="AssortmentBUMatrixControllerExt"
+           contentType="application/vnd.ms-excel#{!IF(Negoptim__Assortment_BU__c.Id != null, Negoptim__Assortment_BU__c.Negoptim__Long_name__c, '')}{!NOW()}.xls" cache="true" readOnly="true">
+    <apex:outputText value="{!xmlheader}" escape="false"/>
+    <Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+              xmlns:o="urn:schemas-microsoft-com:office:office"
+              xmlns:x="urn:schemas-microsoft-com:office:excel"
+              xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+              xmlns:html="http://www.w3.org/TR/REC-html40">
+        <Styles>
+            <Style ss:ID="s1" ss:Name="Normal">
+                <Alignment/>
+                <Borders/>
+                <Font ss:Bold="1"/>
+                <Interior/>
+                <NumberFormat/>
+                <Protection/>
+            </Style>
+            <Style ss:ID="ColWhite">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:bgcolor="black" />
+                <Interior ss:Color="white" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="header">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:Bold="1" ss:bgcolor="#e3deb8" />
+                <Interior ss:Color="#f8f8f8" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colSeparator">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:bgcolor="#e3deb8" />
+                <Interior ss:Color="#e3deb8" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colDefault">
+                <Alignment ss:Horizontal="Center"/>
+                <Font ss:FontName="Calibri" ss:Size="12" ss:bgcolor="#fff" />
+                <Interior ss:Color="#fff" />
+            </Style>
+            <Style ss:ID="colHistory">
+                <Alignment ss:Horizontal="Center"/>
+                <Font ss:FontName="Calibri" ss:Size="12" ss:bgcolor="#FFFF33" />
+                <Interior ss:Color="#FFFF33" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colTotal">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:bgcolor="#e3deb8" ss:Bold="1"/>
+                <Interior ss:Color="#e3deb8" ss:Pattern="Solid"/>
+                <Alignment ss:Horizontal="Center"/>
+            </Style>
+            <Style ss:ID="colTotalWrap">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:bgcolor="#e3deb8" ss:Bold="1"/>
+                <Interior ss:Color="#e3deb8" ss:Pattern="Solid"/>
+                <Alignment ss:Horizontal="Center" ss:WrapText="1"/>
+            </Style>
+            <Style ss:ID="colFooter">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:bgcolor="#e3deb8" />
+                <Interior ss:Color="#e3deb8" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colInHeader">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:bgcolor="#E3E3D7" />
+                <Interior ss:Color="#E3E3D7" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colOutHeader">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:Bold="1" ss:bgcolor="#e2f3ec" />
+                <Interior ss:Color="#e2f3ec" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colIn">
+                <Alignment ss:Horizontal="Center"/>
+                <Font ss:FontName="Calibri" ss:Size="11" ss:bgcolor="#f8f8f8" />
+                <Interior ss:Color="#f8f8f8" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colOut">
+                <Alignment ss:Horizontal="Center"/>
+                <Font ss:FontName="Calibri" ss:Size="11" ss:bgcolor="#e2f3ec" />
+                <Interior ss:Color="#e2f3ec" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colnull">
+                <Alignment ss:Horizontal="Center" ss:WrapText="1"/>
+                <Font ss:FontName="Calibri" ss:Size="11" ss:bgcolor="#ffffff" />
+                <Interior ss:Color="#ffffff" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colKeep">
+                <Alignment ss:Horizontal="Center" ss:WrapText="1"/>
+                <Font ss:FontName="Calibri" ss:Size="11" ss:bgcolor="#89bded" />
+                <Interior ss:Color="#89bded" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colDelete">
+                <Alignment ss:Horizontal="Center" ss:WrapText="1"/>
+                <Font ss:FontName="Calibri" ss:Size="11" ss:bgcolor="#ff0000" />
+                <Interior ss:Color="#ff0000" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colNew">
+                <Alignment ss:Horizontal="Center" ss:WrapText="1"/>
+                <Font ss:FontName="Calibri" ss:Size="11" ss:bgcolor="#75ff34" />
+                <Interior ss:Color="#75ff34" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colIncrease">
+                <Alignment ss:Horizontal="Center" ss:WrapText="1"/>
+                <Font ss:FontName="Calibri" ss:Size="11" ss:bgcolor="#bbff9b" />
+                <Interior ss:Color="#bbff9b" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colDecrease">
+                <Alignment ss:Horizontal="Center" ss:WrapText="1"/>
+                <Font ss:FontName="Calibri" ss:Size="11" ss:bgcolor="#eadf81" />
+                <Interior ss:Color="#eadf81" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colSubstitute">
+                <Alignment ss:Horizontal="Center" ss:WrapText="1"/>
+                <Font ss:FontName="Calibri" ss:Size="11" ss:bgcolor="#ea9f85" />
+                <Interior ss:Color="#ea9f85" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colProbablydeleted">
+                <Alignment ss:Horizontal="Center" ss:WrapText="1"/>
+                <Font ss:FontName="Calibri" ss:Size="11" ss:bgcolor="#f7ad65" />
+                <Interior ss:Color="#f7ad65" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colOpportunity">
+                <Alignment ss:Horizontal="Center" ss:WrapText="1"/>
+                <Font ss:FontName="Calibri" ss:Size="11" ss:bgcolor="#c8e4ff" />
+                <Interior ss:Color="#c8e4ff" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colCplt">
+                <Alignment ss:Horizontal="Center" ss:WrapText="1"/>
+                <Font ss:FontName="Calibri" ss:Size="11" ss:bgcolor="#ffffff" />
+                <Interior ss:Color="#ffffff" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="INNO_INTRO_DATE_LESS_N">
+                <Font ss:FontName="Calibri" ss:Size="11" ss:Color="{!JSINHTMLENCODE(INNO_INTRO_DATE_LESS_N)}" />
+            </Style>
+            <Style ss:ID="INNO_INTRO_DATE_GREATER_N">
+                <Font ss:FontName="Calibri" ss:Size="11" ss:Color="{!JSINHTMLENCODE(INNO_INTRO_DATE_GREATER_N)}" />
+            </Style>
+            <Style ss:ID="STOP_DATE_LESS_N">
+                <Font ss:FontName="Calibri" ss:Size="11" ss:Color="{!JSINHTMLENCODE(STOP_DATE_LESS_N)}" />
+            </Style>
+            <Style ss:ID="STOP_DATE_GREATER_N">
+                <Font ss:FontName="Calibri" ss:Size="11" ss:Color="{!JSINHTMLENCODE(STOP_DATE_GREATER_N)}" />
+            </Style>
+        </Styles>
+        <Worksheet ss:Name="{!$ObjectType.Negoptim__Assortment_BU__c.Label}">
+            <Table x:FullColumns="1" x:FullRows="1">
+                <Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/>
+                <Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/>
+                <Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/>
+                <Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/>
+                <Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/>
+                <Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/>
+                <Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/>
+                <Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/>
+                <Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/>
+                <Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/>
+                <Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/>
+                <Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/>
+                <Row ss:StyleID="header">
+                    <Cell ss:StyleID="header"><Data ss:Type="String">{!IF(Negoptim__Assortment_BU__c.Id != null, Negoptim__Assortment_BU__c.Negoptim__Long_name__c, '')}</Data></Cell>
+                </Row>
+                <Row ss:StyleID="header">
+                    <Cell ss:StyleID="header"><Data ss:Type="String">{!$ObjectType.Negoptim__Assortment_BU__c.fields.Negoptim__New_Client_WD_MarketBased__c.label}</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s1"><Data ss:Type="Number">{!Negoptim__Assortment_BU__c.Negoptim__New_Client_WD_MarketBased__c}</Data></Cell>
+                </Row>
+                <Row>
+                </Row>
+                <Row>
+                    <apex:repeat value="{!clientStatusesPickList}" var="clientStatusVal"> <!-- gridSettingsManager.picklistValuesMap['Client_Status__c']-->
+                        <Cell ss:StyleID="col{!clientStatusVal.value}">
+                            <Data ss:Type="String"><apex:outputText >{!clientStatusVal.Label}</apex:outputText></Data>
+                        </Cell>
+                    </apex:repeat>
+                </Row>
+                <Row>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="colTotal">
+                        <Data ss:Type="String">{!$Label.negoptim__LBL_Totals}</Data>
+                    </Cell>
+                    <!--Loop over total field label-->
+                    <apex:repeat value="{!totalFields}" var="total">
+                        <Cell ss:StyleID="colTotal">
+                            <Data ss:Type="String">{!total.fieldLabel}</Data>
+                        </Cell>
+                    </apex:repeat>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="colTotal">
+                        <Data ss:Type="String"></Data>
+                    </Cell>
+                    <!--used to get Assortment_BU__c Category-->
+                    <apex:variable value="{!0}" var="parentCategoryId"/>
+                    <!--used to map between Total field and fieldToCount,fieldToSum-->
+                    <apex:variable value="{!fieldsToCountList_serialized}" var="fieldToCount"/>
+                    <apex:variable value="{!fieldsToSumList_serialized}" var="fieldToSum"/>
+
+                    <apex:repeat value="{!wAssortmentDetailList}" var="detail">
+                        <apex:repeat value="{!detail.assortmentDetails}" var="assDetails">
+                            <apex:variable value="{!assDetails['Negoptim__Assortment_BU__r.Negoptim__Orga_HE__c']}" var="parentCategoryId"/>
+                        </apex:repeat>
+                    </apex:repeat>
+
+                    <apex:repeat value="{!totalFields}" var="total">
+                        <Cell ss:StyleID="colTotalWrap">
+                            <Data ss:Type="Number"><apex:outputText value="{!counts[parentCategoryId][total.fieldName]}" rendered="{!AND(CONTAINS(fieldToCount,total.fieldName),total.fieldName != '')}"/><apex:outputText value="{!ROUND(sums[parentCategoryId][total.fieldName],2)}" rendered="{!AND(CONTAINS(fieldToSum,total.fieldName),total.fieldName != '')}"/></Data>
+                        </Cell>
+                    </apex:repeat>
+                </Row>
+                <Row>
+                </Row>
+                <!-- Column Headers -->
+                <Row>
+                    <Cell ss:StyleID="colOutHeader">
+                        <Data ss:Type="String"></Data>
+                    </Cell>
+                    <apex:repeat value="{!gridSettingsManager.GRID_FIELDS}" var="field">
+                        <apex:outputPanel layout="none" rendered="{!!CONTAINS(field.fieldName, 'Negoptim__Client_Clust')}">
+                            <Cell ss:StyleID="colOutHeader">
+                                <Data ss:Type="String"><apex:outputText value="{!field.fieldLabel}" rendered="{!AND(field.fieldName != '',!ISBLANK(field.fieldName))}"/></Data>
+                            </Cell>
+                        </apex:outputPanel>
+                        <!-- client clusters -->
+                        <apex:repeat value="{!categoryBUClustersRefMap[maxClusterCategory]}" var="buCluster" rendered="{!AND(maxClusterCategory != null, maxClusterCategory != '', field.fieldName == 'Negoptim__Ref_Client_Clust1__c')}">
+                            <Cell ss:StyleID="colOutHeader">
+                                <Data ss:Type="String"><apex:outputText value="{!buCluster.orgaBU.Name}"></apex:outputText></Data>
+                            </Cell>
+                        </apex:repeat>
+                        <!-- client clusters cplt -->
+                        <apex:repeat value="{!categoryBUCpltRefMap[maxCpltCategory]}" var="buCluster" rendered="{!AND(maxCpltCategory != null, maxCpltCategory != '', field.fieldName == 'Negoptim__Ref_Client_Clust_Cplt1__c')}">
+                            <Cell ss:StyleID="colOutHeader">
+                                <Data ss:Type="String"><apex:outputText value="{!buCluster.orgaBU.Name}"></apex:outputText></Data>
+                            </Cell>
+                        </apex:repeat>
+                        <!-- client clusters -->
+                        <apex:repeat value="{!categoryBUClustersMap[maxClusterCategory]}" var="buCluster" rendered="{!AND(maxClusterCategory != null, maxClusterCategory != '', field.fieldName == 'Negoptim__Client_Clust1__c')}">
+                            <Cell ss:StyleID="colOutHeader">
+                                <Data ss:Type="String"><apex:outputText value="{!buCluster.orgaBU.Name}"></apex:outputText></Data>
+                            </Cell>
+                        </apex:repeat>
+                        <!-- client clusters cplt -->
+                        <apex:repeat value="{!categoryBUCpltMap[maxCpltCategory]}" var="buCluster" rendered="{!AND(maxCpltCategory != null, maxCpltCategory != '', field.fieldName == 'Negoptim__Client_Clust_Cplt1__c')}">
+                            <Cell ss:StyleID="colOutHeader">
+                                <Data ss:Type="String"><apex:outputText value="{!buCluster.orgaBU.Name}"></apex:outputText></Data>
+                            </Cell>
+                        </apex:repeat>
+                    </apex:repeat>
+                </Row>
+                <apex:repeat value="{!wAssortmentDetailList}" var="detail">
+                    <!-- data rows -->
+                    <apex:repeat value="{!detail.assortmentDetails}" var="assDetails">
+                        <apex:variable var="colClientStatus" value="{!if(assDetails['Negoptim__Client_Status__c'] == 'Keep', 'colKeep',
+                                                                    if(assDetails['Negoptim__Client_Status__c'] == 'Delete','colDelete',
+                                                                    if(assDetails['Negoptim__Client_Status__c'] == 'New','colNew',
+                                                                    if(assDetails['Negoptim__Client_Status__c'] == 'Increase','colIncrease',
+                                                                    if(assDetails['Negoptim__Client_Status__c'] == 'Decrease','colDecrease',
+                                                                    if(assDetails['Negoptim__Client_Status__c'] == 'Substitute','colSubstitute',
+                                                                    if(assDetails['Negoptim__Client_Status__c'] == 'Probably deleted','colProbablydeleted',
+                                                                    if(assDetails['Negoptim__Client_Status__c'] == 'Opportunity','colOpportunity','ColWhite'))))))))}"/>
+                        <Row>
+                            <Cell ss:StyleID="ColWhite">
+                                <Data ss:Type="String"></Data>
+                            </Cell>
+                            <apex:repeat value="{!gridSettingsManager.GRID_FIELDS}" var="field">
+                                <apex:outputPanel layout="none" rendered="{!field.fieldName == 'Negoptim__Product__c'}">
+                                    <Cell ss:StyleID="{!IF(AND(OR(assDetails.Negoptim__Product__r.Negoptim__IsInnovation__c, assDetails.Negoptim__Product__r.recordType.developerName == 'Unit_Need'), assDetails.Negoptim__Product__r.Negoptim__Market_Introduction_Date__c!=null, YEAR(assDetails.Negoptim__Product__r.Negoptim__Market_Introduction_Date__c) < Negoptim__Assortment_BU__c.Negoptim__Year__c), 'INNO_INTRO_DATE_LESS_N',
+                                                      IF(AND(OR(assDetails.Negoptim__Product__r.Negoptim__IsInnovation__c, assDetails.Negoptim__Product__r.recordType.developerName == 'Unit_Need'), assDetails.Negoptim__Product__r.Negoptim__Market_Introduction_Date__c!=null, YEAR(assDetails.Negoptim__Product__r.Negoptim__Market_Introduction_Date__c) >= Negoptim__Assortment_BU__c.Negoptim__Year__c), 'INNO_INTRO_DATE_GREATER_N',
+                                                      IF(AND(assDetails.Negoptim__Product__r.Negoptim__Market_End_of_Life_Date__c!=null, YEAR(assDetails.Negoptim__Product__r.Negoptim__Market_End_of_Life_Date__c) < Negoptim__Assortment_BU__c.Negoptim__Year__c), 'STOP_DATE_LESS_N',
+                                                      IF(AND(assDetails.Negoptim__Product__r.Negoptim__Market_End_of_Life_Date__c!=null, YEAR(assDetails.Negoptim__Product__r.Negoptim__Market_End_of_Life_Date__c) >= Negoptim__Assortment_BU__c.Negoptim__Year__c), 'STOP_DATE_GREATER_N', 'ColWhite'))))}">
+                                        <Data ss:Type="String"><apex:outputText value="{!assDetails['Negoptim__Product__r.Name']}"/></Data>
+                                    </Cell>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(!CONTAINS(field.fieldName, 'Negoptim__Client_Clust'), field.fieldName != 'Negoptim__Product__c')}">
+                                    <Cell ss:StyleID="{!IF(OR(field.fieldName == 'Negoptim__Client_Status__c',
+                                                      field.fieldName == 'Negoptim__Client_Ass__c',
+                                                      CONTAINS(field.fieldName,'Negoptim__Client_Clust'),
+                                                      field.fieldName == 'Negoptim__Ref_Client_ProductNumber__c',
+                                                      field.fieldName == 'Negoptim__New_Client_ProductNumber__c',
+                                                      field.fieldName == 'Negoptim__Key_Note__c'), colClientStatus,'ColWhite')}">
+                                        <apex:outputPanel layout="none" rendered="{!!field.isNumberField}" >
+                                            <Data ss:Type="String"><apex:outputPanel layout="none" rendered="{!field.stringFieldType == 'PICKLIST' && assDetails[field.fieldName] != null}" ><apex:outputText value="{!gridSettingsManager.picklistValuesMap[field.fieldName][assDetails[field.fieldName]]}" /></apex:outputPanel><apex:outputPanel layout="none" rendered="{!field.stringFieldType == 'BOOLEAN'}"><apex:outputText value="{!IF(assDetails[field.fieldName],'X','')}" /></apex:outputPanel><apex:outputPanel layout="none"  rendered="{!field.stringFieldType == 'DATE'}" ><apex:outputText value="{0,date,dd'/'MM'/'yyyy}"><apex:param value="{!assDetails[field.fieldName]}" /></apex:outputText></apex:outputPanel><apex:outputPanel layout="none" rendered="{!CONTAINS(fieldToSum, field.fieldName)}" ><apex:outputText value="{!ROUND(assDetails[field.fieldName],field.scale)}"  /></apex:outputPanel><apex:outputPanel layout="none" rendered="{!AND(field.fieldName != 'Product__c',field.stringFieldType != 'DATE',field.stringFieldType != 'BOOLEAN',field.stringFieldType != 'PICKLIST',!CONTAINS(fieldToSum,field.fieldName))}" ><apex:outputText value="{!assDetails[field.fieldName]}"  /></apex:outputPanel></Data>
+                                        </apex:outputPanel>
+                                        <apex:outputPanel layout="none" rendered="{!field.isNumberField}" >
+                                            <Data ss:Type="Number"><apex:outputText value="{!ROUND(assDetails[field.fieldName],field.scale)}"/></Data>
+                                        </apex:outputPanel>
+                                    </Cell>
+                                </apex:outputPanel>
+                                <!-- ref client clusters -->
+                                <apex:outputPanel layout="none" rendered="{!!manageAssortByPersonalizedCategory}">
+                                    <apex:repeat value="{!categoryBUClustersRefMap[assDetails.Negoptim__Category__c]}" var="buCluster" rendered="{!field.fieldName == 'Negoptim__Ref_Client_Clust1__c'}">
+                                        <Cell ss:StyleID="ColWhite">
+                                            <apex:outputPanel layout="none" rendered="{!buCluster.orgaBU != null}">
+                                                <Data ss:Type="String"><apex:outputText value="{!IF(assDetails['Negoptim__Ref_Client_Clust'& TEXT(buCluster.stratIndex+1) &'__c'],'X','')}" rendered="{!field.stringFieldType == 'BOOLEAN'}"/></Data>
+                                            </apex:outputPanel>
+                                        </Cell>
+                                    </apex:repeat>
+                                    <!-- client clusters -->
+                                    <apex:repeat value="{!categoryBUClustersMap[assDetails.Negoptim__Category__c]}" var="buCluster" rendered="{!field.fieldName == 'Negoptim__Client_Clust1__c'}">
+                                        <Cell ss:StyleID="{!colClientStatus}">
+                                            <apex:outputPanel layout="none" rendered="{!buCluster.orgaBU != null}">
+                                                <Data ss:Type="String"><apex:outputText value="{!IF(assDetails['Negoptim__Client_Clust'& TEXT(buCluster.stratIndex+1) &'__c'],'X','')}" rendered="{!field.stringFieldType == 'BOOLEAN'}"/></Data>
+                                            </apex:outputPanel>
+                                        </Cell>
+                                    </apex:repeat>
+                                    <!-- ref client clusters cplt -->
+                                    <apex:repeat value="{!categoryBUCpltRefMap[assDetails.Negoptim__Category__c]}" var="buCluster" rendered="{!field.fieldName == 'Negoptim__Ref_Client_Clust_Cplt1__c'}">
+                                        <Cell ss:StyleID="ColWhite">
+                                            <apex:outputPanel layout="none" rendered="{!buCluster.orgaBU != null}">
+                                                <Data ss:Type="String"><apex:outputText value="{!IF(assDetails['Negoptim__Ref_Client_Clust_Cplt'& TEXT(buCluster.stratIndex+1) &'__c'],'X','')}" rendered="{!field.stringFieldType == 'BOOLEAN'}"/></Data>
+                                            </apex:outputPanel>
+                                        </Cell>
+                                    </apex:repeat>
+                                    <!-- client clusters cplt -->
+                                    <apex:repeat value="{!categoryBUCpltMap[assDetails.Negoptim__Category__c]}" var="buCluster" rendered="{!field.fieldName == 'Negoptim__Client_Clust_Cplt1__c'}">
+                                        <Cell ss:StyleID="{!colClientStatus}">
+                                            <apex:outputPanel layout="none" rendered="{!buCluster.orgaBU != null}">
+                                                <Data ss:Type="String"><apex:outputText value="{!IF(assDetails['Negoptim__Client_Clust_Cplt'& TEXT(buCluster.stratIndex+1) &'__c'],'X','')}" rendered="{!field.stringFieldType == 'BOOLEAN'}"/></Data>
+                                            </apex:outputPanel>
+                                        </Cell>
+                                    </apex:repeat>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!manageAssortByPersonalizedCategory}">
+                                    <apex:repeat value="{!categoryBUClustersRefMap[assDetails.Negoptim__Client_Category__c]}" var="buCluster" rendered="{!field.fieldName == 'Negoptim__Ref_Client_Clust1__c'}">
+                                        <Cell ss:StyleID="ColWhite">
+                                            <apex:outputPanel layout="none" rendered="{!buCluster.orgaBU != null}">
+                                                <Data ss:Type="String"><apex:outputText value="{!IF(assDetails['Negoptim__Ref_Client_Clust'& TEXT(buCluster.stratIndex+1) &'__c'],'X','')}" rendered="{!field.stringFieldType == 'BOOLEAN'}"/></Data>
+                                            </apex:outputPanel>
+                                        </Cell>
+                                    </apex:repeat>
+                                    <!-- client clusters -->
+                                    <apex:repeat value="{!categoryBUClustersMap[assDetails.Negoptim__Client_Category__c]}" var="buCluster" rendered="{!field.fieldName == 'Negoptim__Client_Clust1__c'}">
+                                        <Cell ss:StyleID="{!colClientStatus}">
+                                            <apex:outputPanel layout="none" rendered="{!buCluster.orgaBU != null}">
+                                                <Data ss:Type="String"><apex:outputText value="{!IF(assDetails['Negoptim__Client_Clust'& TEXT(buCluster.stratIndex+1) &'__c'],'X','')}" rendered="{!field.stringFieldType == 'BOOLEAN'}"/></Data>
+                                            </apex:outputPanel>
+                                        </Cell>
+                                    </apex:repeat>
+                                    <!-- ref client clusters cplt -->
+                                    <apex:repeat value="{!categoryBUCpltRefMap[assDetails.Negoptim__Client_Category__c]}" var="buCluster" rendered="{!field.fieldName == 'Negoptim__Ref_Client_Clust_Cplt1__c'}">
+                                        <Cell ss:StyleID="ColWhite">
+                                            <apex:outputPanel layout="none" rendered="{!buCluster.orgaBU != null}">
+                                                <Data ss:Type="String"><apex:outputText value="{!IF(assDetails['Negoptim__Ref_Client_Clust_Cplt'& TEXT(buCluster.stratIndex+1) &'__c'],'X','')}" rendered="{!field.stringFieldType == 'BOOLEAN'}"/></Data>
+                                            </apex:outputPanel>
+                                        </Cell>
+                                    </apex:repeat>
+                                    <!-- client clusters cplt -->
+                                    <apex:repeat value="{!categoryBUCpltMap[assDetails.Negoptim__Client_Category__c]}" var="buCluster" rendered="{!field.fieldName == 'Negoptim__Client_Clust_Cplt1__c'}">
+                                        <Cell ss:StyleID="{!colClientStatus}">
+                                            <apex:outputPanel layout="none" rendered="{!buCluster.orgaBU != null}">
+                                                <Data ss:Type="String"><apex:outputText value="{!IF(assDetails['Negoptim__Client_Clust_Cplt'& TEXT(buCluster.stratIndex+1) &'__c'],'X','')}" rendered="{!field.stringFieldType == 'BOOLEAN'}"/></Data>
+                                            </apex:outputPanel>
+                                        </Cell>
+                                    </apex:repeat>
+                                </apex:outputPanel>
+                            </apex:repeat>
+                        </Row>
+                    </apex:repeat>
+                    <!-- Subtotals -->
+                    <Row>
+                        <Cell ss:StyleID="colInHeader">
+                            <Data ss:Type="String"><apex:outputText value="{!HTMLENCODE(detail.categoryName)}"/></Data>
+                        </Cell>
+                        <apex:variable value="{!fieldsToCountList_serialized}" var="fieldToCount"/>
+                        <apex:variable value="{!fieldsToSumList_serialized}" var="fieldToSum"/>
+                        <apex:repeat value="{!gridSettingsManager.GRID_FIELDS}" var="field">
+                            <apex:outputPanel layout="none" rendered="{!!CONTAINS(field.fieldName, 'Client_Clust')}">
+                                <Cell ss:StyleID="colInHeader">
+                                    <apex:outputPanel layout="none" rendered="{!AND(CONTAINS(fieldToCount,field.fieldName),field.fieldName != '')}">
+                                        <Data ss:Type="Number"><apex:outputText value="{!counts[detail.categoryId][field.fieldName]}" /></Data>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel layout="none" rendered="{!AND(CONTAINS(fieldToSum,field.fieldName),field.fieldName != '')}">
+                                        <Data ss:Type="Number"><apex:outputText value="{!ROUND(sums[detail.categoryId][field.fieldName],field.scale)}"/></Data>
+                                    </apex:outputPanel>
+                                </Cell>
+                            </apex:outputPanel>
+                            <!-- ref client clusters -->
+                            <apex:repeat value="{!categoryBUClustersRefMap[detail.categoryId]}" var="buCluster" rendered="{!field.fieldName == 'Negoptim__Ref_Client_Clust1__c'}">
+                                <Cell ss:StyleID="colInHeader">
+                                    <Data ss:Type="Number"><apex:outputText value="{!counts[detail.categoryId]['Negoptim__Ref_Client_Clust'& TEXT(buCluster.stratIndex+1) &'__c']}"
+                                                                            rendered="{!AND(CONTAINS(fieldToCount,'Negoptim__Ref_Client_Clust'& TEXT(buCluster.stratIndex+1) &'__c'), buCluster.orgaBU != null)}"/></Data>
+                                </Cell>
+                            </apex:repeat>
+                            <!-- client clusters -->
+                            <apex:repeat value="{!categoryBUClustersMap[detail.categoryId]}" var="buCluster" rendered="{!field.fieldName == 'Negoptim__Client_Clust1__c'}">
+                                <Cell ss:StyleID="colInHeader">
+                                    <Data ss:Type="Number"><apex:outputText value="{!counts[detail.categoryId]['Negoptim__Client_Clust'& TEXT(buCluster.stratIndex+1) &'__c']}"
+                                                                            rendered="{!AND(CONTAINS(fieldToCount,'Negoptim__Client_Clust'& TEXT(buCluster.stratIndex+1) &'__c'), buCluster.orgaBU != null)}"/></Data>
+                                </Cell>
+                            </apex:repeat>
+                            <!-- ref client clusters cplt -->
+                            <apex:repeat value="{!categoryBUCpltRefMap[detail.categoryId]}" var="buCluster" rendered="{!field.fieldName == 'Negoptim__Ref_Client_Clust_Cplt1__c'}">
+                                <Cell ss:StyleID="colInHeader">
+                                    <Data ss:Type="Number"><apex:outputText value="{!counts[detail.categoryId]['Negoptim__Ref_Client_Clust_Cplt'& TEXT(buCluster.stratIndex+1) &'__c']}"
+                                                                            rendered="{!AND(CONTAINS(fieldToCount,'Negoptim__Ref_Client_Clust_Cplt'& TEXT(buCluster.stratIndex+1) &'__c'), buCluster.orgaBU != null)}"/></Data>
+                                </Cell>
+                            </apex:repeat>
+                            <!-- client clusters cplt -->
+                            <apex:repeat value="{!categoryBUCpltMap[detail.categoryId]}" var="buCluster" rendered="{!field.fieldName == 'Negoptim__Client_Clust_Cplt1__c'}">
+                                <Cell ss:StyleID="colInHeader">
+                                    <Data ss:Type="Number"><apex:outputText value="{!counts[detail.categoryId]['Negoptim__Client_Clust_Cplt'& TEXT(buCluster.stratIndex+1) &'__c']}"
+                                                                            rendered="{!AND(CONTAINS(fieldToCount,'Negoptim__Client_Clust_Cplt'& TEXT(buCluster.stratIndex+1) &'__c'), buCluster.orgaBU != null)}"/></Data>
+                                </Cell>
+                            </apex:repeat>
+                        </apex:repeat>
+                    </Row>
+                </apex:repeat>
+            </Table>
+        </Worksheet>
+    </Workbook>
+</apex:page>

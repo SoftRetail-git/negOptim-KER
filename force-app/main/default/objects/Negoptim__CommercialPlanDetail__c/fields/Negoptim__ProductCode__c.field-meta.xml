@@ -3,7 +3,7 @@
     <fullName>Negoptim__ProductCode__c</fullName>
     <deprecated>false</deprecated>
     <externalId>false</externalId>
-    <formula>null</formula>
+    <formula>Negoptim__Product__r.ProductCode</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Product Code SAP</label>
     <required>false</required>

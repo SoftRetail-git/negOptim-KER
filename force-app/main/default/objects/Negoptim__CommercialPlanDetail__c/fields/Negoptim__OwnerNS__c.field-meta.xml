@@ -3,7 +3,7 @@
     <fullName>Negoptim__OwnerNS__c</fullName>
     <deprecated>false</deprecated>
     <externalId>false</externalId>
-    <formula>null</formula>
+    <formula>Negoptim__NegoScope__r.Owner:User.Username</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Owner</label>
     <required>false</required>

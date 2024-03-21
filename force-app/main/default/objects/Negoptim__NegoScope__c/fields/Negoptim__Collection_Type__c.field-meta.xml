@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negoptim__Collection_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Specify the Type of Offer/Assortment managing for the Client/Supplier for the linked agreement</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Préciser le Type d&apos;Offre/Gestion de l&apos;Assortiment pour le Client/Fournisseur pour l&apos;accord lié</inlineHelpText>
+    <label>Collection Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Negoptim__Collection_Type</valueSetName>
+    </valueSet>
+</CustomField>

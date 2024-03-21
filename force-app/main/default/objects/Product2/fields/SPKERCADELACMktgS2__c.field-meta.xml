@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPKERCADELACMktgS2__c</fullName>
+    <externalId>false</externalId>
+    <label>SPKERCADELAC Mktg-S2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ALYSSE FOOD MUFFIN</fullName>
+                <default>false</default>
+                <label>ALYSSE FOOD MUFFIN</label>
+            </value>
+            <value>
+                <fullName>ASSORTIMENT PB</fullName>
+                <default>false</default>
+                <label>ASSORTIMENT PB</label>
+            </value>
+            <value>
+                <fullName>BARRE MARBREE</fullName>
+                <default>false</default>
+                <label>BARRE MARBREE</label>
+            </value>
+            <value>
+                <fullName>BARRE NATURE</fullName>
+                <default>false</default>
+                <label>BARRE NATURE</label>
+            </value>
+            <value>
+                <fullName>CAKE FRUIT</fullName>
+                <default>false</default>
+                <label>CAKE FRUIT</label>
+            </value>
+            <value>
+                <fullName>GALETTE NAT PB</fullName>
+                <default>false</default>
+                <label>GALETTE NAT PB</label>
+            </value>
+            <value>
+                <fullName>GAT BRET DEMI-LUNE</fullName>
+                <default>false</default>
+                <label>GAT BRET DEMI-LUNE</label>
+            </value>
+            <value>
+                <fullName>GAT BRET ROND</fullName>
+                <default>false</default>
+                <label>GAT BRET ROND</label>
+            </value>
+            <value>
+                <fullName>GDE GAL PB</fullName>
+                <default>false</default>
+                <label>GDE GAL PB</label>
+            </value>
+            <value>
+                <fullName>LE GOURMAND</fullName>
+                <default>false</default>
+                <label>LE GOURMAND</label>
+            </value>
+            <value>
+                <fullName>MAD A PARTAGER</fullName>
+                <default>false</default>
+                <label>MAD A PARTAGER</label>
+            </value>
+            <value>
+                <fullName>MAD COQ INDI COEUR</fullName>
+                <default>false</default>
+                <label>MAD COQ INDI COEUR</label>
+            </value>
+            <value>
+                <fullName>MAD COQ INDI KIDS</fullName>
+                <default>false</default>
+                <label>MAD COQ INDI KIDS</label>
+            </value>
+            <value>
+                <fullName>MAD COQ INDI MEM</fullName>
+                <default>false</default>
+                <label>MAD COQ INDI MEM</label>
+            </value>
+            <value>
+                <fullName>MAD COQ INDI PB</fullName>
+                <default>false</default>
+                <label>MAD COQ INDI PB</label>
+            </value>
+            <value>
+                <fullName>MOELLEUX GAP</fullName>
+                <default>false</default>
+                <label>MOELLEUX GAP</label>
+            </value>
+            <value>
+                <fullName>PALET NAT PB</fullName>
+                <default>false</default>
+                <label>PALET NAT PB</label>
+            </value>
+            <value>
+                <fullName>PETIT BEURRE PB</fullName>
+                <default>false</default>
+                <label>PETIT BEURRE PB</label>
+            </value>
+            <value>
+                <fullName>QQ NATURE</fullName>
+                <default>false</default>
+                <label>QQ NATURE</label>
+            </value>
+            <value>
+                <fullName>MAD COQ INDI COQUE</fullName>
+                <default>false</default>
+                <label>MAD COQ INDI COQUE</label>
+            </value>
+            <value>
+                <fullName>MAD COQ INDI MIXTE</fullName>
+                <default>false</default>
+                <label>MAD COQ INDI MIXTE</label>
+            </value>
+            <value>
+                <fullName>MINI PB</fullName>
+                <default>false</default>
+                <label>MINI PB</label>
+            </value>
+            <value>
+                <fullName>MINI MGV</fullName>
+                <default>false</default>
+                <label>MINI MGV</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

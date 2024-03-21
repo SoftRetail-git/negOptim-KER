@@ -2,11 +2,11 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Client/Fournisseur</value>
+        <value>Client</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Clients/Fournisseurs</value>
+        <value>Clients</value>
     </caseValues>
     <gender>Feminine</gender>
     <layouts>
@@ -16,10 +16,11 @@
             <section>Custom Links</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Cycle de vie</label>
             <section>Life Cycle</section>
         </sections>
     </layouts>
+    <nameFieldLabel>Client</nameFieldLabel>
     <recordTypes>
         <label></label>
         <name>Negoptim__Client</name>

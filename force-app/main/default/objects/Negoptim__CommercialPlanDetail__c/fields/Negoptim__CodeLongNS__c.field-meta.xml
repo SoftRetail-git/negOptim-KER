@@ -3,7 +3,7 @@
     <fullName>Negoptim__CodeLongNS__c</fullName>
     <deprecated>false</deprecated>
     <externalId>false</externalId>
-    <formula>null</formula>
+    <formula>Negoptim__NegoScope__r.Negoptim__NS_Code_Long__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Nego Scope Code</label>
     <required>false</required>

@@ -17,7 +17,7 @@
     </customApplications>
     <customApplications>
         <description xsi:nil="true"/>
-        <label><!-- Nego --></label>
+        <label><!-- Négociation --></label>
         <name>Nego</name>
     </customApplications>
     <customApplications>
@@ -50,6 +50,31 @@
         <label><!-- Promotions --></label>
         <name>Promotions</name>
     </customApplications>
+    <customApplications>
+        <description xsi:nil="true"/>
+        <label><!-- myNego --></label>
+        <name>myNego_Lightning</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- Invoice --></label>
+        <name>Invoice</name>
+    </customLabels>
+    <customLabels>
+        <label>Création des assortiments Régionaux</label>
+        <name>LBL_Generate_Regional_Assortments</name>
+    </customLabels>
+    <customLabels>
+        <label>Les Assortiments Régionaux sont générés avec succès</label>
+        <name>LBL_Regional_Assortment_BUs_generated_successfully</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL something wrong --></label>
+        <name>LBL_something_wrong</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Amount --></label>
+        <name>Negoptim__Amount</name>
+    </customLabels>
     <customLabels>
         <label><!-- WD Fact history --></label>
         <name>Negoptim__AssNego_Conso_Fact_WD_MarketBased_pts</name>
@@ -65,6 +90,10 @@
     <customLabels>
         <label><!-- WD Budget --></label>
         <name>Negoptim__AssTarget_Conso_New_WD_MarketBased_pts</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- At least one included structure element must be selected --></label>
+        <name>Negoptim__At_least_one_included_structure_element_must_be_selected</name>
     </customLabels>
     <customLabels>
         <label><!-- Available Templates --></label>
@@ -91,6 +120,10 @@
         <name>Negoptim__Brands</name>
     </customLabels>
     <customLabels>
+        <label><!-- Calculate --></label>
+        <name>Negoptim__Calculate</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Cancel --></label>
         <name>Negoptim__Cancel</name>
     </customLabels>
@@ -101,6 +134,10 @@
     <customLabels>
         <label><!-- Clear Selected --></label>
         <name>Negoptim__Clear_Selected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Clone --></label>
+        <name>Negoptim__Clone</name>
     </customLabels>
     <customLabels>
         <label><!-- Current_Product --></label>
@@ -119,6 +156,14 @@
         <name>Negoptim__DV_Nego_MarketBased_Histo</name>
     </customLabels>
     <customLabels>
+        <label><!-- Delete --></label>
+        <name>Negoptim__Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Manual Invoice PopUp Description --></label>
+        <name>Negoptim__Description_Manual_Invoice_PopUp</name>
+    </customLabels>
+    <customLabels>
         <label><!-- EmailTo --></label>
         <name>Negoptim__EmailTo</name>
     </customLabels>
@@ -131,8 +176,16 @@
         <name>Negoptim__Email_Form</name>
     </customLabels>
     <customLabels>
+        <label><!-- Error_MustSelectNegoScope --></label>
+        <name>Negoptim__Error_MustSelectNegoScope</name>
+    </customLabels>
+    <customLabels>
         <label><!-- GAP WD --></label>
         <name>Negoptim__GAP_WD</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Informations --></label>
+        <name>Negoptim__Informations</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL Toggle Active --></label>
@@ -145,6 +198,14 @@
     <customLabels>
         <label><!-- LBL Toggle Inactive --></label>
         <name>Negoptim__LBLToggleInactive</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- APW To NetPrice --></label>
+        <name>Negoptim__LBL_APW_To_NetPrice</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Update Acceptance Status --></label>
+        <name>Negoptim__LBL_APW_Update_Acceptance_Status</name>
     </customLabels>
     <customLabels>
         <label><!-- Abort --></label>
@@ -175,6 +236,18 @@
         <name>Negoptim__LBL_Add</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL Add As Input --></label>
+        <name>Negoptim__LBL_Add_As_Input</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Add As Output --></label>
+        <name>Negoptim__LBL_Add_As_Output</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Add Fields --></label>
+        <name>Negoptim__LBL_Add_Fields</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Add New User --></label>
         <name>Negoptim__LBL_Add_New_User</name>
     </customLabels>
@@ -195,12 +268,32 @@
         <name>Negoptim__LBL_All</name>
     </customLabels>
     <customLabels>
+        <label><!-- Amount --></label>
+        <name>Negoptim__LBL_Amount</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_And --></label>
         <name>Negoptim__LBL_And</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL Applied Filter On Data Selection --></label>
+        <name>Negoptim__LBL_Applied_Filter_On_Data_Selection</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Apply --></label>
         <name>Negoptim__LBL_Apply</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Approved --></label>
+        <name>Negoptim__LBL_Approved</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_April --></label>
+        <name>Negoptim__LBL_April</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Asc --></label>
+        <name>Negoptim__LBL_Asc</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_AssNego_Conso_Fact_WD_MarketBased_pts --></label>
@@ -251,6 +344,10 @@
         <name>Negoptim__LBL_Assortment_Store_Clustering</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_August --></label>
+        <name>Negoptim__LBL_August</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Available --></label>
         <name>Negoptim__LBL_Available</name>
     </customLabels>
@@ -259,11 +356,19 @@
         <name>Negoptim__LBL_Available_Fields</name>
     </customLabels>
     <customLabels>
-        <label><!-- Back To Filter Page --></label>
+        <label><!-- BU Clustering --></label>
+        <name>Negoptim__LBL_BU_Clustering</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_BU_Selection --></label>
+        <name>Negoptim__LBL_BU_Selection</name>
+    </customLabels>
+    <customLabels>
+        <label>Retour page de filtres</label>
         <name>Negoptim__LBL_Back_To_Filter_Page</name>
     </customLabels>
     <customLabels>
-        <label><!-- LBL_Back_To_Home_Page --></label>
+        <label>Retour page d&apos;accueil</label>
         <name>Negoptim__LBL_Back_To_Home_Page</name>
     </customLabels>
     <customLabels>
@@ -273,6 +378,10 @@
     <customLabels>
         <label><!-- LBL_Banner --></label>
         <name>Negoptim__LBL_Banner</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Begin Date --></label>
+        <name>Negoptim__LBL_BeginDate</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Border --></label>
@@ -295,12 +404,24 @@
         <name>Negoptim__LBL_Budget_Tons</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_Button --></label>
+        <name>Negoptim__LBL_Button</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Calendar Settings --></label>
+        <name>Negoptim__LBL_Calendar_Settings</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Cancel --></label>
         <name>Negoptim__LBL_Cancel</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Change_Type --></label>
         <name>Negoptim__LBL_Change_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Clone --></label>
+        <name>Negoptim__LBL_Clone</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Close --></label>
@@ -319,16 +440,40 @@
         <name>Negoptim__LBL_Column_Formating</name>
     </customLabels>
     <customLabels>
+        <label><!-- Column Header Label --></label>
+        <name>Negoptim__LBL_Column_Header_Label</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Conditional_Formatting --></label>
         <name>Negoptim__LBL_Conditional_Formatting</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Conditions_Failed --></label>
+        <name>Negoptim__LBL_Conditions_Failed</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Confirm --></label>
         <name>Negoptim__LBL_Confirm</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_Consolidate_Contracts --></label>
+        <name>Negoptim__LBL_Consolidate_Contracts</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contract Name --></label>
+        <name>Negoptim__LBL_ContractName</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Contract_Tree --></label>
         <name>Negoptim__LBL_Contract_Tree</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Control_Rules --></label>
+        <name>Negoptim__LBL_Control_Rules</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Current_Fields --></label>
+        <name>Negoptim__LBL_Current_Fields</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Custom_Js --></label>
@@ -359,24 +504,104 @@
         <name>Negoptim__LBL_Deactive</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_December --></label>
+        <name>Negoptim__LBL_December</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Default_Expression --></label>
+        <name>Negoptim__LBL_Default_Expression</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Default NegoScope --></label>
+        <name>Negoptim__LBL_Default_NegoScope</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Default_Page_Size --></label>
         <name>Negoptim__LBL_Default_Page_Size</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Default Sorting Field --></label>
+        <name>Negoptim__LBL_Default_Sorting_Field</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL Default Value --></label>
         <name>Negoptim__LBL_Default_Value</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_Define_New_External_Control --></label>
+        <name>Negoptim__LBL_Define_New_External_Control</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Delete --></label>
         <name>Negoptim__LBL_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Deploy --></label>
+        <name>Negoptim__LBL_Deploy</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Desc --></label>
+        <name>Negoptim__LBL_Desc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Description --></label>
+        <name>Negoptim__LBL_Description</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Detail Conditions --></label>
+        <name>Negoptim__LBL_Detail_Conditions</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Detail_Object --></label>
         <name>Negoptim__LBL_Detail_Object</name>
     </customLabels>
     <customLabels>
+        <label><!-- Disc Percent --></label>
+        <name>Negoptim__LBL_Disc_Percent</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Disc Rank --></label>
+        <name>Negoptim__LBL_Disc_Rank</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Disc UType --></label>
+        <name>Negoptim__LBL_Disc_UType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Disc Unit --></label>
+        <name>Negoptim__LBL_Disc_Unit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Discount --></label>
+        <name>Negoptim__LBL_Discount</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Dispatch --></label>
+        <name>Negoptim__LBL_Dispatch</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Display_Full_URL --></label>
+        <name>Negoptim__LBL_Display_Full_URL</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Display_In_Totals --></label>
         <name>Negoptim__LBL_Display_In_Totals</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Display Promo Price --></label>
+        <name>Negoptim__LBL_Display_Promo_Price</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Display Regular Price --></label>
+        <name>Negoptim__LBL_Display_Regular_Price</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Distribute --></label>
+        <name>Negoptim__LBL_Distribute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Done --></label>
+        <name>Negoptim__LBL_Done</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Dotted --></label>
@@ -387,16 +612,40 @@
         <name>Negoptim__LBL_Double</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_Download_Zip --></label>
+        <name>Negoptim__LBL_Download_Zip</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Edit --></label>
         <name>Negoptim__LBL_Edit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- EditNegoScope --></label>
+        <name>Negoptim__LBL_EditNegoScope</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_End --></label>
         <name>Negoptim__LBL_End</name>
     </customLabels>
     <customLabels>
+        <label><!-- End Date --></label>
+        <name>Negoptim__LBL_EndDate</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Error --></label>
         <name>Negoptim__LBL_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Event Color Control Field --></label>
+        <name>Negoptim__LBL_Event_Color_Control_Field</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Event End Date Field --></label>
+        <name>Negoptim__LBL_Event_End_Date_Field</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Event Start Date Field --></label>
+        <name>Negoptim__LBL_Event_Start_Date_Field</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Expand_Tree --></label>
@@ -407,16 +656,28 @@
         <name>Negoptim__LBL_Export</name>
     </customLabels>
     <customLabels>
-        <label><!-- Export Details --></label>
+        <label>Exporter</label>
         <name>Negoptim__LBL_Export_Details</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Export Excel Lite --></label>
+        <name>Negoptim__LBL_Export_Excel_Lite</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Export_To_Excel --></label>
         <name>Negoptim__LBL_Export_To_Excel</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL Expose Filter --></label>
+        <name>Negoptim__LBL_Expose_Filter</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Expression --></label>
         <name>Negoptim__LBL_Expression</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_External_Control --></label>
+        <name>Negoptim__LBL_External_Control</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Fact_WD_Business_plan_Channel --></label>
@@ -425,6 +686,18 @@
     <customLabels>
         <label><!-- LBL_False --></label>
         <name>Negoptim__LBL_False</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Favorite_Color --></label>
+        <name>Negoptim__LBL_Favorite_Color</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_February --></label>
+        <name>Negoptim__LBL_February</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Field --></label>
+        <name>Negoptim__LBL_Field</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Field_Name --></label>
@@ -451,12 +724,56 @@
         <name>Negoptim__LBL_Formating_Rule</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_GAP --></label>
+        <name>Negoptim__LBL_GAP</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Gap_ND --></label>
         <name>Negoptim__LBL_Gap_ND</name>
     </customLabels>
     <customLabels>
         <label><!-- Gap Ton --></label>
         <name>Negoptim__LBL_Gap_Ton</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- General Information --></label>
+        <name>Negoptim__LBL_General_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Generate Invoice --></label>
+        <name>Negoptim__LBL_GenerateInvoice</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Generate_Apex_Code --></label>
+        <name>Negoptim__LBL_Generate_Apex_Code</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Generate_Automatic_Dispatch --></label>
+        <name>Negoptim__LBL_Generate_Automatic_Dispatch</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Generate Contract Annex --></label>
+        <name>Negoptim__LBL_Generate_Contract_Annex</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Generate GRC --></label>
+        <name>Negoptim__LBL_Generate_GRC</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Generate GRC From Assortment --></label>
+        <name>Negoptim__LBL_Generate_GRC_From_Assortment</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Generate Name --></label>
+        <name>Negoptim__LBL_Generate_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Generate_Page_Code --></label>
+        <name>Negoptim__LBL_Generate_Page_Code</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Generer_taux --></label>
+        <name>Negoptim__LBL_Generer_taux</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Grid_Layout --></label>
@@ -475,12 +792,24 @@
         <name>Negoptim__LBL_HLP_Helptext</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_Help --></label>
+        <name>Negoptim__LBL_Help</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HelpText Condition List Detail --></label>
+        <name>Negoptim__LBL_HelpText_Condition_List_Detail</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Hide Blank Status --></label>
         <name>Negoptim__LBL_Hide_Blank_Status</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL Hide Empty Brand --></label>
         <name>Negoptim__LBL_Hide_Empty_Brand</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Hide Table --></label>
+        <name>Negoptim__LBL_Hide_Table</name>
     </customLabels>
     <customLabels>
         <label><!-- Histo Products --></label>
@@ -495,6 +824,10 @@
         <name>Negoptim__LBL_Icon_Settings</name>
     </customLabels>
     <customLabels>
+        <label><!-- Import --></label>
+        <name>Negoptim__LBL_Import</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Import All Filtered Products --></label>
         <name>Negoptim__LBL_Import_All_Filtered</name>
     </customLabels>
@@ -507,8 +840,24 @@
         <name>Negoptim__LBL_Include_Nb_Of_Store</name>
     </customLabels>
     <customLabels>
+        <label><!-- Include Products WO Brand --></label>
+        <name>Negoptim__LBL_Include_Products_WO_Brand</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Included Brands --></label>
         <name>Negoptim__LBL_IncludedBrands</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Index_Table --></label>
+        <name>Negoptim__LBL_Index_Table</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Index V2 Helper Text --></label>
+        <name>Negoptim__LBL_Index_V2_Helper_Text</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Info --></label>
+        <name>Negoptim__LBL_Info</name>
     </customLabels>
     <customLabels>
         <label><!-- Information --></label>
@@ -523,6 +872,10 @@
         <name>Negoptim__LBL_Inset</name>
     </customLabels>
     <customLabels>
+        <label><!-- Internally_Calculated --></label>
+        <name>Negoptim__LBL_Internally_Calculated</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Interval of months --></label>
         <name>Negoptim__LBL_Interval_of_months</name>
     </customLabels>
@@ -535,12 +888,40 @@
         <name>Negoptim__LBL_Is_Field_Hidden</name>
     </customLabels>
     <customLabels>
+        <label><!-- Is_Not_Exportable --></label>
+        <name>Negoptim__LBL_Is_Not_Exportable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_January --></label>
+        <name>Negoptim__LBL_January</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_July --></label>
+        <name>Negoptim__LBL_July</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_June --></label>
+        <name>Negoptim__LBL_June</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Last --></label>
         <name>Negoptim__LBL_Last</name>
     </customLabels>
     <customLabels>
         <label><!-- Last Strat --></label>
         <name>Negoptim__LBL_Last_Strat</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Link --></label>
+        <name>Negoptim__LBL_Link</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Live_Preview --></label>
+        <name>Negoptim__LBL_Live_Preview</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Load_More --></label>
+        <name>Negoptim__LBL_Load_More</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Loading --></label>
@@ -551,6 +932,22 @@
         <name>Negoptim__LBL_Lower_Bound</name>
     </customLabels>
     <customLabels>
+        <label><!-- Manage Discount Detail --></label>
+        <name>Negoptim__LBL_Manage_Discount_Detail</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Manual_Invoicing_Planning --></label>
+        <name>Negoptim__LBL_Manual_Invoicing_Planning</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_March --></label>
+        <name>Negoptim__LBL_March</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Mass update --></label>
+        <name>Negoptim__LBL_Mass_update</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Master_Object --></label>
         <name>Negoptim__LBL_Master_Object</name>
     </customLabels>
@@ -559,8 +956,24 @@
         <name>Negoptim__LBL_Maximum</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_May --></label>
+        <name>Negoptim__LBL_May</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Message --></label>
+        <name>Negoptim__LBL_Message</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Message_Type --></label>
+        <name>Negoptim__LBL_Message_Type</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Minimum --></label>
         <name>Negoptim__LBL_Minimum</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Month --></label>
+        <name>Negoptim__LBL_Month</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_More_Actions --></label>
@@ -583,8 +996,28 @@
         <name>Negoptim__LBL_ND_Nego_Histo</name>
     </customLabels>
     <customLabels>
+        <label><!-- Name --></label>
+        <name>Negoptim__LBL_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Nego_Scope_Selection --></label>
+        <name>Negoptim__LBL_Nego_Scope_Selection</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Négocier Post CU --></label>
+        <name>Negoptim__LBL_Negotiation_Followup</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Negotiation_Report --></label>
+        <name>Negoptim__LBL_Negotiation_Report</name>
+    </customLabels>
+    <customLabels>
         <label><!-- New --></label>
         <name>Negoptim__LBL_New</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- New Nego Scope --></label>
+        <name>Negoptim__LBL_NewNegoScope</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_New_Client_WD_MarketBased_pts --></label>
@@ -639,8 +1072,20 @@
         <name>Negoptim__LBL_None_Picklist_Value</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_November --></label>
+        <name>Negoptim__LBL_November</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL Number Of Fixed Columns --></label>
         <name>Negoptim__LBL_Number_Of_Fixed_Columns</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Object Title --></label>
+        <name>Negoptim__LBL_Object_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_October --></label>
+        <name>Negoptim__LBL_October</name>
     </customLabels>
     <customLabels>
         <label><!-- Of --></label>
@@ -651,8 +1096,16 @@
         <name>Negoptim__LBL_Offline</name>
     </customLabels>
     <customLabels>
+        <label><!-- Ok --></label>
+        <name>Negoptim__LBL_Ok</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Online --></label>
         <name>Negoptim__LBL_Online</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Only_Display_Switch_Products --></label>
+        <name>Negoptim__LBL_Only_Display_Switch_Products</name>
     </customLabels>
     <customLabels>
         <label><!-- Only Show Intro Products --></label>
@@ -665,6 +1118,10 @@
     <customLabels>
         <label><!-- LBL_Open_Lazy_Detailed_Report --></label>
         <name>Negoptim__LBL_Open_Lazy_Detailed_Report</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Open_Page --></label>
+        <name>Negoptim__LBL_Open_Page</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Open_Summary --></label>
@@ -691,12 +1148,32 @@
         <name>Negoptim__LBL_Outset</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_Overwrite --></label>
+        <name>Negoptim__LBL_Overwrite</name>
+    </customLabels>
+    <customLabels>
         <label><!-- PDV --></label>
         <name>Negoptim__LBL_PDV</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_Parent_Fields --></label>
+        <name>Negoptim__LBL_Parent_Fields</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Patern --></label>
         <name>Negoptim__LBL_Patern</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Percentage --></label>
+        <name>Negoptim__LBL_Percentage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- % --></label>
+        <name>Negoptim__LBL_Percentage_Abbr</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Personalised_Field --></label>
+        <name>Negoptim__LBL_Personalised_Field</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL Picklist Formatting --></label>
@@ -707,8 +1184,20 @@
         <name>Negoptim__LBL_Please_Select_A_User</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_Predefined_External_Controls --></label>
+        <name>Negoptim__LBL_Predefined_External_Controls</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Preview --></label>
         <name>Negoptim__LBL_Preview</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Preview_Page --></label>
+        <name>Negoptim__LBL_Preview_Page</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Preview Table --></label>
+        <name>Negoptim__LBL_Preview_Table</name>
     </customLabels>
     <customLabels>
         <label><!-- Previous --></label>
@@ -719,12 +1208,52 @@
         <name>Negoptim__LBL_Previous_Value</name>
     </customLabels>
     <customLabels>
+        <label><!-- Prices --></label>
+        <name>Negoptim__LBL_Prices</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Product_Filters --></label>
+        <name>Negoptim__LBL_Product_Filters</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Product List --></label>
+        <name>Negoptim__LBL_Product_List</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Product_Type --></label>
         <name>Negoptim__LBL_Product_Type</name>
     </customLabels>
     <customLabels>
         <label><!-- Profile --></label>
         <name>Negoptim__LBL_Profile</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_PromoCalendar_Title1 --></label>
+        <name>Negoptim__LBL_PromoCalendar_Title1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_PromoCalendar_Title2 --></label>
+        <name>Negoptim__LBL_PromoCalendar_Title2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_PromoCalendar_Title3 --></label>
+        <name>Negoptim__LBL_PromoCalendar_Title3</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_PromoMessage --></label>
+        <name>Negoptim__LBL_PromoMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Promo_Filters --></label>
+        <name>Negoptim__LBL_Promo_Filters</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Promotion --></label>
+        <name>Negoptim__LBL_Promotion</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Promotions --></label>
+        <name>Negoptim__LBL_Promotions</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Read_Only --></label>
@@ -747,8 +1276,32 @@
         <name>Negoptim__LBL_Refresh</name>
     </customLabels>
     <customLabels>
+        <label><!-- Refresh Index --></label>
+        <name>Negoptim__LBL_Refresh_Index</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Register --></label>
+        <name>Negoptim__LBL_Register</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Remaining Amount --></label>
+        <name>Negoptim__LBL_Remaining_Amount</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Reno_Helptext --></label>
         <name>Negoptim__LBL_Reno_Helptext</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Replace_URL_With --></label>
+        <name>Negoptim__LBL_Replace_URL_With</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Replace_With_Icon --></label>
+        <name>Negoptim__LBL_Replace_With_Icon</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Replace_With_Text --></label>
+        <name>Negoptim__LBL_Replace_With_Text</name>
     </customLabels>
     <customLabels>
         <label><!-- Request For Approval --></label>
@@ -759,7 +1312,11 @@
         <name>Negoptim__LBL_Request_For_Approval_DV_Nego</name>
     </customLabels>
     <customLabels>
-        <label><!-- LBL Reset --></label>
+        <label><!-- LBL_Rerender --></label>
+        <name>Negoptim__LBL_Rerender</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Reset --></label>
         <name>Negoptim__LBL_Reset</name>
     </customLabels>
     <customLabels>
@@ -767,8 +1324,20 @@
         <name>Negoptim__LBL_Reset_Password</name>
     </customLabels>
     <customLabels>
+        <label><!-- Response To Supplier --></label>
+        <name>Negoptim__LBL_Response_To_Supplier</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Results --></label>
+        <name>Negoptim__LBL_Results</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Ridge --></label>
         <name>Negoptim__LBL_Ridge</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Rounding --></label>
+        <name>Negoptim__LBL_Rounding</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Save --></label>
@@ -791,8 +1360,24 @@
         <name>Negoptim__LBL_Search_Brand_Type</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL Search Element --></label>
+        <name>Negoptim__LBL_Search_Element</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Search For Available Fields --></label>
+        <name>Negoptim__LBL_Search_For_Available_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Search For Reference Fields --></label>
+        <name>Negoptim__LBL_Search_For_Reference_Fields</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Search_For_User --></label>
         <name>Negoptim__LBL_Search_For_User</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Search Supplier PG --></label>
+        <name>Negoptim__LBL_Search_Supplier_PG</name>
     </customLabels>
     <customLabels>
         <label><!-- Select --></label>
@@ -801,6 +1386,10 @@
     <customLabels>
         <label><!-- LBL Select Columns --></label>
         <name>Negoptim__LBL_Select_Columns</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Select_Field --></label>
+        <name>Negoptim__LBL_Select_Field</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Select_Master_Object --></label>
@@ -827,16 +1416,44 @@
         <name>Negoptim__LBL_Selected</name>
     </customLabels>
     <customLabels>
+        <label><!-- Selected structure elements --></label>
+        <name>Negoptim__LBL_SelectedStructureElements</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Selected_Fields --></label>
         <name>Negoptim__LBL_Selected_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL SellOutFact --></label>
+        <name>Negoptim__LBL_SellOutFact</name>
     </customLabels>
     <customLabels>
         <label><!-- Send --></label>
         <name>Negoptim__LBL_Send</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_September --></label>
+        <name>Negoptim__LBL_September</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Settings --></label>
         <name>Negoptim__LBL_Settings</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Show All Products --></label>
+        <name>Negoptim__LBL_Show_All_Products</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Show Calendar Settings --></label>
+        <name>Negoptim__LBL_Show_Calendar_Settings</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Show_File_Input --></label>
+        <name>Negoptim__LBL_Show_File_Input</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Show_Filter_On_Column_Header --></label>
+        <name>Negoptim__LBL_Show_Filter_On_Column_Header</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL Show Hide Columns --></label>
@@ -851,24 +1468,56 @@
         <name>Negoptim__LBL_Show_Intro_Products</name>
     </customLabels>
     <customLabels>
+        <label><!-- Show Only HLP --></label>
+        <name>Negoptim__LBL_Show_Only_HLP</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Show_Promo_PWF --></label>
+        <name>Negoptim__LBL_Show_Promo_PWF</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Show Record With NetPrice Gap --></label>
+        <name>Negoptim__LBL_Show_Record_With_Net_Price_Gap</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Show_Record_With_Unit_Cost_Gap --></label>
         <name>Negoptim__LBL_Show_Record_With_Unit_Cost_Gap</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Show_Regular_PWF --></label>
+        <name>Negoptim__LBL_Show_Regular_PWF</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Show_Regular_Products_Related_To_Promo_Lines --></label>
+        <name>Negoptim__LBL_Show_Regular_Products_Related_To_Promo_Lines</name>
     </customLabels>
     <customLabels>
         <label><!-- Show SubTotal --></label>
         <name>Negoptim__LBL_Show_SubTotal</name>
     </customLabels>
     <customLabels>
-        <label><!-- LBL_Show_Total --></label>
+        <label>Montrer le total</label>
         <name>Negoptim__LBL_Show_Total</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Show Tree Settings --></label>
+        <name>Negoptim__LBL_Show_Tree_Settings</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Show_Zero_Rows --></label>
         <name>Negoptim__LBL_Show_Zero_Rows</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_Simulate_Amount --></label>
+        <name>Negoptim__LBL_Simulate_Amount</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Size --></label>
         <name>Negoptim__LBL_Size</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Slabs --></label>
+        <name>Negoptim__LBL_Slabs</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Solid --></label>
@@ -877,6 +1526,10 @@
     <customLabels>
         <label><!-- LBL_Start --></label>
         <name>Negoptim__LBL_Start</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Status --></label>
+        <name>Negoptim__LBL_Status</name>
     </customLabels>
     <customLabels>
         <label><!-- Closed --></label>
@@ -919,16 +1572,40 @@
         <name>Negoptim__LBL_Strate_1</name>
     </customLabels>
     <customLabels>
+        <label><!-- Structure Elements --></label>
+        <name>Negoptim__LBL_StructureElements</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Style --></label>
         <name>Negoptim__LBL_Style</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Success --></label>
+        <name>Negoptim__LBL_Success</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Switch_Helptext --></label>
         <name>Negoptim__LBL_Switch_Helptext</name>
     </customLabels>
     <customLabels>
+        <label><!-- System Information --></label>
+        <name>Negoptim__LBL_System_Information</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_TSP_WD --></label>
         <name>Negoptim__LBL_TSP_WD</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Target --></label>
+        <name>Negoptim__LBL_Target</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tax Information --></label>
+        <name>Negoptim__LBL_Tax_Information</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Template_Label --></label>
+        <name>Negoptim__LBL_Template_Label</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Template_List --></label>
@@ -947,6 +1624,22 @@
         <name>Negoptim__LBL_Text</name>
     </customLabels>
     <customLabels>
+        <label><!-- Threshold --></label>
+        <name>Negoptim__LBL_Threshold</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Time Line Level Control --></label>
+        <name>Negoptim__LBL_Time_Line_Level_Control</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Time Line Master-Lookup --></label>
+        <name>Negoptim__LBL_Time_Line_Master_Lookup</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL Time Line Master-Lookup Parent --></label>
+        <name>Negoptim__LBL_Time_Line_Master_Lookup_Parent</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Title --></label>
         <name>Negoptim__LBL_Title</name>
     </customLabels>
@@ -959,8 +1652,32 @@
         <name>Negoptim__LBL_Tons_Nego_History</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_Tooltip_Category_Search --></label>
+        <name>Negoptim__LBL_Tooltip_Category_Search</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Tooltip_Interval_BDate --></label>
+        <name>Negoptim__LBL_Tooltip_Interval_BDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Tooltip_Interval_EDate --></label>
+        <name>Negoptim__LBL_Tooltip_Interval_EDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Tooltip_Product_Search --></label>
+        <name>Negoptim__LBL_Tooltip_Product_Search</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Tooltip_Promo_Search --></label>
+        <name>Negoptim__LBL_Tooltip_Promo_Search</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Total --></label>
         <name>Negoptim__LBL_Total</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Total Amount --></label>
+        <name>Negoptim__LBL_Total_Amount</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Total_Ref_Client_WD_Market --></label>
@@ -979,6 +1696,10 @@
         <name>Negoptim__LBL_Totals</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL Tree Settings --></label>
+        <name>Negoptim__LBL_Tree_Settings</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Trigger Settings --></label>
         <name>Negoptim__LBL_Trigger_Settings</name>
     </customLabels>
@@ -987,8 +1708,24 @@
         <name>Negoptim__LBL_True</name>
     </customLabels>
     <customLabels>
+        <label><!-- Type --></label>
+        <name>Negoptim__LBL_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- URL_Settings --></label>
+        <name>Negoptim__LBL_URL_Settings</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unit Charges --></label>
+        <name>Negoptim__LBL_Unit_Charges</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Universe --></label>
         <name>Negoptim__LBL_Universe</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Upload --></label>
+        <name>Negoptim__LBL_Upload</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Upload_File --></label>
@@ -1007,8 +1744,24 @@
         <name>Negoptim__LBL_Validate_Budget</name>
     </customLabels>
     <customLabels>
+        <label><!-- Validate PWF --></label>
+        <name>Negoptim__LBL_Validate_PWF</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HMP validé par le CG --></label>
+        <name>Negoptim__LBL_Validated_Rise_Rate</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Value --></label>
         <name>Negoptim__LBL_Value</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Value Abbreviation --></label>
+        <name>Negoptim__LBL_Value_Abb</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL WD --></label>
+        <name>Negoptim__LBL_WD</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_WD_Client --></label>
@@ -1051,6 +1804,10 @@
         <name>Negoptim__Loading</name>
     </customLabels>
     <customLabels>
+        <label><!-- APW To NetPrice --></label>
+        <name>Negoptim__MSG_APW_To_NetPrice</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Access Denied --></label>
         <name>Negoptim__MSG_Access_Denied</name>
     </customLabels>
@@ -1075,12 +1832,20 @@
         <name>Negoptim__MSG_Application_Error</name>
     </customLabels>
     <customLabels>
+        <label><!-- Apply Changes To All PWF --></label>
+        <name>Negoptim__MSG_Apply_Changes_To_All_PWF</name>
+    </customLabels>
+    <customLabels>
         <label><!-- MSG_Assortment_Not_Validated --></label>
         <name>Negoptim__MSG_Assortment_Not_Validated</name>
     </customLabels>
     <customLabels>
         <label><!-- successfully Validated --></label>
         <name>Negoptim__MSG_Assortment_Validated</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_Base_To_Mandatory_For_Out_Of_Scope_Conditions --></label>
+        <name>Negoptim__MSG_Base_To_Mandatory_For_Out_Of_Scope_Conditions</name>
     </customLabels>
     <customLabels>
         <label><!-- MSG_Between_Value_Error --></label>
@@ -1111,12 +1876,20 @@
         <name>Negoptim__MSG_Can_t_Assign_This_License</name>
     </customLabels>
     <customLabels>
+        <label><!-- MSG_Cancel_Or_Save --></label>
+        <name>Negoptim__MSG_Cancel_Or_Save</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Cannot change the current supplier  because there are PGs linked to this brand f --></label>
         <name>Negoptim__MSG_Cannot_Change_Current_Supplier</name>
     </customLabels>
     <customLabels>
         <label><!-- MSG_Cannot_Delete_Product_Linked_To_Assortment_Detail --></label>
         <name>Negoptim__MSG_Cannot_Delete_Product_Linked_To_Assortment_Detail</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_Cannot_Delete_Product_Linked_To_Commercial_Plan_Detail --></label>
+        <name>Negoptim__MSG_Cannot_Delete_Product_Linked_To_Commercial_Plan_Detail</name>
     </customLabels>
     <customLabels>
         <label><!-- Cannot delete this record --></label>
@@ -1127,12 +1900,24 @@
         <name>Negoptim__MSG_Cannot_Select_Intro_for_Product_Referenced_in_Assortment</name>
     </customLabels>
     <customLabels>
+        <label><!-- Cannot change NS for Condition --></label>
+        <name>Negoptim__MSG_Cannot_change_NS_for_Condition</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Cant not delete this brand , it is used in a negoscope --></label>
         <name>Negoptim__MSG_Cant_Delete_Brand</name>
     </customLabels>
     <customLabels>
         <label><!-- MSG_Cant_Open_Fullscreen --></label>
         <name>Negoptim__MSG_Cant_Open_Fullscreen</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_Check_Before_Deploy --></label>
+        <name>Negoptim__MSG_Check_Before_Deploy</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_Checked_Subdiscount --></label>
+        <name>Negoptim__MSG_Checked_Subdiscount</name>
     </customLabels>
     <customLabels>
         <label><!-- Choose Brands --></label>
@@ -1167,6 +1952,10 @@
         <name>Negoptim__MSG_Confirm_Import_Products</name>
     </customLabels>
     <customLabels>
+        <label><!-- MSG_Confirm_Message_PopUp --></label>
+        <name>Negoptim__MSG_Confirm_Message_PopUp</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Confirm Request For Approval --></label>
         <name>Negoptim__MSG_Confirm_Request_For_Approval</name>
     </customLabels>
@@ -1175,8 +1964,20 @@
         <name>Negoptim__MSG_Confirm_Validate</name>
     </customLabels>
     <customLabels>
+        <label><!-- MSG_Conso_Required --></label>
+        <name>Negoptim__MSG_Conso_Required</name>
+    </customLabels>
+    <customLabels>
         <label><!-- MSG_Contact_Successfully_Added --></label>
         <name>Negoptim__MSG_Contact_Successfully_Added</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_Contract_Discount_Delete_Validation_Rule --></label>
+        <name>Negoptim__MSG_Contract_Discount_Delete_Validation_Rule</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Another contract exist in this period for the same type --></label>
+        <name>Negoptim__MSG_Contract_Exist_Same_Period</name>
     </customLabels>
     <customLabels>
         <label><!-- MSG_Delete_Complete --></label>
@@ -1197,6 +1998,14 @@
     <customLabels>
         <label><!-- Distributor {0} already linked to brand {1} ! Please cancel or choose another Su --></label>
         <name>Negoptim__MSG_Distributor_Linked_Brand</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_EDateSupToBDate --></label>
+        <name>Negoptim__MSG_EDateSupToBDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_EDateYearInequalToBDateYear --></label>
+        <name>Negoptim__MSG_EDateYearInequalToBDateYear</name>
     </customLabels>
     <customLabels>
         <label><!-- Email Sent Successfully --></label>
@@ -1229,6 +2038,10 @@
     <customLabels>
         <label><!-- Error occurred --></label>
         <name>Negoptim__MSG_Error_Occurred</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG Error Subdiscounts Out Of Scope --></label>
+        <name>Negoptim__MSG_Error_Subdiscounts_Out_Of_Scope</name>
     </customLabels>
     <customLabels>
         <label><!-- MSG_Exporting_Excel --></label>
@@ -1291,6 +2104,10 @@
         <name>Negoptim__MSG_Insufficient_Permissions_To_Update_Product</name>
     </customLabels>
     <customLabels>
+        <label><!-- Code Budget invalide pour le type sélectionné Négo --></label>
+        <name>Negoptim__MSG_Invalid_Code_Budget_For_Nego_DiscountType</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Invalid Email --></label>
         <name>Negoptim__MSG_Invalid_Email</name>
     </customLabels>
@@ -1311,16 +2128,32 @@
         <name>Negoptim__MSG_Invalid_Phone_Number</name>
     </customLabels>
     <customLabels>
+        <label><!-- MSG_Invalid_Record --></label>
+        <name>Negoptim__MSG_Invalid_Record</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Invalid Title --></label>
         <name>Negoptim__MSG_Invalid_Title</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Invalid Type for contract --></label>
+        <name>Negoptim__MSG_Invalid_Type_For_Contract</name>
     </customLabels>
     <customLabels>
         <label><!-- Invalid Username --></label>
         <name>Negoptim__MSG_Invalid_Username</name>
     </customLabels>
     <customLabels>
+        <label><!-- Job In Progress --></label>
+        <name>Negoptim__MSG_Job_In_Progress</name>
+    </customLabels>
+    <customLabels>
         <label><!-- License Limit Exceeded --></label>
         <name>Negoptim__MSG_License_Limit_Exceeded</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_Maintenance_Mode_Active --></label>
+        <name>Negoptim__MSG_Maintenance_Mode_Active</name>
     </customLabels>
     <customLabels>
         <label><!-- MSG_Missing_Field --></label>
@@ -1329,6 +2162,10 @@
     <customLabels>
         <label><!-- Success message when Assortment BU Matrix page is saved --></label>
         <name>Negoptim__MSG_Modifications_Saved_SF_And_Sequences_Generated</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_NS_Creation_Hints --></label>
+        <name>Negoptim__MSG_NS_Creation_Hints</name>
     </customLabels>
     <customLabels>
         <label><!-- No Brand --></label>
@@ -1341,6 +2178,10 @@
     <customLabels>
         <label><!-- No Read Access --></label>
         <name>Negoptim__MSG_No_Read_Access</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_No_Record_ID --></label>
+        <name>Negoptim__MSG_No_Record_ID</name>
     </customLabels>
     <customLabels>
         <label><!-- MSG_No_switch_client_status_deleted_status_validated --></label>
@@ -1357,6 +2198,10 @@
     <customLabels>
         <label><!-- Please Correct The Error And Try Again --></label>
         <name>Negoptim__MSG_Please_Correct_The_Error_And_Try_Again</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Processing Generate GRC Assortment --></label>
+        <name>Negoptim__MSG_Processing_Generate_GRC_Assortment</name>
     </customLabels>
     <customLabels>
         <label><!-- MSG Product element already exists with the same code value --></label>
@@ -1379,8 +2224,24 @@
         <name>Negoptim__MSG_Product_already_exist_in_assortment</name>
     </customLabels>
     <customLabels>
+        <label><!-- MSG_Quantity_Mandatory_For_Unit_Amount --></label>
+        <name>Negoptim__MSG_Quantity_Mandatory_For_Unit_Amount</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_Rank_IsRequired --></label>
+        <name>Negoptim__MSG_Rank_IsRequired</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Record was modified by another user --></label>
         <name>Negoptim__MSG_Record_Modified_By_Another_User</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_Request_Timed_Out --></label>
+        <name>Negoptim__MSG_Request_Timed_Out</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_Rerender_Help_Text --></label>
+        <name>Negoptim__MSG_Rerender_Help_Text</name>
     </customLabels>
     <customLabels>
         <label><!-- MSG_Save_As_Complete --></label>
@@ -1395,12 +2256,28 @@
         <name>Negoptim__MSG_Save_Complete</name>
     </customLabels>
     <customLabels>
+        <label><!-- MSG_Save_failed_contract_discounts_exists_on_same_scope --></label>
+        <name>Negoptim__MSG_Save_failed_contract_discounts_exists_on_same_scope</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select APW --></label>
+        <name>Negoptim__MSG_Select_APW</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Select Cluster For Client Status New. --></label>
         <name>Negoptim__MSG_Select_Cluster_For_Client_Status_New</name>
     </customLabels>
     <customLabels>
+        <label><!-- MSG_Status_Unknown --></label>
+        <name>Negoptim__MSG_Status_Unknown</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Success --></label>
         <name>Negoptim__MSG_Success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Successfully Imported --></label>
+        <name>Negoptim__MSG_Successfully_Imported</name>
     </customLabels>
     <customLabels>
         <label><!-- MSG_Successfully_Saved --></label>
@@ -1451,6 +2328,10 @@
         <name>Negoptim__MSG_Template_Type_Missing</name>
     </customLabels>
     <customLabels>
+        <label><!-- MSG_The_Combination_NS_Name_Supplier_Keys_Must_Be_Unique --></label>
+        <name>Negoptim__MSG_The_Combination_NS_Name_Supplier_Keys_Must_Be_Unique</name>
+    </customLabels>
+    <customLabels>
         <label><!-- User Successfully Added --></label>
         <name>Negoptim__MSG_User_Successfully_Added</name>
     </customLabels>
@@ -1459,8 +2340,20 @@
         <name>Negoptim__MSG_Warning</name>
     </customLabels>
     <customLabels>
+        <label><!-- MSG Warning Subdiscounts Out Of Scope --></label>
+        <name>Negoptim__MSG_Warning_Subdiscounts_Out_Of_Scope</name>
+    </customLabels>
+    <customLabels>
         <label><!-- nta Successfully Added --></label>
         <name>Negoptim__MSG_nta_Suessfully_Added</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NegoScopeSaved --></label>
+        <name>Negoptim__NegoScopeSaved</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Negotiate --></label>
+        <name>Negoptim__Negotiate</name>
     </customLabels>
     <customLabels>
         <label><!-- New WD --></label>
@@ -1539,8 +2432,60 @@
         <name>Negoptim__Save</name>
     </customLabels>
     <customLabels>
-        <label><!-- Search --></label>
+        <label>Recherchez</label>
         <name>Negoptim__Search</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Section Infos --></label>
+        <name>Negoptim__Section_Infos</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Section Infos sys --></label>
+        <name>Negoptim__Section_Infos_sys</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Section_Life_Cycle --></label>
+        <name>Negoptim__Section_Life_Cycle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Discount --></label>
+        <name>Negoptim__Section_PWF_Discounts</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Prices --></label>
+        <name>Negoptim__Section_PWF_Prices</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Promotions --></label>
+        <name>Negoptim__Section_PWF_Promotions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Rounding --></label>
+        <name>Negoptim__Section_PWF_Rounding</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tax Information --></label>
+        <name>Negoptim__Section_PWF_Taxes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unit Charges --></label>
+        <name>Negoptim__Section_PWF_Unit_Charges</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Prices --></label>
+        <name>Negoptim__Section_SPG_Prices</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Rounding --></label>
+        <name>Negoptim__Section_SPG_Rounding</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tax Information --></label>
+        <name>Negoptim__Section_SPG_Taxes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Unit Charges --></label>
+        <name>Negoptim__Section_SPG_Unit_Charges</name>
     </customLabels>
     <customLabels>
         <label><!-- Send --></label>
@@ -1571,6 +2516,38 @@
         <name>Negoptim__Switch_All</name>
     </customLabels>
     <customLabels>
+        <label><!-- Tab Commercial Plans --></label>
+        <name>Negoptim__Tab_Commercial_Plans</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tab_Nego_Scope --></label>
+        <name>Negoptim__Tab_Nego_Scope</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tab PWF Details --></label>
+        <name>Negoptim__Tab_PWF_Details</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tab Promo Detail --></label>
+        <name>Negoptim__Tab_Promo_Detail</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tab_distributed_brands --></label>
+        <name>Negoptim__Tab_distributed_brands</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tab infos gen --></label>
+        <name>Negoptim__Tab_infos_gen</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Tab_Product_Assortment --></label>
+        <name>Negoptim__Tab_product_assortment</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TotalComputed --></label>
+        <name>Negoptim__TotalComputed</name>
+    </customLabels>
+    <customLabels>
         <label><!-- User License --></label>
         <name>Negoptim__User_License</name>
     </customLabels>
@@ -1599,40 +2576,408 @@
         <name>Negoptim__emailCc</name>
     </customLabels>
     <customLabels>
+        <label><!-- Assortment Simulation Created --></label>
+        <name>SPKER_MSG_Assortment_Simulation_Created</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Assortment target Validate Successfully --></label>
+        <name>SPKER_MSG_Assortment_target_Validate_Successfully</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG Check onTop before validate --></label>
+        <name>SPKER_MSG_Check_onTop_before_validate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Execute Assortment Conso Batch Successfully --></label>
+        <name>SPKER_MSG_Execute_Assortment_Conso_Batch_Successfully</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PreValidate Budget Confirmation --></label>
+        <name>SPKER_MSG_PreValidate_Budget_Confirmation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG Validate Simulation --></label>
+        <name>SPKER_MSG_Validate_Simulation</name>
+    </customLabels>
+    <customLabels>
+        <label>Informations Générales</label>
+        <name>TAB_General_Info</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AccessLevel --></label>
+        <name>fsc_AccessLevel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Back --></label>
+        <name>fsc_Back</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ButtonIsNotSupportedMessage --></label>
+        <name>fsc_ButtonIsNotSupportedMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ConditionLogicHelpText --></label>
+        <name>fsc_ConditionLogicHelpText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete --></label>
+        <name>fsc_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FieldIsNotSupportedMessage --></label>
+        <name>fsc_FieldIsNotSupportedMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- fsc_FieldTypeNotSuportedMessage --></label>
+        <name>fsc_FieldTypeNotSuportedMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- For --></label>
+        <name>fsc_For</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Key Label --></label>
+        <name>fsc_Key_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LackingPermissions --></label>
+        <name>fsc_LackingPermissions</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ManagerEmptyMessage --></label>
+        <name>fsc_ManagerEmptyMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MultipleGroupsForRole --></label>
+        <name>fsc_MultipleGroupsForRole</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Name --></label>
+        <name>fsc_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NonePicklistValueLabel --></label>
+        <name>fsc_NonePicklistValueLabel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- OWDReadWrite --></label>
+        <name>fsc_OWDReadWrite</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- OwnerAdminModify --></label>
+        <name>fsc_OwnerAdminModify</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PublicGroups --></label>
+        <name>fsc_PublicGroups</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Queues --></label>
+        <name>fsc_Queues</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Read --></label>
+        <name>fsc_Read</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ReadWrite --></label>
+        <name>fsc_ReadWrite</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Reason --></label>
+        <name>fsc_Reason</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RelatedUsers --></label>
+        <name>fsc_RelatedUsers</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Roles --></label>
+        <name>fsc_Roles</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Search in --></label>
+        <name>fsc_Search</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SearchFor --></label>
+        <name>fsc_SearchFor</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SetAccessLevel --></label>
+        <name>fsc_SetAccessLevel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SupportedAddCapabilitiesEmptyMessage --></label>
+        <name>fsc_SupportedAddCapabilitiesEmptyMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SupportedButtonsEmptyMessage --></label>
+        <name>fsc_SupportedButtonsEmptyMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SupportedEditCapabilitiesEmptyMessage --></label>
+        <name>fsc_SupportedEditCapabilitiesEmptyMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TooManyResultsMessage --></label>
+        <name>fsc_TooManyResultsMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Type --></label>
+        <name>fsc_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UserOrGroup --></label>
+        <name>fsc_UserOrGroup</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Users --></label>
+        <name>fsc_Users</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Value Label --></label>
+        <name>fsc_Value_Label</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel --></label>
+        <name>nToolkit__Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error --></label>
+        <name>nToolkit__Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Activate All --></label>
+        <name>nToolkit__LBL_Activate_All</name>
+    </customLabels>
+    <customLabels>
         <label><!-- All --></label>
         <name>nToolkit__LBL_All</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- All Reports --></label>
+        <name>nToolkit__LBL_All_Reports</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Allow Sending Email --></label>
+        <name>nToolkit__LBL_Allow_Sending_Email</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Allow Sending Email Technical --></label>
+        <name>nToolkit__LBL_Allow_Sending_Email_Technical</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Allow Notification --></label>
+        <name>nToolkit__LBL_Allow_Sending_Notification</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Apex_Code --></label>
+        <name>nToolkit__LBL_Apex_Code</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Apex_Code_Executor --></label>
+        <name>nToolkit__LBL_Apex_Code_Executor</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Apex_Profiling --></label>
+        <name>nToolkit__LBL_Apex_Profiling</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Apply_To_All_Profile --></label>
+        <name>nToolkit__LBL_Apply_To_All_Profile</name>
     </customLabels>
     <customLabels>
         <label><!-- Available --></label>
         <name>nToolkit__LBL_Available</name>
     </customLabels>
     <customLabels>
+        <label><!-- Batch name --></label>
+        <name>nToolkit__LBL_Batch_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Batches Control --></label>
+        <name>nToolkit__LBL_Batches_Control</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Callout --></label>
+        <name>nToolkit__LBL_Callout</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cancel Clone Report --></label>
+        <name>nToolkit__LBL_Cancel</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Caracteristics --></label>
         <name>nToolkit__LBL_Caracteristics</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Choose_the_profiles_you_want_to_copy --></label>
+        <name>nToolkit__LBL_Choose_the_profiles_you_want_to_copy</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Choose_the_sender_email --></label>
+        <name>nToolkit__LBL_Choose_the_sender_email</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Close --></label>
+        <name>nToolkit__LBL_Close</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Column --></label>
+        <name>nToolkit__LBL_Column</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Confirm --></label>
+        <name>nToolkit__LBL_Confirm</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Copy_Batch_Settings_From_Profile --></label>
+        <name>nToolkit__LBL_Copy_Batch_Settings_From_Profile</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Copy_Metadata_From_a_Profile --></label>
+        <name>nToolkit__LBL_Copy_Metadata_From_a_Profile</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Create --></label>
+        <name>nToolkit__LBL_Create</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Database --></label>
+        <name>nToolkit__LBL_Database</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Deactivate All --></label>
+        <name>nToolkit__LBL_Deactivate_All</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Debug --></label>
+        <name>nToolkit__LBL_Debug</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Debug_Level --></label>
+        <name>nToolkit__LBL_Debug_Level</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Developer_Name --></label>
+        <name>nToolkit__LBL_Developer_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Disallow Email --></label>
+        <name>nToolkit__LBL_Disallow_Sending_Email</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Disallow Email Technical --></label>
+        <name>nToolkit__LBL_Disallow_Sending_Email_Technical</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Disallow Notification --></label>
+        <name>nToolkit__LBL_Disallow_Sending_Notification</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Email_Subject --></label>
+        <name>nToolkit__LBL_Email_Subject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Error --></label>
+        <name>nToolkit__LBL_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error Cloning --></label>
+        <name>nToolkit__LBL_Error_Cloning</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Error Loading List --></label>
+        <name>nToolkit__LBL_Error_Loading_List</name>
     </customLabels>
     <customLabels>
         <label><!-- E --></label>
         <name>nToolkit__LBL_Exclusive_abbr</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_Execute --></label>
+        <name>nToolkit__LBL_Execute</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Execution_mode --></label>
+        <name>nToolkit__LBL_Execution_mode</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_File_Explorer --></label>
+        <name>nToolkit__LBL_File_Explorer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Fine --></label>
+        <name>nToolkit__LBL_Fine</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Finer --></label>
+        <name>nToolkit__LBL_Finer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Finest --></label>
+        <name>nToolkit__LBL_Finest</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- First --></label>
+        <name>nToolkit__LBL_First</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Image_Explorer --></label>
         <name>nToolkit__LBL_Image_Explorer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Info --></label>
+        <name>nToolkit__LBL_Info</name>
     </customLabels>
     <customLabels>
         <label><!-- I --></label>
         <name>nToolkit__LBL_Inno_abbr</name>
     </customLabels>
     <customLabels>
+        <label><!-- Last --></label>
+        <name>nToolkit__LBL_Last</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Line --></label>
+        <name>nToolkit__LBL_Line</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_Load_More_Files --></label>
         <name>nToolkit__LBL_Load_More_Files</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Loading --></label>
+        <name>nToolkit__LBL_Loading</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Matrix_View --></label>
+        <name>nToolkit__LBL_Matrix_View</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Reports --></label>
+        <name>nToolkit__LBL_MyReports</name>
     </customLabels>
     <customLabels>
         <label><!-- Navigate --></label>
         <name>nToolkit__LBL_Navigate</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_Nba --></label>
+        <name>nToolkit__LBL_Nba</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Next --></label>
+        <name>nToolkit__LBL_Next</name>
+    </customLabels>
+    <customLabels>
         <label><!-- LBL_No_Item_To_Display --></label>
         <name>nToolkit__LBL_No_Item_To_Display</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_None --></label>
+        <name>nToolkit__LBL_None</name>
     </customLabels>
     <customLabels>
         <label><!-- LBL_Open_report --></label>
@@ -1643,8 +2988,36 @@
         <name>nToolkit__LBL_Others</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_Output --></label>
+        <name>nToolkit__LBL_Output</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Preview --></label>
+        <name>nToolkit__LBL_Preview</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Previous --></label>
+        <name>nToolkit__LBL_Previous</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Profile --></label>
+        <name>nToolkit__LBL_Profile</name>
+    </customLabels>
+    <customLabels>
         <label><!-- R --></label>
         <name>nToolkit__LBL_Reno_abbr</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Reset --></label>
+        <name>nToolkit__LBL_Reset</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Save --></label>
+        <name>nToolkit__LBL_Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Search --></label>
+        <name>nToolkit__LBL_Search</name>
     </customLabels>
     <customLabels>
         <label><!-- Select Folder --></label>
@@ -1655,16 +3028,124 @@
         <name>nToolkit__LBL_Selected</name>
     </customLabels>
     <customLabels>
+        <label><!-- LBL_Session_Started --></label>
+        <name>nToolkit__LBL_Session_Started</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Settings --></label>
+        <name>nToolkit__LBL_Settings</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Show Filter --></label>
         <name>nToolkit__LBL_Show_Filter</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Show_More --></label>
+        <name>nToolkit__LBL_Show_More</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Standard Reports --></label>
+        <name>nToolkit__LBL_Standard_Reports</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Start_Session --></label>
+        <name>nToolkit__LBL_Start_Session</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Stop_Session --></label>
+        <name>nToolkit__LBL_Stop_Session</name>
     </customLabels>
     <customLabels>
         <label><!-- D --></label>
         <name>nToolkit__LBL_Stop_abbr</name>
     </customLabels>
     <customLabels>
+        <label><!-- Success --></label>
+        <name>nToolkit__LBL_Success</name>
+    </customLabels>
+    <customLabels>
         <label><!-- S --></label>
         <name>nToolkit__LBL_Switch_abbr</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_System --></label>
+        <name>nToolkit__LBL_System</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Trigger Settings --></label>
+        <name>nToolkit__LBL_Trigger_Settings</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Validation --></label>
+        <name>nToolkit__LBL_Validation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Visualforce --></label>
+        <name>nToolkit__LBL_Visualforce</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Warn --></label>
+        <name>nToolkit__LBL_Warn</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Warning --></label>
+        <name>nToolkit__LBL_Warning</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Wave --></label>
+        <name>nToolkit__LBL_Wave</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Whitespace_excluded --></label>
+        <name>nToolkit__LBL_Whitespace_excluded</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Whitespace_included --></label>
+        <name>nToolkit__LBL_Whitespace_included</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LBL_Workflow --></label>
+        <name>nToolkit__LBL_Workflow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Choose Report Template --></label>
+        <name>nToolkit__LBL_choose_a_template</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Loading --></label>
+        <name>nToolkit__Loading</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_CODE_COMPILED_FAILED --></label>
+        <name>nToolkit__MSG_CODE_COMPILED_FAILED</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_CODE_COMPILED_SUCCESS --></label>
+        <name>nToolkit__MSG_CODE_COMPILED_SUCCESS</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_CODE_EXECUTED_FAILED --></label>
+        <name>nToolkit__MSG_CODE_EXECUTED_FAILED</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_CODE_EXECUTED_SUCCESS --></label>
+        <name>nToolkit__MSG_CODE_EXECUTED_SUCCESS</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_COMPILED_EXECUTED_SUCCESS --></label>
+        <name>nToolkit__MSG_COMPILED_EXECUTED_SUCCESS</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_COMPLED_EXECUTED_FAILED --></label>
+        <name>nToolkit__MSG_COMPLED_EXECUTED_FAILED</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_CONFIRM_SAVE --></label>
+        <name>nToolkit__MSG_CONFIRM_SAVE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_Error_Fields --></label>
+        <name>nToolkit__MSG_Error_Fields</name>
     </customLabels>
     <customLabels>
         <label><!-- Error occurred --></label>
@@ -1674,6 +3155,58 @@
         <label><!-- MSG_Field_Already_Used --></label>
         <name>nToolkit__MSG_Field_Already_Used</name>
     </customLabels>
+    <customLabels>
+        <label><!-- MSG_Insert_apex_code --></label>
+        <name>nToolkit__MSG_Insert_apex_code</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Insufficient access to read --></label>
+        <name>nToolkit__MSG_Insufficient_Access_To_Read</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_Invalid_Object --></label>
+        <name>nToolkit__MSG_Invalid_Object</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_Invalid_Object_Field --></label>
+        <name>nToolkit__MSG_Invalid_Object_Field</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_LOG_ATTACH --></label>
+        <name>nToolkit__MSG_LOG_ATTACH</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MSG_Success --></label>
+        <name>nToolkit__MSG_Success</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Successfully Saved --></label>
+        <name>nToolkit__MSG_Successfully_Saved</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Next --></label>
+        <name>nToolkit__Next</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Previous --></label>
+        <name>nToolkit__Previous</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save --></label>
+        <name>nToolkit__Save</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- view --></label>
+        <name>nToolkit__view</name>
+    </customLabels>
+    <customTabs>
+        <label><!-- Assortment Bu Matrix --></label>
+        <name>Assortment_Bu_Matrix</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Assortment Management Panel --></label>
+        <name>Assortment_Management_Panel</name>
+    </customTabs>
     <customTabs>
         <label><!-- Assortment Matrix Comparator --></label>
         <name>Assortment_Matrix_Comparator</name>
@@ -1689,6 +3222,10 @@
     <customTabs>
         <label><!-- Grid Settings Manager --></label>
         <name>Grid_Settings_Manager</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Promo Calendar --></label>
+        <name>Promo_Calendar</name>
     </customTabs>
     <customTabs>
         <label><!-- Trigger Settings --></label>
@@ -1770,6 +3307,523 @@
         <flows/>
         <fullName>Negoptim__Set_Status_of_Assortment_details</fullName>
     </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Crown_logo</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>OnTopButton</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>OnTopButton2</name>
+                </fields>
+                <fields>
+                    <name>OnTopDisplayText</name>
+                </fields>
+                <fields>
+                    <name>OnTopDisplayText1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Picto_En_Attente_On_Top</name>
+                </fields>
+                <name>Set_as_On_Top_screen</name>
+            </screens>
+        </flows>
+        <fullName>SCREEN_AssortmentBU_OnTopSimulation</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>Congrats_DisplayText</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>confettiEffect</name>
+                        <value/>
+                    </inputParameters>
+                    <name>FlowConfetti</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Picto_Assort_Valide2</name>
+                </fields>
+                <name>Final_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Picto_Assort_a_valider2</name>
+                </fields>
+                <fields>
+                    <name>RollBack_DisplayText</name>
+                </fields>
+                <name>Final_Screen2</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>NotValidated_DisplayText</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Picto_Assort_Valide</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>horizontalAlignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageHeight</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>imageName</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Picto_Assort_a_valider</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>UnValidateButton</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>actionMode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>alignment</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>buttons</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>orientation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showLines</name>
+                        <value/>
+                    </inputParameters>
+                    <name>ValidateButton</name>
+                </fields>
+                <fields>
+                    <name>ValidatedAssortment_DisplayText</name>
+                </fields>
+                <name>Set_as_Assortment_Validate</name>
+            </screens>
+        </flows>
+        <fullName>SCREEN_AssortmentBU_ValidateNego</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>fieldApiName</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectApiName</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>recordId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>bu_source</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>fieldApiName</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectApiName</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>recordId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>bu_target</name>
+                </fields>
+                <name>Duplicate_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Duplicated_Assortment</name>
+                </fields>
+                <name>Error_Message</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>navigate</name>
+                </fields>
+                <name>navigate_To_New_Assortment</name>
+            </screens>
+        </flows>
+        <fullName>SPKERCADELAC_Duplicate_AssortmentBU</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>error</name>
+                </fields>
+                <name>Error_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Generate_Regional_Assortments</name>
+                </fields>
+                <name>Generate_assortment_screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>success_msg</name>
+                </fields>
+                <name>SuccessScreen</name>
+            </screens>
+        </flows>
+        <fullName>SPKERCADELAC_Generate_Regional_AssortmentBUs</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>Assortment_BU_RecordType_Options_Selection</name>
+                </fields>
+                <fields>
+                    <name>Assortment_BU_RecordType_Options_Selection_Screen_Section1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Assortment_BU_RecordType_Options_Selection_Screen_Section1_Column1</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Assortment_BU_RecordType_Options_Selection_Screen_Section1_Column2</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>width</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Assortment_BU_RecordType_Options_Selection_Screen_Section1_Column3</name>
+                </fields>
+                <name>Assortment_BU_RecordType_Options_Selection_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Assortment_Not_Validated_Message</name>
+                </fields>
+                <name>Assortment_Not_Validated_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Error</name>
+                </fields>
+                <name>Error_Display_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Ending_Text</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>recordId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Navigate_To_New_Record</name>
+                </fields>
+                <name>Finish_Screen</name>
+            </screens>
+        </flows>
+        <fullName>SPKER_Assortment_BU_Clone_Simulation_Flow_By_RecordType</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>ErrorMSG</name>
+                </fields>
+                <name>Error_Display_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>AssortmentClonedMSG</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>recordId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Navigate_To_Created_Record</name>
+                </fields>
+                <name>Finish_Screen</name>
+            </screens>
+        </flows>
+        <fullName>SPKER_SCREEN_Clone_Assortment_Simulation_From_Simulation</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>ErrorMSG</name>
+                </fields>
+                <name>Error_Display_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>AssortmentClonedMSG</name>
+                </fields>
+                <fields>
+                    <inputParameters>
+                        <name>recordId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Navigate_To_Created_Record</name>
+                </fields>
+                <name>Finish_Screen</name>
+            </screens>
+        </flows>
+        <fullName>SPKER_SCREEN_Clone_Assortment_Simulation_From_Simulation_Target</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>MSG</name>
+                </fields>
+                <name>Screen_MSG</name>
+            </screens>
+        </flows>
+        <fullName>SPKER_SCREEN_Execute_Consolidate_Assortment_Batch</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>Error_MSG</name>
+                </fields>
+                <name>Error_MSG_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>MSG_PreValidate</name>
+                </fields>
+                <name>Screen_Confirmation_PreValidate</name>
+            </screens>
+        </flows>
+        <fullName>SPKER_SCREEN_Set_Status_of_Assortment_Budget_to_Pre_Validate</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>MSG_Check_onTop_before_validate</name>
+                </fields>
+                <name>Confirm_onTop_true_before_validate</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Validate_simulation_screen</name>
+                </fields>
+                <name>Validate_Simulation</name>
+            </screens>
+        </flows>
+        <fullName>SPKER_SCREEN_Validate_Simulation</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>ValidateTarget</name>
+            </choices>
+            <choices>
+                <name>ValidateTargetWithNego</name>
+            </choices>
+            <choices>
+                <name>ValidateTargetWithSimulation</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>Error_MSG</name>
+                </fields>
+                <name>Error_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>recordId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>Navigate_To_New_Record</name>
+                </fields>
+                <name>Go_to_Created_Record</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Validate_Target_Options</name>
+                </fields>
+                <name>Options_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>MSG_Validate_Target</name>
+                </fields>
+                <name>Screen_Validate_Target</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_Copy_1_of_MSG_Validate_Target</name>
+                </fields>
+                <name>Screen_Validate_Target_With_Nego</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Copy_1_of_MSG_Validate_Target</name>
+                </fields>
+                <name>Screen_Validate_Target_With_Simul</name>
+            </screens>
+        </flows>
+        <fullName>SPKER_SCREEN_Validate_my_Target</fullName>
+    </flowDefinitions>
     <quickActions>
         <label><!-- LogACall --></label>
         <name>LogACall</name>
@@ -1815,8 +3869,8 @@
         <name>SendEmail</name>
     </quickActions>
     <reportTypes>
-        <description><!-- Journaux d’exécution d’orchestrations Spring &apos;24 --></description>
-        <label><!-- Journaux d’exécution d’orchestrations Spring &apos;24 --></label>
+        <description><!-- Journaux d&apos;exécution d&apos;orchestration --></description>
+        <label><!-- Journaux d&apos;exécution d&apos;orchestration --></label>
         <name>flow_orchestration_log_ootb_crt_two_four_eight</name>
         <sections>
             <label><!-- Journaux d&apos;exécution d&apos;orchestration --></label>
@@ -1824,8 +3878,8 @@
         </sections>
     </reportTypes>
     <reportTypes>
-        <description><!-- Exécutions d’orchestration Spring &apos;24 --></description>
-        <label><!-- Exécutions d’orchestration Spring &apos;24 --></label>
+        <description><!-- Exécutions d&apos;orchestration --></description>
+        <label><!-- Exécutions d&apos;orchestration --></label>
         <name>flow_orchestration_run_ootb_crt_two_four_eight</name>
         <sections>
             <label><!-- Exécutions d&apos;orchestration --></label>
@@ -1833,8 +3887,8 @@
         </sections>
     </reportTypes>
     <reportTypes>
-        <description><!-- Exécutions de phases d’orchestration Spring &apos;24 --></description>
-        <label><!-- Exécutions de phases d’orchestration Spring &apos;24 --></label>
+        <description><!-- Exécutions de phase d’orchestration --></description>
+        <label><!-- Exécutions de phase d’orchestration --></label>
         <name>flow_orchestration_stage_run_ootb_crt_two_four_eight</name>
         <sections>
             <label><!-- Exécutions de phase d&apos;orchestration --></label>
@@ -1842,8 +3896,8 @@
         </sections>
     </reportTypes>
     <reportTypes>
-        <description><!-- Exécutions d’étape d’orchestration Spring &apos;24 --></description>
-        <label><!-- Exécutions d’étape d’orchestration Spring &apos;24 --></label>
+        <description><!-- Exécutions d’étape d’orchestration --></description>
+        <label><!-- Exécutions d’étape d’orchestration --></label>
         <name>flow_orchestration_step_run_ootb_crt_two_four_eight</name>
         <sections>
             <label><!-- Exécutions d&apos;étape d&apos;orchestration --></label>
@@ -1851,8 +3905,8 @@
         </sections>
     </reportTypes>
     <reportTypes>
-        <description><!-- Éléments de travail d’orchestration Spring &apos;24 --></description>
-        <label><!-- Éléments de travail d’orchestration Spring &apos;24 --></label>
+        <description><!-- Éléments de travail d’orchestration --></description>
+        <label><!-- Éléments de travail d’orchestration --></label>
         <name>flow_orchestration_work_item_ootb_crt_two_four_eight</name>
         <sections>
             <columns>

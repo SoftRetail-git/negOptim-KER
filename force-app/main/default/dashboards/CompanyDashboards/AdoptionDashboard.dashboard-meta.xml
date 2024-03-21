@@ -136,7 +136,6 @@
             <title>Les 30 derniers jours</title>
         </components>
     </middleSection>
-    <owner>ulit@patisseries.prod</owner>
     <rightSection>
         <columnSize>Medium</columnSize>
         <components>
@@ -303,7 +302,7 @@
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
-    <runningUser>ulit@patisseries.prod</runningUser>
+    <runningUser>ulit@patisseries.uat</runningUser>
     <textColor>#000000</textColor>
     <title>Tableau de bord d&apos;adoption</title>
     <titleColor>#000099</titleColor>

@@ -19,6 +19,10 @@
         <translation>En préparation</translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>Pre Validate</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Request for Approval</masterLabel>
         <translation>Proposé</translation>
     </picklistValues>

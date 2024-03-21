@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Credit Note Request</fullName>
+        <default>true</default>
+        <label>Credit Note Request</label>
+    </customValue>
+    <customValue>
+        <fullName>Invoice</fullName>
+        <default>false</default>
+        <label>Invoice</label>
+    </customValue>
+    <customValue>
+        <fullName>Debit Note</fullName>
+        <default>false</default>
+        <label>Debit Note</label>
+    </customValue>
+    <customValue>
+        <fullName>Credit Note</fullName>
+        <default>false</default>
+        <label>Credit Note</label>
+    </customValue>
+    <customValue>
+        <fullName>Balance Invoice</fullName>
+        <default>false</default>
+        <label>Balance Invoice</label>
+    </customValue>
+    <customValue>
+        <fullName>Down-payment Invoice</fullName>
+        <default>false</default>
+        <label>Down-payment Invoice</label>
+    </customValue>
+    <customValue>
+        <fullName>Balance Credit Note Request</fullName>
+        <default>false</default>
+        <label>Balance Credit Note Request</label>
+    </customValue>
+    <customValue>
+        <fullName>Accrual_CN</fullName>
+        <default>false</default>
+        <label>Accrual_CN</label>
+    </customValue>
+    <customValue>
+        <fullName>Accrual_Inv</fullName>
+        <default>false</default>
+        <label>Accrual_Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Provision</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Provision</label>
+    </customValue>
+    <description>Specify the accounting document used in the process : Credit Note request, debit note, Invoice, ....</description>
+    <masterLabel>Accounting Document Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

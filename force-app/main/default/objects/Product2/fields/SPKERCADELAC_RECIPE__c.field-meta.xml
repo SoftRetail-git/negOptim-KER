@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPKERCADELAC_RECIPE__c</fullName>
+    <externalId>false</externalId>
+    <label>RECETTE</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SIMPLE</fullName>
+                <default>false</default>
+                <label>SIMPLE</label>
+            </value>
+            <value>
+                <fullName>INJECTEES</fullName>
+                <default>false</default>
+                <label>INJECTEES</label>
+            </value>
+            <value>
+                <fullName>INJECTEES + ECLATS</fullName>
+                <default>false</default>
+                <label>INJECTEES + ECLATS</label>
+            </value>
+            <value>
+                <fullName>SIMPLE + ECLATS</fullName>
+                <default>false</default>
+                <label>SIMPLE + ECLATS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

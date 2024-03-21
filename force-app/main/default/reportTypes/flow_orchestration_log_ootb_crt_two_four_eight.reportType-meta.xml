@@ -5,7 +5,7 @@
     <category>other</category>
     <deployed>true</deployed>
     <description>Déterminez quels journaux d’exécution ont été créés et ce qu’il s’est passé dans leurs exécutions d’orchestration associées.</description>
-    <label>Journaux d’exécution d’orchestrations Spring &apos;24</label>
+    <label>Journaux d&apos;exécution d&apos;orchestration</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

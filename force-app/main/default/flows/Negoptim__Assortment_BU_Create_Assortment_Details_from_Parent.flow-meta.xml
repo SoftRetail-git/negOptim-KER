@@ -20,8 +20,6 @@
                 <booleanValue>true</booleanValue>
             </value>
         </inputParameters>
-        <nameSegment>Negoptim__CloneAssortmentDetailsInvocable</nameSegment>
-        <versionSegment>1</versionSegment>
     </actionCalls>
     <actionCalls>
         <name>Clone_Assortment_Details_From_Parent_Objective</name>
@@ -43,8 +41,6 @@
                 <booleanValue>false</booleanValue>
             </value>
         </inputParameters>
-        <nameSegment>Negoptim__CloneAssortmentDetailsInvocable</nameSegment>
-        <versionSegment>1</versionSegment>
     </actionCalls>
     <apiVersion>54.0</apiVersion>
     <decisions>
@@ -215,5 +211,5 @@
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
 </Flow>

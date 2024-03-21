@@ -58,6 +58,11 @@ a faire : Apex, VF ...</description>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Negoptim__Orga_BU__c.Negoptim__Hidden_for_search__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Negoptim__Orga_BU__c.Negoptim__ISO_Country_Code__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -479,6 +484,11 @@ a faire : Apex, VF ...</description>
     <fieldPermissions>
         <editable>true</editable>
         <field>Negoptim__Supplier__c.Negoptim__Ext_id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Negoptim__Supplier__c.Negoptim__Hidden_for_search__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

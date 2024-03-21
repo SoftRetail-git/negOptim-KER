@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EnseignesEDMP</fullName>
+    <columns>Negoptim__BU_Code__c</columns>
+    <columns>Negoptim__Logo__c</columns>
+    <columns>NAME</columns>
+    <columns>Negoptim__Country_origin__c</columns>
+    <columns>Negoptim__Format_Origin__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Negoptim__Orga_BU__c.Negoptim__Banner</value>
+    </filters>
+    <filters>
+        <field>Negoptim__BU_Code__c</field>
+        <operation>contains</operation>
+        <value>EDMP</value>
+    </filters>
+    <label>Enseignes EDMP</label>
+</ListView>

@@ -4,10 +4,10 @@
     <name>Negoptim__Extraction_Status__c</name>
     <picklistValues>
         <masterLabel>Extract</masterLabel>
-        <translation></translation>
+        <translation>A extraire</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Extracted</masterLabel>
-        <translation></translation>
+        <translation>Extrait</translation>
     </picklistValues>
 </CustomFieldTranslation>

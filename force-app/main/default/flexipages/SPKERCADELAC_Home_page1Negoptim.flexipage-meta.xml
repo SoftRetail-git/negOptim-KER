@@ -19,7 +19,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>bannerImageUrl</name>
-                    <value>https://patisseriesgourmandes-prod--c.vf.force.com/resource/1689843747000/Visuel_negOptim1</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat--c.sandbox.vf.force.com/resource/1696599376000/Visuel_negOptim1?</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonLabel</name>
@@ -93,7 +93,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>bannerImageUrl</name>
-                    <value>https://patisseriesgourmandes-prod--c.vf.force.com/resource/1689844141000/Visuel_PG?</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.lightning.force.com/resource/1689844141000/Visuel_PG?</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonLabel</name>
@@ -155,14 +155,14 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>bannerImageUrl</name>
-                    <value>https://patisseriesgourmandes-prod--c.vf.force.com/resource/1689844192000/Referentiel?</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.lightning.force.com/resource/1689844192000/Referentiel?</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonLabel</name>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonUrl</name>
-                    <value>https://patisseriesgourmandes-prod.lightning.force.com/lightning/page/home</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.lightning.force.com/lightning/app/06m060000011dLpAAI</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonVariant</name>
@@ -218,7 +218,11 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>bannerImageUrl</name>
-                    <value>https://patisseriesgourmandes-prod--c.vf.force.com/resource/1689844236000/Assortiment?</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.lightning.force.com/resource/1689844236000/Assortiment?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonUrl</name>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.lightning.force.com/lightning/app/06m060000011dM4AAI</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonVariant</name>
@@ -268,13 +272,14 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>bannerImageUrl</name>
-                    <value>https://patisseriesgourmandes-prod--c.vf.force.com/resource/1689844336000/Negociation?</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.lightning.force.com/resource/1689844336000/Negociation?</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonLabel</name>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonUrl</name>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.lightning.force.com/lightning/app/06m060000011dPhAAI</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonVariant</name>
@@ -330,7 +335,11 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>bannerImageUrl</name>
-                    <value>https://patisseriesgourmandes-prod--c.vf.force.com/resource/1689844373000/Promotions?</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.lightning.force.com/resource/1689844373000/Promotions?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonUrl</name>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.lightning.force.com/lightning/app/06m060000011dM9AAI</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonVariant</name>
@@ -380,13 +389,14 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>bannerImageUrl</name>
-                    <value>https://patisseriesgourmandes-prod--c.vf.force.com/resource/1689844475000/Finances?</value>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.lightning.force.com/resource/1689844475000/Finances?</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonLabel</name>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonUrl</name>
+                    <value>https://patisseriesgourmandes-prod--kercauat.sandbox.lightning.force.com/lightning/app/06m060000011dPrAAI</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>buttonVariant</name>

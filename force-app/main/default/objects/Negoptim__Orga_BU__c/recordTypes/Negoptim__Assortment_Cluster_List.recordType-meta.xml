@@ -2,6 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Negoptim__Assortment_Cluster_List</fullName>
     <active>true</active>
+    <compactLayoutAssignment>SPKERCADELACCOMPACTBU</compactLayoutAssignment>
     <description>Give cluster of Assortment cluster =group some clusters for reference in Assortment detail position (used in multi-complementary management)</description>
     <label>Assortment Cluster List</label>
     <picklistValues>
@@ -102,11 +103,7 @@
     <picklistValues>
         <picklist>Negoptim__Format_Origin__c</picklist>
         <values>
-            <fullName>Cash%26Carry</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Citymarket</fullName>
+            <fullName>CASH</fullName>
             <default>false</default>
         </values>
         <values>
@@ -114,27 +111,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>HMSM</fullName>
+            <fullName>EDMP</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Harddiscount</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Hypermarket</fullName>
-            <default>true</default>
-        </values>
-        <values>
-            <fullName>Supermarket</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Warehouse</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Web</fullName>
+            <fullName>PROXI</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -292,6 +273,63 @@
         </values>
         <values>
             <fullName>Temporary closed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKCDiscount__c</picklist>
+        <values>
+            <fullName>DiscountexVAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DiscountincVAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leclerc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revenue inc VAT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKCInvoicedAmount__c</picklist>
+        <values>
+            <fullName>Invoiced Amount ex VAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoiced Amount inc VAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAT Amount</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKCQuantityInvoiced__c</picklist>
+        <values>
+            <fullName>Free Quantity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoiced Quantity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leclerc</fullName>
             <default>false</default>
         </values>
     </picklistValues>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>SPKERCADELAC  Product</layout>
+        <sections>
+            <label></label>
+            <section>Assortment priority</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Brand and categorie</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ecart VMH</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evol CA %</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Famille et présentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Logistique</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Measure</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Product</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Informations</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>VMH</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPKERCADELAC  UL</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Product</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Informations</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPKERCADELAC BOX</layout>
+        <sections>
+            <label></label>
+            <section>Brand and categorie</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Famille et présentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Logistique</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Product</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Informations</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>Negoptim__Box</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Negoptim__Competitor</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__Higher_Level_Packaging</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__Model</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Negoptim__Product</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Negoptim__Purchases_Kit</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Negoptim__Regular</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Negoptim__Sales_Kit</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__Unit_Need</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Negoptim__Unit_Need_Initialization</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Negoptim__No_name_update_from_specific_profil</name>
+    </validationRules>
+</CustomObjectTranslation>

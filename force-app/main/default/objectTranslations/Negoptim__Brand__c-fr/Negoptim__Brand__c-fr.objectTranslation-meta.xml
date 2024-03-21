@@ -10,17 +10,17 @@
     </caseValues>
     <gender>Feminine</gender>
     <layouts>
-        <layout>SPKERCADELAC - CPG Brand</layout>
+        <layout>SPKERCADELAC - Brand</layout>
         <sections>
             <label></label>
             <section>Custom Links</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Informations générales</label>
             <section>General informations</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Cycle de vie</label>
             <section>Life cycle</section>
         </sections>
     </layouts>

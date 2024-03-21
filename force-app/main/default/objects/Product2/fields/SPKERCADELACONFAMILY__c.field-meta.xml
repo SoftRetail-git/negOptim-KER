@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPKERCADELACONFAMILY__c</fullName>
+    <externalId>false</externalId>
+    <label>SPKERCADELAC ON FAMILY</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PRODUITS SECS</fullName>
+                <default>false</default>
+                <label>PRODUITS SECS</label>
+            </value>
+            <value>
+                <fullName>BARRES</fullName>
+                <default>false</default>
+                <label>BARRES</label>
+            </value>
+            <value>
+                <fullName>GATEAUX A PARTAGER</fullName>
+                <default>false</default>
+                <label>GATEAUX A PARTAGER</label>
+            </value>
+            <value>
+                <fullName>GATEAUX BRETONS</fullName>
+                <default>false</default>
+                <label>GATEAUX BRETONS</label>
+            </value>
+            <value>
+                <fullName>MOELLEUX</fullName>
+                <default>false</default>
+                <label>MOELLEUX</label>
+            </value>
+            <value>
+                <fullName>QUATRE QUART</fullName>
+                <default>false</default>
+                <label>QUATRE QUART</label>
+            </value>
+            <value>
+                <fullName>MUFFINS</fullName>
+                <default>false</default>
+                <label>MUFFINS</label>
+            </value>
+            <value>
+                <fullName>MADELEINES</fullName>
+                <default>false</default>
+                <label>MADELEINES</label>
+            </value>
+            <value>
+                <fullName>MINI GATEAUX</fullName>
+                <default>false</default>
+                <label>MINI GATEAUX</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
