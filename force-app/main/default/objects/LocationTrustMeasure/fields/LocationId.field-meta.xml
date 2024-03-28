@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>LocationId</fullName>
-    <inlineHelpText>Le magasin, l&apos;hôtel ou un autre emplacement physique occupé par votre entreprise. Chaque mesure de confiance réside à un emplacement unique. Si aucune référence externe n&apos;existe à l&apos;emplacement, la carte de confiance n&apos;est pas affichée. Si vous obtenez une erreur, modifiez l&apos;emplacement pour ajouter une référence externe.</inlineHelpText>
-    <type>Lookup</type>
-</CustomField>

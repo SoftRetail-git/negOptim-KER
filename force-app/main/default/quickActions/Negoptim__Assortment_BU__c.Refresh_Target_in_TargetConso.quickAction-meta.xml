@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
-    <flowDefinition>SPKER_SCREEN_Execute_Consolidate_Assortment_Batch</flowDefinition>
-    <label>Refresh Target in TargetConso</label>
-    <optionsCreateFeedItem>false</optionsCreateFeedItem>
-    <type>Flow</type>
-</QuickAction>

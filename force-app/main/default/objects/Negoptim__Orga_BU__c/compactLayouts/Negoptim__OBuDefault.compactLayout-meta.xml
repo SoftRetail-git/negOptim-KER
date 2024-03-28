@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Negoptim__OBuDefault</fullName>
-    <fields>Negoptim__Logo__c</fields>
-    <label>O BU Default</label>
-</CompactLayout>

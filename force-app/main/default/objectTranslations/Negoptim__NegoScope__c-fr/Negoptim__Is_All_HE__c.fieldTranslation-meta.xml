@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help>Préciser si cette ce nego scope inclut tous les éléments de hiérarchie Si non, vous devez détailler l’éléments qui devrait être pris en compte dans le champ d’application.</help>
-    <label></label>
-    <name>Negoptim__Is_All_HE__c</name>
-</CustomFieldTranslation>

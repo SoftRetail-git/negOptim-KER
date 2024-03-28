@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help>Préciser que le périmètre de négociation est l&apos;ensemble de tous les produits disponible. Aucun argument supplémentaire ne sera pris en compte.</help>
-    <label></label>
-    <name>Negoptim__Is_All__c</name>
-</CustomFieldTranslation>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Negoptim__Country_required_for_legal_form</fullName>
-    <active>true</active>
-    <errorConditionFormula>AND ($RecordType.DeveloperName = &quot;Legal&quot;, ISBLANK( Negoptim__Country__c ) )</errorConditionFormula>
-    <errorDisplayField>Negoptim__Country__c</errorDisplayField>
-    <errorMessage>Country is required</errorMessage>
-</ValidationRule>

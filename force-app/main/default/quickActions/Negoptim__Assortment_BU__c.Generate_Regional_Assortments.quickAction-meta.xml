@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
-    <flowDefinition>SPKERCADELAC_Generate_Regional_AssortmentBUs</flowDefinition>
-    <label>Generate Regional Assortments</label>
-    <optionsCreateFeedItem>false</optionsCreateFeedItem>
-    <type>Flow</type>
-</QuickAction>

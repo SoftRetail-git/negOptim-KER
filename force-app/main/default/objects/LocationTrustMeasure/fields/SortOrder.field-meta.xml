@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>SortOrder</fullName>
-    <inlineHelpText>Indiquez l&apos;emplacement de cette mesure de confiance dans votre présentation. Par exemple, dans une bannière, l&apos;ordre d&apos;affichage 1 place la carte confiance à gauche, l&apos;ordre d&apos;affichage 2 place la mesure de confiance à la droite de 1.</inlineHelpText>
-</CustomField>
