@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Multiple_Complementary__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Specify if the Banner/Channel allow for multiple complementary strat. selections.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Autoriser le gestion muti-complémentaire.</inlineHelpText>
+    <label>Multiple Complementary</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

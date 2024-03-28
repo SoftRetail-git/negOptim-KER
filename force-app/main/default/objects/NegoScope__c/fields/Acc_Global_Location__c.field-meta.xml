@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acc_Global_Location__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Acc Global Location</label>
+    <referenceTo>Global_Location__c</referenceTo>
+    <relationshipLabel>Nego Scopes (Acc Global Location)</relationshipLabel>
+    <relationshipName>Nego_Scopes1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoicing_Planning_PE__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Give Specific planning for contract with &quot;Period extension&quot; record type</description>
+    <externalId>false</externalId>
+    <label>Invoicing Planning PE</label>
+    <referenceTo>Pol_Com_Invoicing_Planning__c</referenceTo>
+    <relationshipLabel>Conditions Tarifaires (Invoicing Planning PE)</relationshipLabel>
+    <relationshipName>Conditions_Tarifaires2</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

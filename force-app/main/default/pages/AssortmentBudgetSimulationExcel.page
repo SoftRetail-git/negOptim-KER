@@ -1,0 +1,245 @@
+<apex:page standardController="Assortment_BU__c" extensions="AssortmentBudgetSimulationController"
+            contentType="application/vnd.ms-excel#{!IF(Assortment_BU__c.Id != null, Assortment_BU__c.Long_name__c, '')}{!NOW()}.xls" cache="true" readOnly="true">
+    <apex:outputText value="{!xmlheader}" escape="false"/>
+    <Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+              xmlns:o="urn:schemas-microsoft-com:office:office"
+              xmlns:x="urn:schemas-microsoft-com:office:excel"
+              xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+              xmlns:html="http://www.w3.org/TR/REC-html40">
+        <Styles>
+            <Style ss:ID="colDefault" ss:Name="Normal">
+            </Style>
+            <Style ss:ID="header">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:Bold="1" ss:bgcolor="#e3deb8" />
+                <Interior ss:Color="#f8f8f8" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="ColWhite">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:bgcolor="white" />
+                <Interior ss:Color="white" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colHeader">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:Bold="1" ss:bgcolor="#e2f3ec" />
+                <Interior ss:Color="#e2f3ec" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colTitle">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#1E90FF" />
+            </Style>
+            <Style ss:ID="colTotal">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:Bold="1" ss:bgcolor="#E3E3D7" />
+                <Interior ss:Color="#E3E3D7" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colBlankValue">
+                <Interior ss:Color="#B0E0E6" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colBlankBudget">
+                <Interior ss:Color="#F08080" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="colFixed">
+                <Interior ss:Color="#fbefdf" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="INNO_INTRO_DATE_LESS_N" ss:Parent="colFixed">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:Color="{!JSINHTMLENCODE(INNO_INTRO_DATE_LESS_N)}" />
+            </Style>
+            <Style ss:ID="INNO_INTRO_DATE_GREATER_N" ss:Parent="colFixed">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:Color="{!JSINHTMLENCODE(INNO_INTRO_DATE_GREATER_N)}" />
+            </Style>
+            <Style ss:ID="STOP_DATE_LESS_N" ss:Parent="colFixed">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:Color="{!JSINHTMLENCODE(STOP_DATE_LESS_N)}" />
+            </Style>
+            <Style ss:ID="STOP_DATE_GREATER_N" ss:Parent="colFixed">
+                <Font ss:FontName="Calibri" ss:Size="12" ss:Color="{!JSINHTMLENCODE(STOP_DATE_GREATER_N)}" />
+            </Style>
+        </Styles>
+        <Worksheet ss:Name="{!$ObjectType.Assortment_BU__c.Label}">
+            <Table x:FullColumns="1" x:FullRows="1">
+                <apex:variable value="{!subTotalsBUCategoryKey}" var="subTotalsBUCategoryKey"/>
+                <Column ss:Width="80"/>
+                <apex:repeat value="{!gridSettingsManager.GRID_FIELDS}" var="field">
+                    <Column ss:Width="80"/>
+                </apex:repeat>
+                <Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/>
+                <apex:repeat value="{!clientCircuitList}" var="clientCircuit">
+                    <Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/><Column ss:Width="80"/>
+                </apex:repeat>
+
+                <Row ss:StyleID="header">
+                    <Cell ss:StyleID="header"><Data ss:Type="String">{!instanceLongName}</Data></Cell>
+                </Row>
+                <Row ss:StyleID="header">
+                    <Cell ss:StyleID="header"><Data ss:Type="String">{!$ObjectType.Assortment_BU__c.fields.Name.label}</Data></Cell>
+                    <Cell ss:StyleID="header"><Data ss:Type="String">{!$ObjectType.Assortment_BU__c.fields.BU_source__c.label}</Data></Cell>
+                    <Cell ss:StyleID="header"><Data ss:Type="String">{!$ObjectType.Assortment_BU__c.fields.BU_Target__c.label}</Data></Cell>
+                    <Cell ss:StyleID="header"><Data ss:Type="String">{!$ObjectType.Assortment_BU__c.fields.Year__c.label}</Data></Cell>
+                    <Cell ss:StyleID="header"><Data ss:Type="String">{!$ObjectType.Assortment_BU__c.fields.Ass_BDate__c.label}</Data></Cell>
+                    <Cell ss:StyleID="header"><Data ss:Type="String">{!$ObjectType.Assortment_BU__c.fields.Ass_EDate__c.label}</Data></Cell>
+                    <Cell ss:StyleID="header"><Data ss:Type="String">{!$ObjectType.Assortment_BU__c.fields.Assortment_type__c.label}</Data></Cell>
+                    <Cell ss:StyleID="header"><Data ss:Type="String">{!$ObjectType.Assortment_BU__c.fields.Orga_HE__c.label}</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="colDefault"><Data ss:Type="String">{!Assortment_BU__c.Name}</Data></Cell>
+                    <Cell ss:StyleID="colDefault"><Data ss:Type="String"><apex:outputText value="{!Assortment_BU__c.BU_source__r.Name}" /></Data></Cell>
+                    <Cell ss:StyleID="colDefault"><Data ss:Type="String"><apex:outputText value="{!Assortment_BU__c.BU_Target__r.Name}" /></Data></Cell>
+                    <Cell ss:StyleID="colDefault"><Data ss:Type="String"><apex:outputText value="{!Assortment_BU__c.Year__c}" /></Data></Cell>
+                    <Cell ss:StyleID="colDefault"><Data ss:Type="String"><apex:outputText rendered="{!Assortment_BU__c.Ass_BDate__c != null}" value="{0,date,dd/MM/yyyy}"><apex:param value="{!Assortment_BU__c.Ass_BDate__c}" /></apex:outputText></Data></Cell>
+                    <Cell ss:StyleID="colDefault"><Data ss:Type="String"><apex:outputText rendered="{!Assortment_BU__c.Ass_EDate__c != null}" value="{0,date,dd/MM/yyyy}"><apex:param value="{!Assortment_BU__c.Ass_EDate__c}" /></apex:outputText></Data></Cell>
+                    <Cell ss:StyleID="colDefault"><Data ss:Type="String">{!Assortment_BU__c.Assortment_type__c}</Data></Cell>
+                    <Cell ss:StyleID="colDefault"><Data ss:Type="String"><apex:outputText value="{!Assortment_BU__c.Orga_HE__r.Name}" /></Data></Cell>
+                </Row>
+                <Row></Row>
+                <!-- header row -->
+                <Row>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    <apex:repeat value="{!gridSettingsManager.GRID_FIELDS}" var="field">
+                        <Cell ss:StyleID="colHeader">
+                            <Data ss:Type="String"><apex:outputText value="{!field.fieldLabel}" rendered="{!AND(field.fieldName != '', !ISBLANK(field.fieldName))}"/></Data>
+                        </Cell>
+                    </apex:repeat>
+
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"><apex:outputText value="{!Assortment_BU__c.BU_Target__r.Name}" /></Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+
+                    <apex:repeat value="{!clientCircuitList}" var="clientCircuit">
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="String">{!clientCircuit.Name}</Data></Cell>
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    </apex:repeat>
+                </Row>
+                <!-- DV Row -->
+                <Row>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    <apex:repeat value="{!gridSettingsManager.GRID_FIELDS}" var="field">
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    </apex:repeat>
+
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+
+                    <apex:repeat value="{!clientCircuitList}" var="clientCircuit">
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="Number">{!clientCircuit.Weighted_Distribution_Manual_N1__c}</Data></Cell>
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    </apex:repeat>
+                </Row>
+                <!-- column titles row -->
+                <Row>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    <apex:repeat value="{!gridSettingsManager.GRID_FIELDS}" var="field">
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="String"></Data></Cell>
+                    </apex:repeat>
+                    <!-- channel -->
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String">{!$Label.AssNego_Conso_Fact_WD_MarketBased_pts}</Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String">{!$Label.AssNego_Conso_New_WD_MarketBased_pts}</Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String">{!$Label.AssNego_Conso_L4L_WD_MarketBased_pts}</Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String">{!$Label.Ref_Client_WD_MarketBased_Nego_pts}</Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String">{!$Label.New_Client_WD_MarketBased_pts}</Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String">{!$Label.AssTarget_Conso_New_WD_MarketBased_pts}</Data></Cell>
+                    <Cell ss:StyleID="colHeader"><Data ss:Type="String">{!$Label.GAP_WD}</Data></Cell>
+
+                    <apex:repeat value="{!clientCircuitList}" var="clientCircuit">
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="String">{!$Label.AssNego_Conso_Fact_WD_MarketBased_pts}</Data></Cell>
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="String">{!$Label.AssNego_Conso_New_WD_MarketBased_pts}</Data></Cell>
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="String">{!$Label.AssNego_Conso_L4L_WD_MarketBased_pts}</Data></Cell>
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="String">{!$Label.LBL_Strate}</Data></Cell>
+                        <Cell ss:StyleID="colHeader"><Data ss:Type="String">{!$Label.AssTarget_Conso_New_WD_MarketBased_pts}</Data></Cell>
+                    </apex:repeat>
+                </Row>
+                <apex:repeat value="{!data}" var="categoryWrapper" >
+                    <Row>
+                        <Cell ss:StyleID="colTotal">
+                            <Data ss:Type="String"><apex:outputText value="{!HTMLENCODE(categoryWrapper.categoryName)}"/></Data>
+                        </Cell>
+                        <apex:repeat value="{!gridSettingsManager.GRID_FIELDS}" var="field">
+                            <Cell ss:StyleID="colTotal"><Data ss:Type="String"></Data></Cell>
+                        </apex:repeat>
+                        <Cell ss:StyleID="colTotal"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId), CONTAINS(subTotalsValuesKeyMap[Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId], 'Nego-Fact_WD_MarketBased_Pts__c'))}" value="{!subTotalsMap[Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId]['Nego-Fact_WD_MarketBased_Pts__c']}" /></Data></Cell>
+                        <Cell ss:StyleID="colTotal"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId), CONTAINS(subTotalsValuesKeyMap[Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId], 'Nego-New_Client_WD_MarketBased_Pts__c'))}" value="{!subTotalsMap[Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId]['Nego-New_Client_WD_MarketBased_Pts__c']}" /></Data></Cell>
+                        <Cell ss:StyleID="colTotal"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId), CONTAINS(subTotalsValuesKeyMap[Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId], 'Nego-L4L_Client_WD_Marketbased_Pts__c'))}" value="{!subTotalsMap[Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId]['Nego-L4L_Client_WD_Marketbased_Pts__c']}" /></Data></Cell>
+                        <Cell ss:StyleID="colTotal"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId), CONTAINS(subTotalsValuesKeyMap[Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId], 'Nego-Ref_Client_WD_MarketBased_Nego_Pts__c'))}" value="{!subTotalsMap[Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId]['Nego-Ref_Client_WD_MarketBased_Nego_Pts__c']}" /></Data></Cell>
+                        <Cell ss:StyleID="colTotal"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId), CONTAINS(subTotalsValuesKeyMap[Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId], 'Budget-New_Client_WD_MarketBased_Pts__c'))}" value="{!subTotalsMap[Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId]['Budget-New_Client_WD_MarketBased_Pts__c']}" /></Data></Cell>
+                        <Cell ss:StyleID="colTotal"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId), CONTAINS(subTotalsValuesKeyMap[Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId], 'Target-New_Client_WD_MarketBased_Pts__c'))}" value="{!subTotalsMap[Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId]['Target-New_Client_WD_MarketBased_Pts__c']}" /></Data></Cell>
+                        <Cell ss:StyleID="colTotal"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId), CONTAINS(subTotalsValuesKeyMap[Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId], 'gap'))}" value="{!subTotalsMap[Assortment_BU__c.BU_Target__c + '-' + categoryWrapper.categoryId]['gap']}" /></Data></Cell>
+                        <apex:repeat value="{!clientCircuitList}" var="clientCircuit">
+                            <Cell ss:StyleID="colTotal"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, clientCircuit.Id + '-' + categoryWrapper.categoryId), CONTAINS(subTotalsValuesKeyMap[clientCircuit.Id + '-' + categoryWrapper.categoryId], 'Nego-Fact_WD_MarketBased_Pts__c'))}" value="{!subTotalsMap[clientCircuit.Id + '-' + categoryWrapper.categoryId]['Nego-Fact_WD_MarketBased_Pts__c']}" /></Data></Cell>
+                            <Cell ss:StyleID="colTotal"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, clientCircuit.Id + '-' + categoryWrapper.categoryId), CONTAINS(subTotalsValuesKeyMap[clientCircuit.Id + '-' + categoryWrapper.categoryId], 'Nego-New_Client_WD_MarketBased_Pts__c'))}" value="{!subTotalsMap[clientCircuit.Id + '-' + categoryWrapper.categoryId]['Nego-New_Client_WD_MarketBased_Pts__c']}" /></Data></Cell>
+                            <Cell ss:StyleID="colTotal"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, clientCircuit.Id + '-' + categoryWrapper.categoryId), CONTAINS(subTotalsValuesKeyMap[clientCircuit.Id + '-' + categoryWrapper.categoryId], 'Nego-L4L_Client_WD_Marketbased_Pts__c'))}" value="{!subTotalsMap[clientCircuit.Id + '-' + categoryWrapper.categoryId]['Nego-L4L_Client_WD_Marketbased_Pts__c']}" /></Data></Cell>
+                            <Cell ss:StyleID="colTotal"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, clientCircuit.Id + '-' + categoryWrapper.categoryId), CONTAINS(subTotalsValuesKeyMap[clientCircuit.Id + '-' + categoryWrapper.categoryId], 'Nego-Ass_BU_Cluster__c'))}" value="{!subTotalsMap[clientCircuit.Id + '-' + categoryWrapper.categoryId]['Nego-Ass_BU_Cluster__c']}" /></Data></Cell>
+                            <Cell ss:StyleID="colTotal"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, clientCircuit.Id + '-' + categoryWrapper.categoryId), CONTAINS(subTotalsValuesKeyMap[clientCircuit.Id + '-' + categoryWrapper.categoryId], 'Target-New_Client_WD_MarketBased_Pts__c'))}" value="{!subTotalsMap[clientCircuit.Id + '-' + categoryWrapper.categoryId]['Target-New_Client_WD_MarketBased_Pts__c']}" /></Data></Cell>
+                        </apex:repeat>
+                    </Row>
+                    <apex:repeat value="{!categoryWrapper.products}" var="productWrapper">
+                        <Row>
+                            <Cell ss:StyleID="colFixed"><Data ss:Type="String"></Data></Cell>
+                            <apex:repeat value="{!gridSettingsManager.GRID_FIELDS}" var="field">
+                                <apex:outputPanel layout="none" rendered="{!field.fieldName == 'Name'}">
+                                    <Cell ss:StyleID="{!IF(AND(OR(productWrapper.product.IsInnovation__c, productWrapper.product.recordType.developerName == 'Unit_Need'), productWrapper.product.Market_Introduction_Date__c!=null, YEAR(productWrapper.product.Market_Introduction_Date__c) < Assortment_BU__c.Year__c), 'INNO_INTRO_DATE_LESS_N',
+                                                      IF(AND(OR(productWrapper.product.IsInnovation__c, productWrapper.product.recordType.developerName == 'Unit_Need'), productWrapper.product.Market_Introduction_Date__c!=null, YEAR(productWrapper.product.Market_Introduction_Date__c) >= Assortment_BU__c.Year__c), 'INNO_INTRO_DATE_GREATER_N',
+                                                      IF(AND(productWrapper.product.Market_End_of_Life_Date__c!=null, YEAR(productWrapper.product.Market_End_of_Life_Date__c) < Assortment_BU__c.Year__c), 'STOP_DATE_LESS_N',
+                                                      IF(AND(productWrapper.product.Market_End_of_Life_Date__c!=null, YEAR(productWrapper.product.Market_End_of_Life_Date__c) >= Assortment_BU__c.Year__c), 'STOP_DATE_GREATER_N', 'colFixed'))))}">
+                                        <Data ss:Type="String"><apex:outputText value="{!productWrapper.product.Name}"/></Data>
+                                    </Cell>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!field.fieldName != 'Name'}">
+                                    <Cell ss:StyleID="colFixed">
+                                        <Data ss:Type="String"><apex:outputText value="{!gridSettingsManager.picklistValuesMap[field.fieldName][productWrapper.product[field.fieldName]]}"
+                                                                                rendered="{!field.stringFieldType == 'PICKLIST' && productWrapper.product[field.fieldName] != null}"/><apex:outputText value="{!IF(productWrapper.product[field.fieldName],'X','')}"
+                                                                                                                                                                                                       rendered="{!field.stringFieldType == 'BOOLEAN'}"/><apex:outputText value="{0,date,dd'/'MM'/'yyyy}"
+                                                                                                                                                                                                                                                                          rendered="{!field.stringFieldType == 'DATE'}"><apex:param value="{!productWrapper.product[field.fieldName]}" /> </apex:outputText><apex:outputText value="{!productWrapper.product[field.fieldName]}"
+                                                                                                                                                                                                                                                                                                                                                                                                                             rendered="{!AND(field.stringFieldType != 'DATE',
+                                                                                                                                                                                                                                                                                                                                                                                                                                       field.stringFieldType != 'BOOLEAN',
+                                                                                                                                                                                                                                                                                                                                                                                                                                       field.stringFieldType != 'PICKLIST')}"/></Data>
+                                    </Cell>
+                                </apex:outputPanel>
+                            </apex:repeat>
+                            <Cell ss:StyleID="colFixed"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, productWrapper.product.Id), CONTAINS(subTotalsValuesKeyMap[productWrapper.product.Id], 'Nego-Fact_WD_MarketBased_Pts__c'))}" value="{!subTotalsMap[productWrapper.product.Id]['Nego-Fact_WD_MarketBased_Pts__c']}" /></Data></Cell>
+                            <Cell ss:StyleID="colFixed"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, productWrapper.product.Id), CONTAINS(subTotalsValuesKeyMap[productWrapper.product.Id], 'Nego-New_Client_WD_MarketBased_Pts__c'))}" value="{!subTotalsMap[productWrapper.product.Id]['Nego-New_Client_WD_MarketBased_Pts__c']}" /></Data></Cell>
+                            <Cell ss:StyleID="colFixed"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, productWrapper.product.Id), CONTAINS(subTotalsValuesKeyMap[productWrapper.product.Id], 'Nego-L4L_Client_WD_Marketbased_Pts__c'))}" value="{!subTotalsMap[productWrapper.product.Id]['Nego-L4L_Client_WD_Marketbased_Pts__c']}" /></Data></Cell>
+                            <Cell ss:StyleID="colFixed"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, productWrapper.product.Id), CONTAINS(subTotalsValuesKeyMap[productWrapper.product.Id], 'Nego-Ref_Client_WD_MarketBased_Nego_Pts__c'))}" value="{!subTotalsMap[productWrapper.product.Id]['Nego-Ref_Client_WD_MarketBased_Nego_Pts__c']}" /></Data></Cell>
+                            <Cell ss:StyleID="colFixed">
+                                <Data ss:Type="Number"><apex:outputText value="{!productWrapper.cumulDetail.New_Client_WD_MarketBased__c}" rendered="{!AND(Assortment_BU__c.Status__c != 'Validated', !readOnlyUser)}" /><apex:outputText value="{!productWrapper.cumulDetail.New_Client_WD_MarketBased_Pts__c}" rendered="{!OR(Assortment_BU__c.Status__c == 'Validated', readOnlyUser)}" /></Data>
+                            </Cell>
+                            <Cell ss:StyleID="colFixed"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, productWrapper.product.Id), CONTAINS(subTotalsValuesKeyMap[productWrapper.product.Id], 'Target-New_Client_WD_MarketBased_Pts__c'))}" value="{!subTotalsMap[productWrapper.product.Id]['Target-New_Client_WD_MarketBased_Pts__c']}" /></Data></Cell>
+                            <Cell ss:StyleID="colFixed"><Data ss:Type="Number"><apex:outputText rendered="{!AND(CONTAINS(subTotalsBUCategoryKey, productWrapper.product.Id), CONTAINS(subTotalsValuesKeyMap[productWrapper.product.Id], 'gap'))}" value="{!subTotalsMap[productWrapper.product.Id]['gap']}" /></Data></Cell>
+                            <apex:repeat value="{!productWrapper.details}" var="detailWrapper">
+                                <apex:outputPanel layout="none" rendered="{!detailWrapper.buId == null || detailWrapper.histoDetail.Client_Status__c == null}" >
+                                    <Cell ss:StyleID="colBlankValue"><Data ss:Type="String"></Data></Cell>
+                                    <Cell ss:StyleID="colBlankValue"><Data ss:Type="String"></Data></Cell>
+                                    <Cell ss:StyleID="colBlankValue"><Data ss:Type="String"></Data></Cell>
+                                    <Cell ss:StyleID="colBlankValue"><Data ss:Type="String"></Data></Cell>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!detailWrapper.buId != null && detailWrapper.histoDetail.Client_Status__c != null}" >
+                                    <Cell ss:StyleID="colDefault"><Data ss:Type="Number"><apex:outputText value="{!detailWrapper.histoDetail.Fact_WD_MarketBased_Pts__c}" /></Data></Cell>
+                                    <Cell ss:StyleID="colDefault"><Data ss:Type="Number"><apex:outputText value="{!detailWrapper.histoDetail.New_Client_WD_MarketBased_Pts__c}" /></Data></Cell>
+                                    <Cell ss:StyleID="colDefault"><Data ss:Type="Number"><apex:outputText value="{!detailWrapper.histoDetail.L4L_Client_WD_MarketBased_Pts__c}" /></Data></Cell>
+                                    <Cell ss:StyleID="colTitle"><Data ss:Type="String"><apex:outputText value="{!detailWrapper.histoDetail.Ass_BU_Cluster__r.Name}" /></Data></Cell>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!(Assortment_BU__c.Status__c == 'Validated' || Assortment_BU__c.Status__c == 'Request for Approval') && detailWrapper.targetStatus == 'Validated'}">
+                                    <Cell ss:StyleID="colDefault"><Data ss:Type="Number"><apex:outputText value="{!detailWrapper.targetNewClientWDMarketBasedPts.value}" /></Data></Cell>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!Assortment_BU__c.Status__c != 'Validated' && Assortment_BU__c.Status__c != 'Request for Approval'}">
+                                    <Cell ss:StyleID="colDefault"><Data ss:Type="String"></Data></Cell>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!(Assortment_BU__c.Status__c == 'Request for Approval' || Assortment_BU__c.Status__c == 'Validated') && detailWrapper.targetStatus != 'Validated'}">
+                                    <Cell ss:StyleID="colBlankBudget"><Data ss:Type="String"></Data></Cell>
+                                </apex:outputPanel>
+                            </apex:repeat>
+                        </Row>
+                    </apex:repeat>
+                </apex:repeat>
+            </Table>
+        </Worksheet>
+    </Workbook>
+</apex:page>

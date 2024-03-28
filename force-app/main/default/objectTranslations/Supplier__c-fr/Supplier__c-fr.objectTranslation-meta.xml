@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Client</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Clients</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>SPKERCADELAC Client Supplier</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Cycle de vie</label>
+            <section>Life Cycle</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Client</nameFieldLabel>
+    <recordTypes>
+        <label></label>
+        <name>Client</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Supplier</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

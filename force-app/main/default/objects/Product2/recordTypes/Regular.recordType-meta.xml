@@ -1,0 +1,1126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regular</fullName>
+    <active>true</active>
+    <label>Regular</label>
+    <picklistValues>
+        <picklist>Family</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Animation__c</picklist>
+        <values>
+            <fullName>Promotion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Market__c</picklist>
+        <values>
+            <fullName>CC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMKT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Merch_Family__c</picklist>
+        <values>
+            <fullName>Merch Family1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PriorityCashCarry__c</picklist>
+        <values>
+            <fullName>Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PriorityConv__c</picklist>
+        <values>
+            <fullName>Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PriorityDrive__c</picklist>
+        <values>
+            <fullName>Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PriorityHM__c</picklist>
+        <values>
+            <fullName>Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PriorityWeb__c</picklist>
+        <values>
+            <fullName>Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority_SM__c</picklist>
+        <values>
+            <fullName>Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProductType__c</picklist>
+        <values>
+            <fullName>NationalBrand</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Reference_Type__c</picklist>
+        <values>
+            <fullName>Reno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switch</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EOL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In preparation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In process of creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In process of deletion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initialization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On sale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Planned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre opening</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>UC__c</picklist>
+        <values>
+            <fullName>1%2F2 palette</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Col</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palette</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Piece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UC</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>UV__c</picklist>
+        <values>
+            <fullName>1%2F2 palette</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Col</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palette</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Piece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UC</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Promo_FDR__c</picklist>
+        <values>
+            <fullName>FDR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QuantityUnitOfMeasure</picklist>
+        <values>
+            <fullName>Each</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKERCADELACExcluEnseigne__c</picklist>
+        <values>
+            <fullName>CARREFOUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GALEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTERMARCHE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TOUS SAUF CARREFOUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TOUS SAUF GALEC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKERCADELACFormat__c</picklist>
+        <values>
+            <fullName>BARQUETTE 200G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARQUETTE 240G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARQUETTE 300G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARQUETTE 500G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COFFRET 325G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COFFRET 90G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ETUI 125G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GATEAUX 1%2F2 LUNE 400G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GATEAUX ROND 400G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LONG 200G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LONG 350G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LONG 380G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LONG 450G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LONG 500G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LONG 500X2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LONG 600G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LONG 690G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LONG 800G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 280G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 300G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 360G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 363G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 390G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 396G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 400G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 410G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 420G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 429G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 445G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 450G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 455G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 478G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 525G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 528G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 544G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 594G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 600G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 607G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 60G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 627G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 690G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 693G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET 800G</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKERCADELACMktgS2__c</picklist>
+        <values>
+            <fullName>ALYSSE FOOD MUFFIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSORTIMENT PB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARRE MARBREE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARRE NATURE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAKE FRUIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GALETTE NAT PB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GAT BRET DEMI-LUNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GAT BRET ROND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GDE GAL PB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LE GOURMAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAD A PARTAGER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAD COQ INDI COEUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAD COQ INDI KIDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAD COQ INDI MEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAD COQ INDI PB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOELLEUX GAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PALET NAT PB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PETIT BEURRE PB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QQ NATURE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKERCADELACNeedUnitMktgS3__c</picklist>
+        <values>
+            <fullName>ALYSSE FOOD MUFFIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARQ ASSORT PB 500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARQ GALETTE NAT PB 300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARQ GALETTE NAT PB 500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARQ GDE GAL CHO CARAM PB 240</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARQ GDE GAL NAT PB 240</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARQ GDE GAL PEP CHOC PB 240</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARQ PALET NAT PB 300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARQ PALET NAT PB 500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARQ PTI BEURRE 200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAKE BRET FRUIT 380</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAKE MARB CHOC 500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAKE NATURE 800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COFF 325 ASSORT PB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COFF CŒUR 90 PAL PB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEMI-LUNE FRAMBOISE 400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEMI-LUNE PRUNEAU 400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ETUI PALET NAT PB 120-125</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GATEAU BRETON ROND 400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LE GOURMAND AMANDES 350</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LE GOURMAND CITRON 350</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAD COEUR FRAMBOISE 280</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAD COEUR PATE A TART 300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAD COQ FOU CHOCO 420-455</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAD COQ FOU FRAISE 420-455</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAD COQ FOU PEP CHOCO 360-390</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAD COQ INDI PB BRET 300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAD COQ INDI PB BRET 363-429</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAP NATURE X20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAP NATURE X40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAP PEPITE CHOCO X20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAP PEPITE CHOCO X40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM AMANDE 600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM CHOCOLAIT 600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM CITRON 400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM CITRON 600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM FROM BLANC 600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM MARB CHO 400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM MARB CHO 600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM NATURE 400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM NATURE 600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM NATURE 800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM PEP SUC 400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM PEP SUC 600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM PEPITE CHOCO 400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM PEPITE CHOCO 600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM PEPITE CHOCO 800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM VANILLE 400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEM VANILLE 600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOELLEUX CHOCO 500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOELLEUX MARB PCH 450-475</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOELLEUX NATURE 200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOELLEUX NATURE 350</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOELLEUX NATURE 500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOELLEUX NATURE 690</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOELLEUX NATURE BIO 350-400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOELLEUX PANACHE 500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOELLEUX PEP CHOC 350-400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOELLEUX PEP CHOC 500</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKERCADELACONFAMILY__c</picklist>
+        <values>
+            <fullName>BARRES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GATEAUX A PARTAGER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GATEAUX BRETONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MADELEINES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOELLEUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MUFFINS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRODUITS SECS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUATRE QUART</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKERCADELACPresentation__c</picklist>
+        <values>
+            <fullName>A PARTAGER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARQUETTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COFFRET ET BOITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ETUI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SACHET</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKERCADELACPriorityHMSM__c</picklist>
+        <values>
+            <fullName>Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKERCADELAC_Famille__c</picklist>
+        <values>
+            <fullName>AUTRES MIXTES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARRES MGV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARRES MGV MARBREES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GALETTES PB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GATEAUX BRETONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MADELEINES COQUILLES MGV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MADELEINES COQUILLES PB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MADELEINES INJECTEES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOELLEUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MUFFINS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PALETS PB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PETIT BEURRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUATRE QUART</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKERCADELAC_INGREDIENTS__c</picklist>
+        <values>
+            <fullName>MIXTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PUR BEURRE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKERCADELAC_RECIPE__c</picklist>
+        <values>
+            <fullName>INJECTEES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INJECTEES %2B ECLATS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIMPLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIMPLE %2B ECLATS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKERCADELAC_SHELL__c</picklist>
+        <values>
+            <fullName>LAIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOIR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SANS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

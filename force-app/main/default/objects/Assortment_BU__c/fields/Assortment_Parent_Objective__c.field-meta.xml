@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assortment_Parent_Objective__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Parent Assortment Objective</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>((1 AND 2 AND 3 AND 4 AND 5) OR (6 AND 7)) AND 8</booleanFilter>
+        <errorMessage>Assortment_Parent_Objective__c - Value does not exist or does not match filter criteria.</errorMessage>
+        <filterItems>
+            <field>Assortment_BU__c.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Target, Simulation</value>
+        </filterItems>
+        <filterItems>
+            <field>Assortment_BU__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Validated</value>
+        </filterItems>
+        <filterItems>
+            <field>Assortment_BU__c.BU_Target__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.BU_Target__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Assortment_BU__c.BU_source__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.BU_source__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Nego</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Target, Simulation, PR</value>
+        </filterItems>
+        <filterItems>
+            <field>Assortment_BU__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Budget</value>
+        </filterItems>
+        <filterItems>
+            <field>Assortment_BU__c.Orga_HE__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Orga_HE__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Assortment_BU__c</referenceTo>
+    <relationshipName>Assortment_BU_Objective</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPKCLogo__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( RecordType.DeveloperName =&quot;SalesFloorEvent&quot;,
+
+IMAGE(&apos;/resource/LogoSalesFloorEvent/LogoSalesFloorEvent/&apos; + &apos;SalesFloorEvent&apos; +&apos;.png&apos;, &apos;&apos; , 45, 90),
+
+IF ( RecordType.DeveloperName =&quot;TradeMarketingCampaign&quot;,
+
+IMAGE(&apos;/resource/LogoTradeMarketingCampaign/LogoTradeMarketingCampaign/&apos; + &apos;TradeMarketingCampaign&apos; +&apos;.png&apos;, &apos;&apos; , 45, 90), NULL))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Visuel PAC</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

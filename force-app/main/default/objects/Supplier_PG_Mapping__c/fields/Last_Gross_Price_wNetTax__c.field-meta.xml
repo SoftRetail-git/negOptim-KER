@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Gross_Price_wNetTax__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>Last_Gross_Price__c
+
++
+IF (CONTAINS(NetPrice_Taxes_New__c,&apos;N1/&apos;), Tax_1_New__c,0)
++ IF (CONTAINS(NetPrice_Taxes_New__c,&apos;N2/&apos;), Tax_2_New__c,0)
++ IF (CONTAINS(NetPrice_Taxes_New__c,&apos;N3/&apos;), Tax_3_New__c,0)
++ IF (CONTAINS(NetPrice_Taxes_New__c,&apos;N4/&apos;),Tax_4_New__c,0)
++ IF (CONTAINS(NetPrice_Taxes_New__c,&apos;N5/&apos;),Tax_5_New__c,0)
++ IF (CONTAINS(NetPrice_Taxes_New__c,&apos;N6/&apos;),Tax_6_New__c,0)
++ IF (CONTAINS(NetPrice_Taxes_New__c,&apos;N7/&apos;),Tax_7_New__c,0)
++ IF (CONTAINS(NetPrice_Taxes_New__c,&apos;N8/&apos;),Tax_8_New__c,0)
++ IF (CONTAINS(NetPrice_Taxes_New__c,&apos;N9/&apos;),Tax_9_New__c,0)
++ IF (CONTAINS(NetPrice_Taxes_New__c,&apos;N10/&apos;),Tax_10_New__c,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last Gross Price wNetTax</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

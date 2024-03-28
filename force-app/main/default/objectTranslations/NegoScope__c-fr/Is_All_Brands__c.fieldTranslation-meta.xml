@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Préciser si ce périmètre de négociation inclut toutes les marques du fournisseur. Si non, vous devez détailler les Marques qui doivent être prises en compte dans le périmètre et si d&apos;éventuelles futures Marques liées au fournisseur doivent également être incluses dans le périmètre par défaut.</help>
+    <label></label>
+    <name>Is_All_Brands__c</name>
+</CustomFieldTranslation>

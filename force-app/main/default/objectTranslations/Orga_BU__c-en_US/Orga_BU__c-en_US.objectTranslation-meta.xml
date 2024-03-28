@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value></value>
+    </caseValues>
+    <layouts>
+        <layout>SPKERCADELAC -  Channel</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Life cycle</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPKERCADELAC - Banner</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fee</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Invoice Parameters</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Life cycle</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Weight Distribution Rise Plan for Inno</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Weight Distribution Rise Plan for Stop</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Weight Distribution Rise Plan for Switch</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPKERCADELAC - Cluster</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Life cycle</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>ND/WD Calculation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPKERCADELAC - Country</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Life cycle</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPKERCADELAC - Group</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Life cycle</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPKERCADELAC - Wharehouse</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Life cycle</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel></nameFieldLabel>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Assortment_Cluster</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Assortment_Cluster_List</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Banner</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Channel</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Country</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Group</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Legal</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>List</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Region</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Store</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Tax_Agency</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Warehouse</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Web</name>
+    </recordTypes>
+    <startsWith></startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Country_required_for_legal_form</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Country_required_for_stores</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Legal_Form_required_for_Store</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>BU_Clustering</name>
+    </webLinks>
+</CustomObjectTranslation>

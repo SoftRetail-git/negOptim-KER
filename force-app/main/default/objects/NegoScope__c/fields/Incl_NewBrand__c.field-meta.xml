@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incl_NewBrand__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If the nego scope is not the whole supplier (Is_all is negative) and not the All Brands (Is_all_brands negative). 
+
+This detail that any new Brand coming for the supplier will be included by default in this nego scope.
+
+If no, and the user want to include one new brand in this scope, he will have the select manually the new brand in the scope to include it.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Préciser si les futures Marques liées au fournisseur doivent être automatiquement incluses dans ce périmètre de négociation.</inlineHelpText>
+    <label>Include New Brand</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

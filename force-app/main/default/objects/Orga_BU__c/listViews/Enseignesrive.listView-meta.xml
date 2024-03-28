@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enseignesrive</fullName>
+    <columns>BU_Code__c</columns>
+    <columns>Logo__c</columns>
+    <columns>NAME</columns>
+    <columns>Country_origin__c</columns>
+    <columns>Format_Origin__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Orga_BU__c.Banner</value>
+    </filters>
+    <filters>
+        <field>BU_Code__c</field>
+        <operation>contains</operation>
+        <value>Drive</value>
+    </filters>
+    <label>Enseignes Drive</label>
+</ListView>

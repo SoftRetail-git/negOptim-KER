@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Allow to specify a brand type for the NS and their linked contracts</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Permet de spécifier un type de marque pour les NS et leurs contrats liés</inlineHelpText>
+    <label>Brand Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Brand_Type</valueSetName>
+    </valueSet>
+</CustomField>

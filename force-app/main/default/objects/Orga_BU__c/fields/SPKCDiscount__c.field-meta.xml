@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPKCDiscount__c</fullName>
+    <externalId>false</externalId>
+    <label>SPKCDiscount</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DiscountincVAT</fullName>
+                <default>false</default>
+                <label>DiscountincVAT</label>
+            </value>
+            <value>
+                <fullName>DiscountexVAT</fullName>
+                <default>false</default>
+                <label>DiscountexVAT</label>
+            </value>
+            <value>
+                <fullName>Revenue inc VAT</fullName>
+                <default>false</default>
+                <label>Revenue inc VAT</label>
+            </value>
+            <value>
+                <fullName>No information</fullName>
+                <default>false</default>
+                <label>No information</label>
+            </value>
+            <value>
+                <fullName>Leclerc</fullName>
+                <default>false</default>
+                <label>Leclerc</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

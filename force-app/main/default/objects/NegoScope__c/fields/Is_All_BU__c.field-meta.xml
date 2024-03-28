@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_All_BU__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If the nego scope is not the whole supplier (Is_all is negative). 
+
+This detail that the nego scope is including all the Business Units of the supplier. 
+
+If no, user should detail the business Unit that will be considered (supplier negoscope BU table) and if the futur Business Units linked to the supplier should be automatically included in the scope (Incl. New BU field)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Préciser si ce périmètre de négociation inclut toutes les Business Units du fournisseur. Si non, vous devez détailler la BU qui doit être prise en compte dans le périmètre et si une future BU du fournisseur doit être incluse dans le périmètre par défaut également</inlineHelpText>
+    <label>All Business Units</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

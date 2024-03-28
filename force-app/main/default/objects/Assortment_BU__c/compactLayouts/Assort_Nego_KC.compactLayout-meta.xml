@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assort_Nego_KC</fullName>
+    <fields>Name</fields>
+    <fields>BU_source__c</fields>
+    <fields>BU_Target__c</fields>
+    <fields>Status__c</fields>
+    <fields>Ass_BDate__c</fields>
+    <fields>Ass_EDate__c</fields>
+    <fields>Year__c</fields>
+    <label>Assort Nego KC</label>
+</CompactLayout>

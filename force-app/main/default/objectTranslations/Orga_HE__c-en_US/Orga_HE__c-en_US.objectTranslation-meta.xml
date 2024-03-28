@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Segmentation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Segmentation</value>
+    </caseValues>
+    <layouts>
+        <layout>SPKERCADELAC Hierarchy Element</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Life Cycle</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel></nameFieldLabel>
+    <recordTypes>
+        <label></label>
+        <name>Product</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

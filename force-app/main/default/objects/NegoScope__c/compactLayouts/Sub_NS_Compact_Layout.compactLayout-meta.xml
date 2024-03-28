@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_NS_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>NS_Code_Long__c</fields>
+    <fields>Supplier__c</fields>
+    <fields>Parent_Nego_Scope__c</fields>
+    <fields>Use_Electronic_Signature__c</fields>
+    <fields>Status__c</fields>
+    <label>Sub NS Compact Layout</label>
+</CompactLayout>

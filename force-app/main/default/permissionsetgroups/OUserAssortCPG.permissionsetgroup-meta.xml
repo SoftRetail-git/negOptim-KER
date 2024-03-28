@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>generic NegOptim User of Assortment</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>O User Assort CPG</label>
+    <permissionSets>OAssortment</permissionSets>
+    <permissionSets>OClient</permissionSets>
+    <permissionSets>OPortalAccount</permissionSets>
+    <permissionSets>OProduct</permissionSets>
+    <permissionSets>OStandardSF</permissionSets>
+    <permissionSets>OToggleComponent</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

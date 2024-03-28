@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NS_Section_main__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Main hierarchy name defined for the NS</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Nom de la hiérarchie principale définie pour le NS</inlineHelpText>
+    <label>Main NS Section</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Index_perc__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Index waterfall percentage due to the row</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Index waterfall percentage due to the row</inlineHelpText>
+    <label>Index perc</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

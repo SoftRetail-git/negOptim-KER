@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accrual_Planning__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Accrual Planning</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Accrual_Planning__c - Value does not exist or does not match filter criteria.</errorMessage>
+        <filterItems>
+            <field>Pol_Com_Invoicing_Planning__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Accrual</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Pol_Com_Invoicing_Planning__c</referenceTo>
+    <relationshipLabel>Conditions Tarifaires (Accrual Planning)</relationshipLabel>
+    <relationshipName>Conditions_Tarifaires1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

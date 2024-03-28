@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incl_NewBU__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If the nego scope is not the whole supplier (Is_all is negative) and not the All Brands (Is_all_BU negative). 
+
+This detail that any new Business Unit coming for the supplier will be included by default in this nego scope. 
+
+If no, and the user want to include one new Business Unit in this scope, he will have the select manually the new BU in the scope to include it.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Préciser si la future Business Unit liée au fournisseur doit être automatiquement incluse dans ce périmètre de négociation.</inlineHelpText>
+    <label>Include New BU</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

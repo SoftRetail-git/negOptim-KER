@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <label></label>
+        <name>Box</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Cluster</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Display</name>
+    </recordTypes>
+</CustomObjectTranslation>

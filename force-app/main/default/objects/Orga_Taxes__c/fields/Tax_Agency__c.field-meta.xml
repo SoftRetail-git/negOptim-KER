@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tax_Agency__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Tax Agency</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Tax_Agency__c - Value does not exist or does not match filter criteria.</errorMessage>
+        <filterItems>
+            <field>Orga_BU__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Tax Agency</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Orga_BU__c</referenceTo>
+    <relationshipLabel>Orga Taxes (Tax Agency)</relationshipLabel>
+    <relationshipName>Orga_Taxes2</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

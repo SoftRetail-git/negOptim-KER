@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Store</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>SPKERCADELACCOMPACTBU</compactLayoutAssignment>
+    <description>Add a new store to your organization</description>
+    <label>Store</label>
+    <picklistValues>
+        <picklist>Assortment_Strat__c</picklist>
+        <values>
+            <fullName>Cplt0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cplt1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cplt2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cplt3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cplt4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cplt5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strat0</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Strat1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strat10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strat11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strat12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strat13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strat14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strat15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strat16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strat2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strat3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strat4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strat5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strat6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strat7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strat8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strat9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Format_Origin__c</picklist>
+        <values>
+            <fullName>CASH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROXI</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Merch_Family__c</picklist>
+        <values>
+            <fullName>Merch Family1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merch Family9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mission__c</picklist>
+        <values>
+            <fullName>Business Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buying</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floor animation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchandizing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panelist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In preparation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Temporary closed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKCDiscount__c</picklist>
+        <values>
+            <fullName>DiscountexVAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DiscountincVAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leclerc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revenue inc VAT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKCInvoicedAmount__c</picklist>
+        <values>
+            <fullName>Invoiced Amount ex VAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoiced Amount inc VAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAT Amount</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPKCQuantityInvoiced__c</picklist>
+        <values>
+            <fullName>Free Quantity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoiced Quantity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leclerc</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <label></label>
+        <name>Assortment_BU_link</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Nego_BU_Link</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Store_KPI</name>
+    </recordTypes>
+</CustomObjectTranslation>

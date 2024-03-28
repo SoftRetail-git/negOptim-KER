@@ -1,0 +1,255 @@
+<apex:page controller="AssortmentMatrixComparatorController" contentType="application/vnd.ms-excel#{!title}{!NOW()}.xls"
+    readOnly="true">
+    <apex:outputText value="{!xmlheader}" escape="false" />
+    <Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel"
+        xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40">
+        <Styles>
+            <Style ss:ID="Default" ss:Name="Normal">
+                <Alignment ss:Vertical="Center"/><Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11"/><Interior/><NumberFormat/><Protection/>
+            </Style>
+            <Style ss:ID="allBorders">
+                <Borders><Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2" ss:Color="#DDDBDA"/><Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2" ss:Color="#DDDBDA"/><Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2" ss:Color="#DDDBDA"/><Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2" ss:Color="#DDDBDA"/></Borders>
+            </Style>
+            <Style ss:ID="header" ss:Parent="allBorders">
+                <Alignment ss:Vertical="Center"/><Interior ss:Color="#FAFAF9" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="emptyDetail" ss:Parent="allBorders">
+                <Alignment ss:Vertical="Center"/><Interior ss:Color="#7AD4EF" ss:Pattern="ReverseDiagStripe" ss:PatternColor="#E7E6E6"/>
+            </Style>
+            <Style ss:ID="INNO_INTRO_DATE_LESS_N" ss:Parent="allBorders">
+                <Font ss:FontName="Calibri" ss:Size="11" ss:Color="{!JSINHTMLENCODE(INNO_INTRO_DATE_LESS_N)}" />
+            </Style>
+            <Style ss:ID="INNO_INTRO_DATE_GREATER_N" ss:Parent="allBorders">
+                <Font ss:FontName="Calibri" ss:Size="11" ss:Color="{!JSINHTMLENCODE(INNO_INTRO_DATE_GREATER_N)}" />
+            </Style>
+            <Style ss:ID="STOP_DATE_LESS_N" ss:Parent="allBorders">
+                <Font ss:FontName="Calibri" ss:Size="11" ss:Color="{!JSINHTMLENCODE(STOP_DATE_LESS_N)}" />
+            </Style>
+            <Style ss:ID="STOP_DATE_GREATER_N" ss:Parent="allBorders">
+                <Font ss:FontName="Calibri" ss:Size="11" ss:Color="{!JSINHTMLENCODE(STOP_DATE_GREATER_N)}" />
+            </Style>
+            <Style ss:ID="categoryRow" ss:Parent="allBorders">
+                <Alignment ss:Vertical="Center"/><Interior ss:Color="#D8EDFF" ss:Pattern="Solid"/>
+            </Style>
+            <Style ss:ID="consoRow" ss:Parent="allBorders">
+                <Alignment ss:Vertical="Center"/><Interior ss:Color="#FBEFDF" ss:Pattern="Solid"/>
+            </Style>
+        </Styles>
+        <Worksheet ss:Name="Report">
+            <Table x:FullColumns="1" x:FullRows="1">
+                <Column ss:Width="120" />
+                <Column ss:Width="120" />
+                <Column ss:Width="120" />
+                <Column ss:Width="120" />
+                <Column ss:Width="120" />
+
+                <Column ss:Width="120" />
+                <Column ss:Width="120" />
+                <Column ss:Width="120" />
+                <apex:repeat value="{!assortmentsIdList}" var="assortmentId">
+                    <Column ss:Width="120" />
+                    <Column ss:Width="120" />
+                    <Column ss:Width="120" />
+                    <Column ss:Width="120" />
+                    <Column ss:Width="120" />
+                    <Column ss:Width="120" />
+                </apex:repeat>
+                <Row>
+                    <Cell ss:StyleID="allBorders">
+                        <Data ss:Type="String"><apex:outputText value="{!title}" /></Data>
+                    </Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="allBorders">
+                        <Data ss:Type="String"></Data>
+                    </Cell>
+                </Row>
+                <apex:outputPanel layout="none" rendered="{!noOfRecords != 0}">
+                    <Row>
+                        <Cell ss:MergeDown="1" ss:StyleID="header">
+                            <Data ss:Type="String"><apex:outputText value="{!$ObjectType.Product2.fields.ProductCode.label}" /></Data>
+                        </Cell>
+                        <Cell ss:MergeDown="1" ss:StyleID="header">
+                            <Data ss:Type="String"><apex:outputText value="{!$ObjectType.Product2.fields.Name.label}" /></Data>
+                        </Cell>
+                        <Cell ss:MergeDown="1" ss:StyleID="header">
+                            <Data ss:Type="String"><apex:outputText value="{!$ObjectType.Product2.fields.Product_EAN__c.label}" /></Data>
+                        </Cell>
+                        <Cell ss:MergeDown="1" ss:StyleID="header">
+                            <Data ss:Type="String"><apex:outputText value="{!$ObjectType.Product2.fields.VIP__c.label}" /></Data>
+                        </Cell>
+                        <Cell ss:MergeAcross="2" ss:StyleID="header">
+                            <Data ss:Type="String"><apex:outputText value="{!$Label.LBL_Assortment_Conso}" /></Data>
+                        </Cell>
+                        <apex:repeat value="{!assortmentsIdList}" var="assortmentId">
+                            <Cell ss:MergeAcross="5" ss:HRef="{!baseUrl}/{!assortmentsMap[assortmentId].assortment.Id}" ss:StyleID="header">
+                                <Data ss:Type="String"><apex:outputText value="{!assortmentsMap[assortmentId].assortment.Name} ({!assortmentsMap[assortmentId].statusLabel})" /></Data>
+                            </Cell>
+                        </apex:repeat>
+                    </Row>
+                    <Row>
+                        <!-- conso fields -->
+                        <Cell ss:Index="6" ss:StyleID="header">
+                            <Data ss:Type="String"><apex:outputText value="{!$ObjectType.Assortment_Detail__c.fields.New_Client_ProductNumber__c.label}" /></Data>
+                        </Cell>
+                        <Cell ss:StyleID="header">
+                            <Data ss:Type="String"><apex:outputText value="{!$ObjectType.Assortment_Detail__c.fields.New_Client_WD_MarketBased_Pts__c.label}" /></Data>
+                        </Cell>
+                        <Cell ss:StyleID="header">
+                            <Data ss:Type="String"><apex:outputText value="{!$ObjectType.Assortment_Detail__c.fields.New_Client_WD_ClientBased_Pts__c.label}" /></Data>
+                        </Cell>
+                        <apex:repeat value="{!assortmentsIdList}" var="assortmentId">
+                            <Cell ss:StyleID="header">
+                                <Data ss:Type="String"><apex:outputText value="{!$ObjectType.Assortment_Detail__c.fields.Ass_BU_Cluster__c.label}" /></Data>
+                            </Cell>
+                            <Cell ss:StyleID="header">
+                                <Data ss:Type="String"><apex:outputText value="{!$ObjectType.Assortment_Detail__c.fields.Client_Status__c.label}" /></Data>
+                            </Cell>
+                            <Cell ss:StyleID="header">
+                                <Data ss:Type="String"><apex:outputText value="{!$ObjectType.Assortment_Detail__c.fields.New_Client_ProductNumber__c.label}" /></Data>
+                            </Cell>
+                            <Cell ss:StyleID="header">
+                                <Data ss:Type="String"><apex:outputText value="{!$ObjectType.Assortment_Detail__c.fields.New_Client_WD_MarketBased_Pts__c.label}" /></Data>
+                            </Cell>
+                            <Cell ss:StyleID="header">
+                                <Data ss:Type="String"><apex:outputText value="{!$ObjectType.Assortment_Detail__c.fields.New_Client_WD_ClientBased_Pts__c.label}" /></Data>
+                            </Cell>
+                            <Cell ss:StyleID="header">
+                                <Data ss:Type="String"><apex:outputText value="{!$ObjectType.Assortment_Detail__c.fields.Movement_Date__c.label}" /></Data>
+                            </Cell>
+                        </apex:repeat>
+                    </Row>
+                    <apex:repeat value="{!categoryWrapperList}" var="categoryWrapper">
+                        <Row>
+                            <Cell ss:MergeAcross="4" ss:HRef="{!baseUrl}/{!categoryWrapper.referenceDetail.Category__c}" ss:StyleID="categoryRow">
+                                <Data ss:Type="String"><apex:outputText value="{!categoryWrapper.referenceDetail.Category__r.Long_Name__c}" /></Data>
+                            </Cell>
+                            <Cell ss:StyleID="categoryRow">
+                                <Data ss:Type="Number"><apex:outputText value="{!subTotalsMap['conso-'+categoryWrapper.referenceDetail.Category__c][$ObjectType.Assortment_Detail__c.fields.New_Client_ProductNumber__c.Name]}"/></Data>
+                            </Cell>
+                            <Cell ss:StyleID="categoryRow">
+                                <Data ss:Type="Number"><apex:outputText value="{!subTotalsMap['conso-'+categoryWrapper.referenceDetail.Category__c][$ObjectType.Assortment_Detail__c.fields.New_Client_WD_MarketBased_Pts__c.Name]}"/></Data>
+                            </Cell>
+                            <Cell ss:StyleID="categoryRow">
+                                <Data ss:Type="Number"><apex:outputText value="{!subTotalsMap['conso-'+categoryWrapper.referenceDetail.Category__c][$ObjectType.Assortment_Detail__c.fields.New_Client_WD_ClientBased_Pts__c.Name]}"/></Data>
+                            </Cell>
+                            <apex:repeat value="{!assortmentsIdList}" var="assortmentId">
+                                <Cell ss:StyleID="categoryRow">
+                                    <Data ss:Type="String"></Data>
+                                </Cell>
+                                <Cell ss:StyleID="categoryRow">
+                                    <Data ss:Type="String"></Data>
+                                </Cell>
+                                <Cell ss:StyleID="categoryRow">
+                                    <Data ss:Type="Number"><apex:outputText value="{!subTotalsMap[assortmentId + '-' + categoryWrapper.referenceDetail.Category__c][$ObjectType.Assortment_Detail__c.fields.New_Client_ProductNumber__c.Name]}" rendered="{!CONTAINS(subTotalsMapKeySet, assortmentId + '-' + categoryWrapper.referenceDetail.Category__c)}"/></Data>
+                                </Cell>
+                                <Cell ss:StyleID="categoryRow">
+                                    <Data ss:Type="Number"><apex:outputText value="{!subTotalsMap[assortmentId + '-' + categoryWrapper.referenceDetail.Category__c][$ObjectType.Assortment_Detail__c.fields.New_Client_WD_MarketBased_Pts__c.Name]}" rendered="{!CONTAINS(subTotalsMapKeySet, assortmentId + '-' + categoryWrapper.referenceDetail.Category__c)}"/></Data>
+                                </Cell>
+                                <Cell ss:StyleID="categoryRow">
+                                    <Data ss:Type="Number"><apex:outputText value="{!subTotalsMap[assortmentId + '-' + categoryWrapper.referenceDetail.Category__c][$ObjectType.Assortment_Detail__c.fields.New_Client_WD_ClientBased_Pts__c.Name]}" rendered="{!CONTAINS(subTotalsMapKeySet, assortmentId + '-' + categoryWrapper.referenceDetail.Category__c)}"/></Data>
+                                </Cell>
+                                <Cell ss:StyleID="categoryRow">
+                                    <Data ss:Type="String"></Data>
+                                </Cell>
+                            </apex:repeat>
+                        </Row>
+                        <apex:repeat value="{!categoryWrapper.products}" var="productWrapper">
+                            <Row>
+                                <Cell ss:StyleID="allBorders">
+                                    <Data ss:Type="String"><apex:outputText value="{!productWrapper.referenceDetail.Product__r.ProductCode}" /></Data>
+                                </Cell>
+                                <Cell ss:HRef="{!baseUrl}/{!productWrapper.referenceDetail.Product__c}"
+                                      ss:StyleID="{!IF(AND(OR(productWrapper.referenceDetail.Product__r.IsInnovation__c, productWrapper.referenceDetail.Product__r.recordType.developerName == 'Unit_Need'), productWrapper.referenceDetail.Product__r.Market_Introduction_Date__c!=null, YEAR(productWrapper.referenceDetail.Product__r.Market_Introduction_Date__c) < VALUE(selectedYear)), 'INNO_INTRO_DATE_LESS_N',
+                                                  IF(AND(OR(productWrapper.referenceDetail.Product__r.IsInnovation__c, productWrapper.referenceDetail.Product__r.recordType.developerName == 'Unit_Need'), productWrapper.referenceDetail.Product__r.Market_Introduction_Date__c!=null, YEAR(productWrapper.referenceDetail.Product__r.Market_Introduction_Date__c) >= VALUE(selectedYear)), 'INNO_INTRO_DATE_GREATER_N',
+                                                  IF(AND(productWrapper.referenceDetail.Product__r.Market_End_of_Life_Date__c!=null, YEAR(productWrapper.referenceDetail.Product__r.Market_End_of_Life_Date__c) < VALUE(selectedYear)), 'STOP_DATE_LESS_N',
+                                                  IF(AND(productWrapper.referenceDetail.Product__r.Market_End_of_Life_Date__c!=null, YEAR(productWrapper.referenceDetail.Product__r.Market_End_of_Life_Date__c) >= VALUE(selectedYear)), 'STOP_DATE_GREATER_N', 'allBorders'))))}">
+                                    <Data ss:Type="String"><apex:outputText value="{!productWrapper.referenceDetail.Product__r.Name}" /></Data>
+                                </Cell>
+                                <Cell ss:StyleID="allBorders">
+                                    <Data ss:Type="String"><apex:outputText value="{!productWrapper.referenceDetail.Product__r.Product_EAN__c}" /></Data>
+                                </Cell>
+                                <Cell ss:StyleID="allBorders">
+                                    <Data ss:Type="String"><apex:outputText value="{!productWrapper.referenceDetail.Product__r.VIP__c}" /></Data>
+                                </Cell>
+                                <!-- Conso Fields -->
+                                <Cell ss:StyleID="consoRow">
+                                    <Data ss:Type="Number"><apex:outputText value="{!subTotalsMap[productWrapper.referenceDetail.Product__c][$ObjectType.Assortment_Detail__c.fields.New_Client_ProductNumber__c.Name]}"/></Data>
+                                </Cell>
+                                <Cell ss:StyleID="consoRow">
+                                    <Data ss:Type="Number"><apex:outputText value="{!subTotalsMap[productWrapper.referenceDetail.Product__c][$ObjectType.Assortment_Detail__c.fields.New_Client_WD_MarketBased_Pts__c.Name]}"/></Data>
+                                </Cell>
+                                <Cell ss:StyleID="consoRow">
+                                    <Data ss:Type="Number"><apex:outputText value="{!subTotalsMap[productWrapper.referenceDetail.Product__c][$ObjectType.Assortment_Detail__c.fields.New_Client_WD_ClientBased_Pts__c.Name]}"/></Data>
+                                </Cell>
+                                <!-- Asortment Details Fields -->
+                                <apex:repeat value="{!assortmentsIdList}" var="assortmentId">
+                                    <apex:outputPanel layout="none" rendered="{!CONTAINS(productWrapper.keySet, assortmentId)}">
+                                        <Cell ss:HRef="{!baseUrl}/{!productWrapper.detailsMap[assortmentId].detail.Ass_BU_Cluster__c}">
+                                            <Data ss:Type="String"><apex:outputText value="{!productWrapper.detailsMap[assortmentId].assBUClusterName}" /></Data>
+                                        </Cell>
+                                        <Cell ss:StyleID="allBorders">
+                                            <Data ss:Type="String"><apex:outputText value="{!clientStatusMap[productWrapper.detailsMap[assortmentId].detail.Client_Status__c]}" rendered="{!AND(!ISNULL(productWrapper.detailsMap[assortmentId].detail.Client_Status__c), CONTAINS(clientStatusMapKeysJSON,productWrapper.detailsMap[assortmentId].detail.Client_Status__c))}"/></Data>
+                                        </Cell>
+                                        <Cell ss:StyleID="allBorders">
+                                            <Data ss:Type="Number"><apex:outputText value="{!productWrapper.detailsMap[assortmentId].newClientProductNumber}" /></Data>
+                                        </Cell>
+                                        <Cell ss:StyleID="allBorders">
+                                            <Data ss:Type="Number"><apex:outputText value="{!productWrapper.detailsMap[assortmentId].newClientWDMarketBased}" /></Data>
+                                        </Cell>
+                                        <Cell ss:StyleID="allBorders">
+                                            <Data ss:Type="Number"><apex:outputText value="{!productWrapper.detailsMap[assortmentId].newClientWDClientBased}" /></Data>
+                                        </Cell>
+                                        <Cell ss:StyleID="allBorders">
+                                            <Data ss:Type="String"><apex:outputText value="{!productWrapper.detailsMap[assortmentId].movementDateFormated}" /></Data>
+                                        </Cell>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel layout="none" rendered="{!!CONTAINS(productWrapper.keySet, assortmentId)}">
+                                        <Cell ss:MergeAcross="5" ss:StyleID="emptyDetail">
+                                            <Data ss:Type="String"></Data>
+                                        </Cell>
+                                    </apex:outputPanel>
+                                </apex:repeat>
+                            </Row>
+                        </apex:repeat>
+                    </apex:repeat>
+                </apex:outputPanel>
+                <apex:outputPanel layout="none" rendered="{!noOfRecords == 0}">
+                    <Row>
+                        <Cell ss:StyleID="allBorders">
+                            <Data ss:Type="String"><apex:outputText value="{!$Label.LBL_No_Item_To_Display}" /></Data>
+                        </Cell>
+                    </Row>
+                </apex:outputPanel>
+            </Table>
+            <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+                <Unsynced />
+                <Selected />
+                <FreezePanes />
+                <FrozenNoSplit />
+                <SplitHorizontal>4</SplitHorizontal>
+                <TopRowBottomPane>3</TopRowBottomPane>
+                <SplitVertical>5</SplitVertical>
+                <LeftColumnRightPane>3</LeftColumnRightPane>
+                <ActivePane>0</ActivePane>
+                <Panes>
+                    <Pane>
+                        <Number>3</Number>
+                    </Pane>
+                    <Pane>
+                        <Number>1</Number>
+                    </Pane>
+                    <Pane>
+                        <Number>2</Number>
+                    </Pane>
+                    <Pane>
+                        <Number>0</Number>
+                        <ActiveRow>1</ActiveRow>
+                    </Pane>
+                </Panes>
+                <ProtectObjects>False</ProtectObjects>
+                <ProtectScenarios>False</ProtectScenarios>
+            </WorksheetOptions>
+        </Worksheet>
+    </Workbook>
+</apex:page>
